@@ -13,10 +13,11 @@ Class Varios
 
 	public function llamamosWS_sartawi($data)
 	{
-
 		$varios = new Varios();
 
-		$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
+		//$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
+		$url = 'http://104.209.250.175/wstest/api/TransfDatosCliente';
+		
 
 		date_default_timezone_set('America/La_Paz');
     		$fecha_facturacion = date('YmdHis');
@@ -33,57 +34,57 @@ Class Varios
 		$user = $res['usuario'];
 		$psw  = $res['clave'];
 
-	//	$user = "portal_innova";						//---------------------------------
-	//	$psw  = "dM527'~F";
-		$user = "dr-scz-ep-ws";
-		$psw  = "456789";
+		//	$user = "portal_innova";						//---------------------------------
+		//	$psw  = "dM527'~F";
+			$user = "dr-scz-ep-ws";
+			$psw  = "456789";
 
-		   // Datos del cliente
-		$codigoCliente = $data['cod_cli'];
-		$operacionId = $data['cod_ope'];
-		$numTransaccion = $data['cod_tra'];
+			// Datos del cliente
+			$codigoCliente = $data['cod_cli'];
+			$operacionId = $data['cod_ope'];
+			$numTransaccion = $data['cod_tra'];
 
-		$tipoDoc = $data['tipo_documento'];
-		//$tipoDoc = 'C';
+			$tipoDoc = $data['tipo_documento'];
+			//$tipoDoc = 'C';
 
-		$numDoc = $data['cedula'];
-		$extensionDoc = $data['extension'];
+			$numDoc = $data['cedula'];
+			$extensionDoc = $data['extension'];
 
-		$expedidoDoc = $data['expedido'];
-		//$expedidoDoc = 'CB';
+			$expedidoDoc = $data['expedido'];
+			//$expedidoDoc = 'CB';
 
-		$apPaterno = $data['ap_paterno'];
-		$apMaterno = $data['ap_materno'];
-		$nombres = $data['nombres'];
-		$razonSocial = $data['razon_social'];
-		$genero = $data['genero'];
-		$telefono = $data['telefono'];
-		$email = "";
-		$direccion = "N-A";
-		$fecNacimiento = $fecha_nacimiento;
-		$cuidad = "SANTA CRUZ";
-		$pais = "BOLIVIA";
-		//$ocupacion = "PPCE0062-LP-24-0001-0003112";	//-------------
-		$ocupacion = $data['contrato'];
-		$indicador = "D";
+			$apPaterno = $data['ap_paterno'];
+			$apMaterno = $data['ap_materno'];
+			$nombres = $data['nombres'];
+			$razonSocial = $data['razon_social'];
+			$genero = $data['genero'];
+			$telefono = $data['telefono'];
+			$email = "";
+			$direccion = "N-A";
+			$fecNacimiento = $fecha_nacimiento;
+			$cuidad = "SANTA CRUZ";
+			$pais = "BOLIVIA";
+			//$ocupacion = "PPCE0062-LP-24-0001-0003112";	//-------------
+			$ocupacion = $data['contrato'];
+			$indicador = "D";
 
-		$planElegido = $data['codigo_plan'];
-	//	$planElegido = "PPCE0062";		//---------------------------
+			$planElegido = $data['codigo_plan'];
+		//	$planElegido = "PPCE0062";		//---------------------------
 
 
-		$monto = $data['precio'];
-		$fecha = $fecha_facturacion;
+			$monto = $data['precio'];
+			$fecha = $fecha_facturacion;
 
-		$numeroPago = 0;
-		$codAgencia = $data['codigo_agencia'];
-	//	$codAgencia = 'LPZ-OB';			//---------------------------
+			$numeroPago = 0;
+			$codAgencia = $data['codigo_agencia'];
+		//	$codAgencia = 'LPZ-OB';			//---------------------------
 
 
 		$codigoAsesor = "";
 		$modalidad = "E";
 
 		$canal = $data['canal'];
-	//	$canal = 'C011';				//-----------------------------
+		//	$canal = 'C011';				//-----------------------------
 
 		$fechaInicio = $data['fecha_inicio'];
 
@@ -513,7 +514,7 @@ Class Varios
 		//echo "SQL: " . $sql . "<br>";
 
 		return ejecutarConsulta($sql);
-			}
+	}
 
 	public function registraDatosLog($data)
 	{

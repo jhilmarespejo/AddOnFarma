@@ -140,10 +140,10 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 
 					<!-- Desde aqui: CAPTURA DATOS ASESOR  -->
 					<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 datos_asesor">
-						<label style='font-size:18px;color:#C00000'>NÚMERO DE PRÉSTAMO</label>
+						<label style='font-size:18px;color:#C00000'>DATOS DEL ASESOR</label>
 					</div>
 					<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 datos_asesor">
-						<label>Número préstamo:</label>
+						<label>Numero documento:</label>
 						<input type="text" class="form-control" name="cedula_asesor" id="cedula_asesor" maxlength="8" placeholder="Numero cedula" onkeypress="return permite(event, 'num')" required>
 					</div>
 					<!-- Hasta aqui: CAPTURA DATOS ASESOR -->

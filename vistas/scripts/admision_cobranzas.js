@@ -6,6 +6,7 @@ function init(){
 
 	$('#vamos_a_cobrar').hide();
 	limpiar();
+	//++
 	$("#formulario").on("submit", function (e) {
 		guardaryeditar(e);
 	});
@@ -324,7 +325,7 @@ function guarda_info(){
 
 }
 
-
+//++
 function guardaryeditar(e) {
   e.preventDefault(); //No se activará la acción predeterminada del evento
 
