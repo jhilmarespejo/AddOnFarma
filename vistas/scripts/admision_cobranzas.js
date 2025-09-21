@@ -109,12 +109,17 @@ function listarPlanes(){
 
 		genero_paciente = $(this).val();
 		console.log("GENERO CLIENTE:" + genero_paciente);
-
+		
 		$.post("../ajax/varios.php?op=listarPlanesCanal", 
 		{genero_paciente:genero_paciente},
 		function (r) {
 			//console.log(r);
 			$("#planes").html(r);
+			///JJJ 
+				$("#planes").prop("selectedIndex", 1);
+				$('#cedula_asesor').val('111333');
+			///JJJ
+
 			$("#planes").selectpicker("refresh");
 		});
 	});
@@ -304,14 +309,15 @@ function guarda_info(){
 				$('#id_pagado').css("color", "green");
 				$('#id_total_a_pagar').css("color", "red");
 				$('#registro_a_facturar').val(data.id_temp);
-
-
-				$('#formularioregistros').hide();
-				limpiar();
-				setTimeout(()=> {
-					$('#vamos_a_cobrar').show();
-				}
-				,100);
+				
+				/// JJJ
+				$('#vamos_a_cobrar').show();
+				// $('#formularioregistros').hide();
+				// limpiar();
+				// setTimeout(()=> {
+				// 	$('#vamos_a_cobrar').show();
+				// }
+				// ,100);
 
 
 			}else{
@@ -424,21 +430,45 @@ function guardaryeditar(e) {
 	}
 
 }
-
+//+P1
 function generarFactura(){
-
 	let registro_a_facturar = $('#registro_a_facturar').val();
-
+    
     document.body.style.cursor = 'wait';
 
     // Mostrar mensaje de carga
     $('#loadingMensaje').show();
-
     $('#btnImprimir').hide();
-    $('#btnImprimir').attr('disabled', true);
     $('#btnVolverInicio').hide();
+	
+	// JJJ cambiar de false a true
+    $('#btnImprimir').attr('disabled', false);
+
+	// JJJ cambiar de false a true
+    $('#btnCancelar').attr('disabled', false);
+	
+	$('#btnContrato').show().attr('disabled', false); // muestra el botón de contrato
+
+
+	// Simulación directa sin AJAX
+    let planElegido = $('#planes option:selected').text() || 'Plan no seleccionado';
+    
+    $('#btnImprimir').show().attr('disabled', false);
+    $('#btnVolverInicio').show();
     $('#btnCancelar').attr('disabled', true);
 
+    $('#loadingMensaje').hide();
+
+    $('#idmensaje_final').html(
+        `<div class="alert alert-success" style="font-size:18px;">
+            ¡Cobranza registrada correctamente!<br>
+            <strong>Plan elegido:</strong> ${planElegido}
+        </div>`
+    ).show();
+
+
+    //+P2
+	/* ///JJJ descomentar este bloque para usar AJAX
     $.ajax({
         url: "../ajax/cobranzas.php?op=generarFactura",
         type: "POST",
@@ -453,6 +483,10 @@ function generarFactura(){
                     .attr('target', '_blank')
                     .show()
                     .attr('disabled', false);
+
+				// Mostrar botón de contrato
+				$('#btnContrato').show().attr('disabled', false);
+                
 
                 $('#btnVolverInicio').show();
                 $('#btnCancelar').attr('disabled', true);
@@ -473,9 +507,36 @@ function generarFactura(){
             // Ocultar mensaje de carga al terminar
             $('#loadingMensaje').hide();
         }
-    });
+    });*/
 }
 
+function verContrato() {
+    // let registro_a_facturar = $('#registro_a_imprimir').val().trim();
+	let registro_a_facturar = $('#registro_a_facturar').val();
+	// console.log('Registro a facturar: ' + registro_a_facturar);
+	// if (!registro_a_facturar) {
+	// 	alert('No se ha definido el registro a facturar');
+	// 	return;
+	// } else {
+	// 	console.log('Registro a facturar: ' + registro_a_facturar);
+	// 	return;
+	// }
+		
+    // Mostrar el contenedor del PDF
+    $('#contenedor-pdf').show();
+		$('html, body').animate({
+			scrollTop: $('#contenedor-pdf').offset().top
+		}, 500); // 500 ms de duración
+    // Cargar el PDF en el iframe
+    $('#visor-pdf').attr('src', '../ajax/obtener_contrato.php?id=' + registro_a_facturar);
+}
+function cerrarContrato() {
+    // Ocultar el contenedor del PDF
+    $('#contenedor-pdf').hide();
+    
+    // Limpiar el iframe
+    $('#visor-pdf').attr('src', '');
+}
 
 
 init();

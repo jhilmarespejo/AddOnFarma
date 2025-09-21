@@ -46,7 +46,7 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 					<div class="box-tools pull-right">
 					</div>
 				</div>
-                        <form name="formulario" id="formulario" method="POST">
+            <form name="formulario" id="formulario" method="POST">
 
 				<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<label>Tipo Documento(*):</label>
@@ -61,12 +61,13 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 
 				<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<label>Numero Documento:</label>
-					<input type="text" class="form-control" name="num_documento" id="num_documento" maxlength="25" onkeypress="return permite(event, 'num')" placeholder="Num Documento">
+					<!-- jjj -->
+					<input type="text" class="form-control" name="num_documento" id="num_documento" maxlength="25" onkeypress="return permite(event, 'num')" placeholder="Num Documento" value="46225711">
 					<input type="hidden" name="codigo_canal" id="codigo_canal" value="<?=$codigo_canal?>">
 					<input type="hidden" name="datos_asesor" id="datos_asesor" value="<?=$datos_asesor?>">
 					<input type="hidden" name="donde" id="donde" >
 				</div>
-
+				
 				<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<label>Complemento:</label>
 					<input type="text" class="form-control" name="extension" id="extension" maxlength="2" onkeypress="return permite(event, 'num_car')" onkeyup="this.value = this.value.toUpperCase()" placeholder="Complemento">
@@ -144,11 +145,13 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 					</div>
 					<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12 datos_asesor">
 						<label>Numero documento:</label>
-						<input type="text" class="form-control" name="cedula_asesor" id="cedula_asesor" maxlength="8" placeholder="Numero cedula" onkeypress="return permite(event, 'num')" required>
+						<input type="text" class="form-control" name="cedula_asesor" id="cedula_asesor" maxlength="8" placeholder="Numero cedula"  value="111333">
+						
+						<!-- JJJ <input type="text" class="form-control" name="cedula_asesor" id="cedula_asesor" maxlength="8" placeholder="Numero cedula" onkeypress="return permite(event, 'num')" required value="111333"> -->
 					</div>
 					<!-- Hasta aqui: CAPTURA DATOS ASESOR -->
 
-
+					
 					<div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
 						<button class="btn btn-primary" type="submit" style="width: 180px;" id="btnGuardar" name="btnGuardar" value="guardar"> <i class="fa fa-save"> </i>&nbsp;&nbsp; GUARDAR </button>
 					</div>
@@ -186,8 +189,8 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 							</tr>
 							<tr>
 								<td colspan='2' style="text-align: right;" id="id_pagado"><strong>Pagado</strong></td>
-
-								<td><input type="text" id="total_paid" class="form-control text-align-right"  style="text-align:right;" onkeypress="return permite(event, 'num')" onkeyup="myFunction()"></td>
+								<!-- ///jjj value="1000"-->
+								<td><input type="text" id="total_paid" class="form-control text-align-right"  style="text-align:right;" onkeypress="return permite(event, 'num')" onkeyup="myFunction()" value="1000"></td>
 							</tr>
 							<tr>
 								<td colspan='2' style="text-align: right;" id="id_cambio"><strong>Cambio</strong></td>
@@ -201,11 +204,14 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 							<form action="registro_a_imprimir.php" method="post">
 								<input type="hidden" id="registro_a_imprimir" name="registro_a_imprimir">
 								<button id="btnCancelar" class="btn btn-primary btn-lg"  onclick="generarFactura()" type="button" style="width: 250px;margin-left:227px;">
-									<i class="fa fa-lg fa-fw fa-file-text"></i>  REGISTRAR COBRANZA</button>
+									<i class="fa fa-lg fa-fw fa-file-text"></i>  REGISTRAR COBRANZA xxx</button>
 
-									<a id="btnImprimir" href="#" target="_blank" class="btn btn-primary" style="display:none;  margin-left:40px;font-size: 16px; padding: 10px 20px;">
-									<i class="fa fa-lg fa-fw fa-file-text"></i>"IMPRIMIR FACTURA</a>
+									<a id="btnImprimir" href="escritorio.php" target="_blank" class="btn btn-primary" style="display:none;  margin-left:40px;font-size: 16px; padding: 10px 20px;">
+									<i class="fa fa-lg fa-fw fa-file-text"></i>IMPRIMIR FACTURA</a>
 
+									<a id="btnContrato" href="#" class="btn btn-primary" style="display:none;  margin-left:40px;font-size: 16px; padding: 10px 20px;" onclick="verContrato()">
+            						<i class="fa fa-lg fa-fw fa-file-text"></i>VER CONTRATO</a>
+									
 									<a id="btnVolverInicio" href="escritorio.php" class="btn btn-primary" style="display:none; margin-left: 40px; font-size: 16px; padding: 10px 20px;"><i class="fa fa-lg fa-fw fa-file-text"></i>VOLVER AL INICIO</a>
 
 									<div id="loadingMensaje" style="display: none; text-align: center; margin-top: 20px;">
@@ -223,15 +229,36 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
         </div><!-- /.row -->
     </section><!-- /.content -->
 
+	<!-- Contenedor para el PDF del contrato -->
+		<div id="contenedor-pdf" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="display: none; margin-top: 20px;">
+			<div class="box box-primary">
+				<div class="box-header with-border">
+					<h3 class="box-title">Contrato del Cliente</h3>
+					<div class="box-tools pull-right">
+						<button type="button" class="btn btn-box-tool" onclick="cerrarContrato()">
+							<i class="fa fa-times"></i>
+						</button>
+					</div>
+				</div>
+				<div class="box-body">
+					<iframe id="visor-pdf" src="" width="100%" height="600px" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	
+
 </div><!-- /.content-wrapper -->
   <!--Fin-Contenido-->
   
 <?php
 require 'footer.php';
-
+// +P1
 ?>
+
 <script type="text/javascript" src="scripts/admision_cobranzas.js"></script>
 <script>
+
+
 function myFunction() {
 
 	$('#total_paid').focus();

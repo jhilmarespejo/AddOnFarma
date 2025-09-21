@@ -158,8 +158,8 @@ switch ($_GET["op"]){
         break;
 
 
-
-
+	
+	// +P2
 	case 'generarFactura':
 
 		/*
@@ -173,13 +173,14 @@ switch ($_GET["op"]){
 		$cod_ope = $varios->getParameterValues('cod_ope');
 		$cod_tra = $varios->getParameterValues('cod_tra');
 
-		//echo "COD OPE:" . $cod_ope . "<br>";
-		//echo "COD TRA:" . $cod_tra . "<br>";
+		echo "COD OPE:" . $cod_ope . "<br>";
+		echo "COD TRA:" . $cod_tra . "<br>";
 
 		// Generamos el número de contrato del paciente
 		$contrato =  $varios->getNumeroContrato($registro_a_facturar);
 
-		//echo "CONTRATO: " . $contrato . "<br>";
+		echo "CONTRATO: " . $contrato . "<br>";
+		exit;
 
 		$data = array();
 		$data['cod_tra'] = $cod_tra;
@@ -188,7 +189,7 @@ switch ($_GET["op"]){
 		//dep($data);
 		//die();
 
-
+		//+P4
 		$ret_val = $cobranzas->generarFactura_c($cod_ope, $cod_tra,$id_usuario,$registro_a_facturar,$contrato);
 
 
@@ -261,6 +262,8 @@ switch ($_GET["op"]){
 
 
 		$horaLlamada = date('H:i:s');
+		
+		//+P5
 		$rc = $varios->llamamosWS_Sartawi($factura); 
 		$horaRetorno = date('H:i:s');
 
@@ -289,7 +292,7 @@ switch ($_GET["op"]){
 		//dep($factura);
 
 		echo json_encode($data);
-		//dep($data);
+		dep($data);exit;
 
 	break;
 

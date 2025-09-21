@@ -78,13 +78,13 @@ switch ($_GET["op"]){
 		$rspta=$plan->listarPlanes($codigo_canal);
 
 		echo '<option value=' . '0' . '>' . 'Seleccione un Plan' . '</option>';	
-
+		
 		while ($reg = $rspta->fetch_object())
 		{
 			echo '<option value=' . $reg->codigo_plan . '-'. $reg->beneficiario . '>'
 								  . $reg->plan . '</option>';
 		}
-
+	
 	break;
 }
 //Fin de las validaciones de acceso

@@ -13,6 +13,7 @@ Class Varios
 
 	public function llamamosWS_sartawi($data)
 	{
+		exit('xxxxx');
 		$varios = new Varios();
 
 		//$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';

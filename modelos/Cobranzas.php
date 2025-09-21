@@ -47,7 +47,7 @@ Class Cobranzas
 
 
 	}
-
+	// +P4
 	public function generarFactura_c($cod_ope, $cod_tra,$id_usuario,$registro_a_facturar,$contrato){
 
 		date_default_timezone_set('America/La_Paz');
