@@ -28,6 +28,7 @@ $nombres = isset($_POST["nombres"])? limpiarCadena($_POST["nombres"]):"";
 $genero = isset($_POST["genero"])? limpiarCadena($_POST["genero"]):"";
 $fecha_nacimiento = isset($_POST["fecha_nacimiento"])? limpiarCadena($_POST["fecha_nacimiento"]):"";
 $num_telefono = isset($_POST["telefono"])? limpiarCadena($_POST["telefono"]):"";
+$email = isset($_POST["email"])? limpiarCadena($_POST["email"]):"";
 $cedula_asesor = isset($_POST["cedula_asesor"])? limpiarCadena($_POST["cedula_asesor"]):"";
 $codigo_renovacion = isset($_POST["codigo_renovacion"])? limpiarCadena($_POST["codigo_renovacion"]):"";
 $donde = isset($_POST["donde"])? limpiarCadena($_POST["donde"]):"";
@@ -95,7 +96,7 @@ switch ($_GET["op"]){
 			//echo "Lamare a Insertar<br>";
 			//die();
 			$rspta=$cliente->insertar($tipo_documento,$num_documento,$extension,$ap_paterno,$ap_materno,
-						$nombres,$fecha_nacimiento,$num_telefono,$genero,$cod_cli,$fecha_creacion);
+						$nombres,$fecha_nacimiento,$num_telefono,$genero,$cod_cli,$fecha_creacion,$email);
 			//echo "ID USR: " . $rspta . "<br>";
 			$new_registro_tit = $rspta;
 
@@ -121,7 +122,7 @@ switch ($_GET["op"]){
 
 
 		$ndx_temp = $varios->insertar_temp($id_usuario,$new_registro_tit,$planes,$fecha_creacion,$deuda,$codigo_canal,$cedula_asesor,$codigo_agencia);
-
+		
 		$data = array();
 		$data['status']     = 'ok';
 		$data['id_cliente'] = $new_registro_tit;

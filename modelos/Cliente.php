@@ -12,7 +12,7 @@ Class Cliente
 
 	//Implementar un método para ingresar al cliente
 	public function insertar($tipo_documento,$num_documento,$extension,$ap_paterno,$ap_materno,
-	$nombres,$fecha_nacimiento,$num_telefono,$genero,$cod_cli,$fecha_creacion)
+	$nombres,$fecha_nacimiento,$num_telefono,$genero,$cod_cli,$fecha_creacion,$email)
 	{
 		if(is_null($ap_paterno)){
 			$ap_paterno = $ap_materno;
@@ -20,9 +20,9 @@ Class Cliente
 		}
 
 		$sql="INSERT INTO clientes (tipo_documento,num_documento,extension,ap_paterno,ap_materno,nombres,
-				fecha_nacimiento,cod_cli,genero,telefono,fecha_creacion)
+				fecha_nacimiento,cod_cli,genero,telefono,fecha_creacion,correo)
 		VALUES ('$tipo_documento','$num_documento','$extension','$ap_paterno','$ap_materno','$nombres',
-				'$fecha_nacimiento','$cod_cli','$genero','$num_telefono','$fecha_creacion')";
+				'$fecha_nacimiento','$cod_cli','$genero','$num_telefono','$fecha_creacion', '$email')";
 
 		//echo "SQL: " . $sql . "<br>";
 		//die();

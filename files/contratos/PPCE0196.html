@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contrato Versión Simplificada - Masivo Consulta Médica General</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            line-height: 1.4;
+            margin: 0;
+            padding: 15px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .underline {
+            text-decoration: underline;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .field {
+            margin-bottom: 10px;
+        }
+        .field-label {
+            font-weight: bold;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .indent {
+            margin-left: 20px;
+        }
+        .center {
+            text-align: center;
+        }
+        .signature-field {
+            margin-top: 50px;
+            border-top: 1px solid black;
+            padding-top: 5px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+	<p>{{t.contrato}}</>
+        <p>El presente documento representa una Versión Simplificada del CONTRATO
+        CON VERSIÓN SIMPLIFICADA. En caso de que el Usuario desee conocer
+        inextenso las normas, términos y condiciones del Plan de Servicios de
+        Prepago de Atención de Salud, éste deberá referirse únicamente al
+        CONTRATO CON VERSIÓN SIMPLIFICADA, el mismo que se encuentra en posesión
+        de la Entidad Prepago de Salud.</p>
+
+        <div class="field">
+            <div class="field-label">USUARIO TITULAR:</div>
+			{{c.nombres'}}
+        </div>
+
+        <div class="field">
+            <div class="field-label">CÉDULA DE IDENTIDAD:</div>
+			{{c.num_documento}}
+        </div>
+
+        <div class="field">
+            <div class="field-label">FECHA DE NACIMIENTO:</div>
+			{{c.fecha_nacimiento}}
+        </div>
+
+        <div class="field">
+            <div class="field-label">VIGENCIA DEL CONTRATO CON</div>
+            <div class="field-label">VERSIÓN SIMPLIFICADA:</div>
+			{{c.fecha_inicio}}
+			{{c.fecha_fin}}
+        </div>
+
+        <div class="field">
+            <div class="field-label">TARIFA ANTICIPADA:</div>
+            <div>Bs45 (cuarenta y cinco 00/100 bolivianos)</div>
+        </div>
+
+        <div class="field">
+            <div class="field-label">FORMA DE PAGO:</div>
+            <div>Al Contado</div>
+        </div>
+
+        <div class="section-title underline">OBJETO DEL CONTRATO CON VERSIÓN SIMPLIFICADA.-</div>
+        <p>El presente CONTRATO CON VERSIÓN SIMPLIFICADA establece las condiciones
+        para la prestación de Servicios Prepago de Salud. La definición y el
+        alcance de los Servicios se encuentran detallados en el presente
+        documento.</p>
+
+        <div class="section-title underline">NATURALEZA DE LOS SERVICIOS PREPAGO DE SALUD.-</div>
+        <p>De acuerdo con la normativa vigente, el presente Plan de Servicios de
+        Prepago de Atención de Salud es mixto ya en él se unen los servicios de
+        prepago de salud Directa e Indirecta, por lo que, para la prestación de
+        los servicios, INNOVASALUD podrá contratar los bienes y/o servicios de
+        terceros y; alternativamente, utilizar medios de su propiedad y/o
+        recursos humanos de su dependencia.</p>
+        
+        <p>Asimismo, el presente Plan de Servicios de Prepago de Atención de Salud
+        corresponde a un Servicio Prepago de Salud Parcial ya que se encuentra
+        limitada a un conjunto de prestaciones debidamente descritas en el
+        siguiente punto.</p>
+
+        <div class="section-title underline">SERVICIOS PREPAGO DE SALUD O PLAN PREPAGO DE SALUD.-</div>
+        <p>Los Servicios Prepago de Salud que componen el presente Plan de
+        Servicios de Prepago de Atención de Salud son:</p>
+
+        <ol>
+            <li><strong>Consulta Médica General.</strong> Es un Servicio Directo ya que se otorga
+                en la red de consultorios de INNOVASALUD a nivel nacional.
+                
+                <p class="indent">Es la atención presencial o virtual brindada por un médico de
+                INNOVASALUD, que incluye un conjunto de actividades mediante las
+                cuales se evalúa el estado de salud y los factores de riesgo
+                biológicos, psicológicos, sociales y culturales que amenazan o alteran
+                el estado de salud de los Usuarios del Plan de Servicios de Prepago de
+                Atención de Salud, con el objeto de detectar precozmente estadios
+                tempranos o avanzados de patologías, que pueden alterar su desarrollo
+                natural y de salud. La medicina dentro sus principios básicos
+                establece dedicarse inicialmente a la prevención de enfermedades, pero
+                cuando la misma se encuentra instalada en el individuo o si se origina
+                como consecuencia de un accidente; debe dedicarse por completo a la
+                contención y erradicación de la misma utilizando todas las capacidades
+                a su alcance en función al nivel de atención.</p>
+                
+                <p class="indent">El presente Plan de Servicios de Prepago de Atención de Salud incluye
+                1 (una) Consulta Médica General, la misma que puede ser utilizada por
+                los Usuarios durante la vigencia del CONTRATO.</p>
+            </li>
+        </ol>
+
+        <div class="section-title underline">LÍMITE ANUAL DE GASTOS.-</div>
+        <p>Es el valor económico acumulado máximo que tiene cada Usuario Titular
+        destinado a garantizar las prestaciones comprometidas en el presente Plan
+        de Servicios de Prepago de Atención de Salud, el cual comprende los
+        servicios descritos en el subtítulo anterior por el período que establezca
+        el plan contratado.</p>
+        
+        <p>Este valor acumulado máximo incluye el costo de los Servicios ofertados
+        en el Plan de Servicios de Prepago de Atención de Salud, los mismos que
+        se encuentran prepagados desde el momento en que el CONTRATANTE y/o
+        Usuario Titular efectúan el pago de la Tarifa Anticipada.</p>
+        
+        <p>El Límite Anual de Gastos, por tanto, corresponde al total de los
+        Servicios definidos en el subtítulo anterior.</p>
+
+        <div class="section-title underline">PROCEDIMIENTO PARA LA PRESTACIÓN DEL SERVICIO.-</div>
+        <p>Para solicitar el cumplimiento de los Servicios contratados, el
+        CONTRATANTE deberá previamente pagar la totalidad de la Tarifa Anticipada
+        definida en los plazos y condiciones establecidas por INNOVASALUD de
+        acuerdo con la cláusula 15 del CONTRATO CON VERSIÓN SIMPLIFICADA.</p>
+        
+        <p>Para exigir el cumplimiento de los Servicios Directos contratados en el
+        Plan de Servicios de Prepago de Atención de Salud, los Usuarios deberán
+        reservar/agendar el día y hora para la atención de los mismos a través
+        de una de las siguientes alternativas:</p>
+        
+        <ul>
+            <li>En la plataforma de Telemedicina de INNOVASALUD ingresando a la
+                dirección: <a href="http://www.innovasalud.bo">www.innovasalud.bo</a></li>
+            <li>Enviando un mensaje o llamando por WhatsApp al número 76503333</li>
+        </ul>
+        
+        <p>Para el registro y reserva de la atención médica se deberá registrar el
+        documento de identidad del Usuario.</p>
+        
+        <p>En caso de que los Usuarios asistan directamente a los consultorios de
+        INNOVASALUD (sin reserva/agenda previa), serán atendidos siempre y
+        cuando existan horarios de atención disponibles ya que las citas
+        agendadas tienen prioridad para la atención.</p>
+        
+        <p>Las direcciones de los Consultorios en los cuales se prestarán los
+        Servicios contratados en el Plan de Servicios de Prepago de Atención de
+        Salud, se encuentran detalladas en la cláusula 8 del CONTRATO CON
+        VERSIÓN SIMPLIFICADA, esta información también se encuentra disponible
+        en la página web de INNOVASALUD
+        <a href="http://www.innovasalud.bo">www.innovasalud.bo</a></p>
+        
+        <p>Para la utilización de los servicios contratados, los Usuarios deben
+        presentarse en el horario registrado y en el consultorio asignado
+        portando su documento de identidad original, ya que si no se presenta
+        este requisito, INNOVASALUD no podrá prestar el servicio de salud.</p>
+        
+        <p>Los Usuarios podrán modificar o cancelar su reserva/agenda, hasta 3
+        horas antes de la misma como máximo. En caso de no asistir a la cita
+        reservada/agendada, los Usuarios perderán dicha atención la misma que
+        será considerada como atendida y, por tanto, será descontada del Plan
+        Contratado salvo fuerza mayor o impedimento debidamente justificado.</p>
+
+        <div class="section-title underline">SERVICIOS NO INCLUIDOS.-</div>
+        <p>Los Servicios contratados en el presente Plan de Servicios de Prepago de
+        Atención de Salud se refieren en forma exclusiva al Primer Nivel de
+        Atención de salud, por tanto, el presente Plan no incluye la atención de
+        otros Servicios que requieran tratamiento por médicos especialistas
+        (Excepto aquellos Planes de Servicios de Prepago de Atención de Salud que
+        incluyan el Servicio de Consulta de Especialidad), ni tampoco internación
+        o intervenciones quirúrgicas; por tanto las patologías que superen la
+        capacidad de resolución del Primer Nivel de Atención de salud, y que
+        tengan que ser tratadas por un especialista, serán derivadas según
+        recomendación de los doctores de INNOVASALUD y tendrán el acompañamiento
+        necesario para buscar una solución al problema.</p>
+        
+        <p>El costo requerido para el pago del(los) especialista(s) será cubierto
+        por el Usuario (o por el Usuario Titular y/o beneficiarios) sin derecho
+        a reembolso de parte de INNOVASALUD, ya que los mencionados eventuales
+        servicios, no se encuentran incluidos en el presente Plan de Servicios de
+        Prepago de Atención de Salud (Excepto aquellos Planes de Servicios de
+        Prepago de Atención de Salud que incluyan el Servicio de Consulta de
+        Especialidad).</p>
+        
+        <p>La capacidad resolutiva de los Establecimientos de Salud y los servicios
+        específicos para la prestación del servicio, se encuentran detallados en
+        el Anexo de Capacidad Resolutiva que forma parte integrante e
+        indivisible del presente CONTRATO CON VERSIÓN SIMPLIFICADA.</p>
+
+        <div class="section-title underline">RECONTRATACIÓN DEL SERVICIO PREPAGO DE SALUD.-</div>
+        <p>Una vez consumidos todos los Servicios incluidos en el presente Plan de
+        Servicios de Prepago de Atención de Salud o cuando termine la vigencia de
+        cada versión simplificada del CONTRATO CON VERSIÓN SIMPLIFICADA, habrá
+        recontratación automática del mismo, siempre que los pagos continúen
+        siendo realizados por el CONTRATANTE y que INNOVASALUD, previo análisis
+        técnico, no haya rechazado expresamente la recontratación dentro de los
+        treinta (30) días calendario siguientes a la fecha de vencimiento de la
+        vigencia del presente CONTRATO CON VERSIÓN SIMPLIFICADA.</p>
+
+        <div class="section-title underline">OBLIGACIONES DE LAS PARTES CONTRATANTES.-</div>
+        
+        <ul>
+            <li>Son obligaciones del CONTRATANTE:
+                <ol>
+                    <li>Pagar la Tarifa Anticipada convenida en el(los) plazo(s) previsto(s)
+                        en el CONTRATO CON VERSIÓN SIMPLIFICADA.</li>
+                    <li>Proporcionar a INNOVASALUD toda documentación, información que
+                        requiera para la prestación del Servicio de Prepago de Salud.</li>
+                </ol>
+            </li>
+        </ul>
+        
+        <ul>
+            <li>Se establecen las siguientes obligaciones para la ENTIDAD PREPAGO DE
+                SALUD:
+                <ol>
+                    <li>Cumplir con la prestación del Servicio Prepago de Salud ante el
+                        requerimiento del CONTRATANTE y/o Usuario, conforme los términos y
+                        limites convenidos en el CONTRATO CON VERSIÓN SIMPLIFICADA.</li>
+                    <li>Garantizar los derechos del CONTRATANTE y/o Usuarios, en caso de
+                        disolución y liquidación voluntaria o forzosa de la ENTIDAD PREPAGO
+                        DE SALUD.</li>
+                    <li>Proveer una copia de la versión simplificada del presente CONTRATO
+                        CON VERSIÓN SIMPLIFICADA de Servicio Prepago de Salud al CONTRATANTE
+                        en un plazo máximo de tres días una vez sea suscrito el mismo.
+                        
+                        <p>Ante el extravío de su copia original de la versión simplificada del
+                        presente CONTRATO CON VERSIÓN SIMPLIFICADA, el CONTRATANTE podrá
+                        solicitar a INNOVASALUD, le extienda de forma gratuita una copia
+                        legalizada de la versión simplificada del presente CONTRATO CON VERSIÓN
+                        SIMPLIFICADA, requerimiento que debe será atendido en el plazo máximo de
+                        cinco (5) días hábiles administrativos siguientes a la fecha de
+                        presentada la solicitud.</p>
+                    </li>
+                    <li>INNOVASALUD no podrá realizar de forma unilateral modificaciones al
+                        presente CONTRATO CON VERSIÓN SIMPLIFICADA en cuanto a las
+                        prestaciones contratadas y/o la Tarifa Anticipada definida en los
+                        artículos 13 y 14, ante la agravación de las condiciones de salud de
+                        los Usuarios, o incremento del costo de los Servicios Prepago de
+                        Salud ya contratados.</li>
+                    <li>INNOVASALUD no podrá liberarse de la obligación de prestar el
+                        servicio contratado mediante el abono al Usuario de una suma de
+                        dinero.</li>
+                    <li>INNOVASALUD no podrá Exigir al CONTRATANTE y/o Usuario pagos
+                        extraordinarios al acordado para la prestación del Servicio Prepago
+                        de Salud.</li>
+                    <li>INNOVASALUD no podrá suspender sus Servicios de manera imprevista e
+                        intempestiva; salvo motivos de caso fortuito o fuerza mayor como
+                        desastres naturales, motín, conmoción civil, paros, huelgas y otros.</li>
+                    <li>INNOVASALUD no podrá efectuar incrementos de la Tarifa Anticipada de
+                        manera unilateral durante la vigencia del presente CONTRATO CON
+                        VERSIÓN SIMPLIFICADA.</li>
+                </ol>
+            </li>
+        </ul>
+
+        <div class="section-title underline">CAUSAS DE SUSPENSIÓN Y RESOLUCIÓN DEL CONTRATO CON VERSIÓN SIMPLIFICADA.-</div>
+        <p>La Resolución del presente CONTRATO CON VERSIÓN SIMPLIFICADA de Servicio
+        Prepago de Salud, podrá ser de mutuo acuerdo o por decisión unilateral de
+        las partes.</p>
+        
+        <p>INNOVASALUD, podrá unilateralmente dar por resuelto el presente CONTRATO
+        CON VERSIÓN SIMPLIFICADA de Servicio Prepago de Salud sólo por
+        incumplimiento de la contraprestación económica por parte del
+        CONTRATANTE; dicha causal se configurará con el retraso de treinta (30)
+        días en el pago de las Tarifas Anticipadas en el tiempo acordado en el
+        Artículo 14 del CONTRATO CON VERSIÓN SIMPLIFICADA.</p>
+        
+        <p>Durante el periodo de mora, INNOVASALUD podrá suspender la prestación de
+        los Servicios Prepago de Salud contratados hasta que se produzca el pago
+        de las cuotas adeudadas.</p>
+        
+        <p>En lo relativo a la resolución unilateral del presente CONTRATO CON
+        VERSIÓN SIMPLIFICADA de Servicio Prepago de Salud por parte del
+        CONTRATANTE, éste podrá hacerlo ante el incumplimiento de la prestación
+        del Servicio por parte de INNNOVASALUD, debiendo notificar por escrito
+        su decisión, dándose la Resolución del presente CONTRATO CON VERSIÓN
+        SIMPLIFICADA desde ese instante. Producida la Resolución del CONTRATO
+        CON VERSIÓN SIMPLIFICADA, INNOVASALUD tiene derecho a retener el monto
+        de la Tarifa Anticipada pagada por los servicios prestados; debiendo
+        devolver el valor correspondiente a los servicios no prestados,
+        descontando los impuestos de ley y los gastos generales y de
+        administración.</p>
+
+        <div class="section-title underline">RESOLUCIÓN DE CONTROVERSIAS.-</div>
+        <p>Las controversias de hecho sobre las características técnicas del
+        CONTRATO CON VERSIÓN SIMPLIFICADA serán resueltas a través del peritaje.
+        Si por esta vía no se llegara a un acuerdo sobre dichas controversias,
+        éstas deberán definirse por la vía del arbitraje; para este fin se
+        considerará el Reglamento de Conciliación de la Autoridad de Fiscalización
+        y Control de Pensiones y Seguros - APS. Las controversias de derecho
+        suscitadas entre las partes sobre la naturaleza y alcance del CONTRATO CON
+        VERSIÓN SIMPLIFICADA serán resueltas en única e inapelable instancia, por
+        la vía del arbitraje, de acuerdo a lo previsto en la Ley No. 708 (Ley de
+        Conciliación y Arbitraje).</p>
+
+        <div class="section-title underline">RETIRO Y ADICIÓN DE USUARIOS.-</div>
+        <p>En el presente Plan de Servicios de Prepago de Atención de Salud no se
+        puede retirar o adicionar Usuarios Beneficiarios debido a que los
+        servicios contratados pueden ser utilizados únicamente por el Usuario
+        Titular.</p>
+        
+        <p>Cada CONTRATANTE debe recibir una Versión Simplificada del presente
+        CONTRATO CON VERSIÓN SIMPLIFICADA, en la cual se identifica el nombre del
+        Usuario.</p>
+
+        <div class="section-title underline">JURISDICCIÓN Y DOMICILIO.-</div>
+        <p>Las partes señalan como lugar para el cumplimiento de las obligaciones
+        derivadas del CONTRATO CON VERSIÓN SIMPLIFICADA, la ciudad de La Paz o las
+        ciudades donde INNOVASALUD tenga legalmente autorizadas sus Sucursales.
+        Las acciones judiciales emergentes del CONTRATO CON VERSIÓN SIMPLIFICADA
+        son de competencia y jurisdicción del Juez del domicilio en Bolivia
+        declarado por el Usuario Titular. En caso de Conciliación y Arbitraje,
+        previstos en el Artículo 18 del CONTRATO CON VERSIÓN SIMPLIFICADA, las
+        partes acuerdan como único Domicilio la ciudad de La Paz.</p>
+
+        <div class="section-title underline">COMUNICACIÓN ENTRE LAS PARTES.-</div>
+        <p>Cualquier comunicación, declaración y/o notificación del CONTRATANTE y/o
+        Usuario Titular, sólo serán válidas si han sido dirigidas por escrito al
+        domicilio legal de INNOVASALUD.</p>
+        
+        <p>Las comunicaciones, declaraciones y/o notificaciones de INNOVASALUD al
+        CONTRATANTE y/o Usuario Titular, se considerarán válidas si se han
+        dirigido por escrito al último domicilio declarado por éste. Por tanto,
+        es una obligación notificar a INNOVASALUD, cualquier cambio de domicilio
+        del CONTRATANTE y/o Usuario Titular.</p>
+
+        <div class="section-title underline">OTROS ASPECTOS NO PREVISTOS.-</div>
+        <p>La Tarifa Anticipada del presente Plan de Servicios de Prepago de
+        Atención de Salud, incluye los Impuestos y Recargos de Ley.</p>
+        
+        <p>Forma parte de la presente Versión Simplificada del CONTRATO CON VERSIÓN
+        SIMPLIFICADA, el Formulario de Solicitud de Servicio y Registro de
+        Usuarios.</p>
+        
+        <p>Todo lo que no esté previsto por el presente CONTRATO CON VERSIÓN
+        SIMPLIFICADA, se sujetará a lo establecido en las disposiciones legales
+        vigentes en la materia.</p>
+
+        <div class="section-title underline">ACEPTACIÓN Y CONFORMIDAD.-</div>
+        <p>El Contratante y/o Usuario Titular y la ENTIDAD PREPAGO DE SALUD
+        aceptan todas y cada una de las disposiciones contenidas en esta Versión
+        Simplificada la misma que, junto con el CONTRATO CON VERSIÓN SIMPLIFICADA,
+        configuran la totalidad de la relación contractual entre las partes
+        intervinientes.</p>
+			{{c.lugar_fecha}}
+        <div style="margin-top: 50px;">
+            <div style="width: 45%; float: left;">
+                <div class="signature-field">Firma del Contratante/Usuario Titular</div>
+            </div>
+            <div style="width: 45%; float: right;">
+                <div class="signature-field">Firma y Sello de INNOVASALUD</div>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</body>
+</html>

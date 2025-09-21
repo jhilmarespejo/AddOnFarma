@@ -122,6 +122,13 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 						<label>Telefono:</label>
 						<input type="text" class="form-control" name="telefono" id="telefono" maxlength="8" placeholder="Telefono" onkeypress="return permite(event, 'num')" required>
 					</div>
+					
+					<div class="form-group col-lg-4 col-md-4 col-sm-4 col-xs-12">
+						<label>Email:</label>
+						<input type="text" class="form-control" name="email" id="email" maxlength="25" placeholder="Email" onkeypress="return permite(event, 'car')" required>
+					</div>
+						
+					
 					<!-- Hasta aqui: CAPTURA DATOS CONTRATANTE -->
 
 					<!-- Desde aqui: CAPTURA DATOS PLAN A CONTRATAR -->
@@ -222,7 +229,7 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 						</div>
           			</div>
 
-
+                    
                     <!--Fin centro -->
                 </div><!-- /.box -->
             </div><!-- /.col -->

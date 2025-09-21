@@ -170,6 +170,7 @@ function buscaPaciente(){
 				f_gene = f_gene!==null ? data.result.genero : " ";
 				s_phon = s_phon!==null ? data.result.telefono : " ";
 				f_fecn = f_fecn!==null ? data.result.fecha_nacimiento : " ";
+				f_email = f_email!==null ? data.result.email : " ";
 				donde  = donde!==null ? data.donde : " ";
 				//f_plan = f_plan!==null ? data.result.planes : " ";
 				if(data.donde === 'I'){
@@ -193,6 +194,7 @@ function buscaPaciente(){
 				$('#encontrado').val(encontrado);
 				$('#id_cliente').val(data.result.id);
 				$('#tipo_documento').val(tipdoc);
+				$('#email').val(f_email);
 				$('#tipo_documento').selectpicker("refresh");
 				$('#datos_titular').show();
 
@@ -413,11 +415,11 @@ function guardaryeditar(e) {
 						$("#mensaje_final").text('Cliente registrado de manera satisfactoria!');
 						$("#mensaje_final").css("font-weight", "bold");
 
-						setTimeout(()=> {
-							$(location).attr("href", "admision_cobranzas.php");
-						}
-						,10);
-                        limpiar();
+						// setTimeout(()=> {
+						// 	$(location).attr("href", "admision_cobranzas.php");
+						// }
+						// ,10);
+                        // limpiar();
 
 					}
 
