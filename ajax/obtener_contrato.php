@@ -14,8 +14,8 @@ use setasign\Fpdi\Tcpdf\Fpdi;
 // Obtener la ruta absoluta del directorio raíz
 $root_path = realpath(dirname(__FILE__) . '/../') . '/';
 
-$id_temp = isset($_GET['id']) ? limpiarCadena($_GET['id']) : '';
-//$id_temp = 41;
+//$id_temp = isset($_GET['id']) ? limpiarCadena($_GET['id']) : '';
+$id_temp = 68;
 
 if ($id_temp != '') {
     // Consultar datos del cliente y contrato

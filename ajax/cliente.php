@@ -77,7 +77,7 @@ switch ($_GET["op"]){
 			if($donde == 'P'){
 
 				//echo "<br>Dentro de Buscar Cliente en BDPM<br><br>";
-				$data = buscarCliente_en_BDPM($num_documento,$extension,$tipo_documento);
+				//$data = buscarCliente_en_BDPM($num_documento,$extension,$tipo_documento);
 				//dep($data);
 				$status = $data['status'];
 				if($status == 'ok'){

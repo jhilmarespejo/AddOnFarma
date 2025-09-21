@@ -62,7 +62,7 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 				<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<label>Numero Documento:</label>
 					<!-- jjj -->
-					<input type="text" class="form-control" name="num_documento" id="num_documento" maxlength="25" onkeypress="return permite(event, 'num')" placeholder="Num Documento" value="46225711">
+					<input type="text" class="form-control" name="num_documento" id="num_documento" maxlength="25" onkeypress="return permite(event, 'num')" placeholder="Num Documento" value="654321">
 					<input type="hidden" name="codigo_canal" id="codigo_canal" value="<?=$codigo_canal?>">
 					<input type="hidden" name="datos_asesor" id="datos_asesor" value="<?=$datos_asesor?>">
 					<input type="hidden" name="donde" id="donde" >
@@ -248,10 +248,23 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 					</div>
 				</div>
 				<div class="box-body">
-					<iframe id="visor-pdf" src="" width="100%" height="600px" frameborder="0"></iframe>
+					<!-- Botones de acción -->
+					<div style="margin-bottom: 15px; display: none;" id="botonesAccion">
+						<button type="button" class="btn btn-info" onclick="enviarPorCorreo()">
+							<i class="fa fa-envelope"></i> Enviar por correo
+						</button>
+						<button type="button" class="btn btn-success" onclick="enviarPorWhatsapp()">
+							<i class="fa fa-whatsapp"></i> Enviar por WhatsApp
+						</button>
+					</div>
+					
+					
+					<!-- Visor PDF -->
+					<iframe id="visor-pdf" src="" width="100%" height="600px" frameborder="0" onload="mostrarBotonesAccion()"></iframe>
 				</div>
 			</div>
 		</div>
+
 	
 
 </div><!-- /.content-wrapper -->

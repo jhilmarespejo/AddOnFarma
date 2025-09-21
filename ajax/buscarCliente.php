@@ -44,74 +44,74 @@ if(!empty($_POST['cedula'])){
         	$data['status'] = 'ok';
         	$data['donde'] = 'I';
         	$data['result'] = $userData;
-    	}else{
+    }else{
 
-		//---------------------------------------------------------//
-		// LLAMAMOS Al WS DE PROMUJER PARA PEDIR DATOS DEL CLIENTE //
-		// --------------------------------------------------------//
-		if($tipo_documento == 'E'){
-			$cedula = 'E-'.$cedula;
-		}
-		$res = buscaClienteEnPM($cedula);
-		//dep($res);
-		//die();
+		// //---------------------------------------------------------//
+		// // LLAMAMOS Al WS DE PROMUJER PARA PEDIR DATOS DEL CLIENTE //
+		// // --------------------------------------------------------//
+		// if($tipo_documento == 'E'){
+		// 	$cedula = 'E-'.$cedula;
+		// }
+		// $res = buscaClienteEnPM($cedula);
+		// //dep($res);
+		// //die();
 
-		// Rescatamos el resultado dependiendo si nos devuleve un objeto o no.
-		$estado = (isset($res->estado))?$res->estado:$res['estado'];
+		// // Rescatamos el resultado dependiendo si nos devuleve un objeto o no.
+		// $estado = (isset($res->estado))?$res->estado:$res['estado'];
 
-		//echo "Estado1: " . $estado . "<br>";
-		// CASO QUE SE HAYA ENCONTRADO AL CIENTE EN PM
-		// $estado = 'X';
+		// //echo "Estado1: " . $estado . "<br>";
+		// // CASO QUE SE HAYA ENCONTRADO AL CIENTE EN PM
+		// // $estado = 'X';
 
-		if($estado == 'E'){
-			$dataPM['id'] = '';
-			$dataPM['ap_paterno'] = trim($res->paterno);
-			$dataPM['ap_materno'] = trim($res->materno);
+		// if($estado == 'E'){
+		// 	$dataPM['id'] = '';
+		// 	$dataPM['ap_paterno'] = trim($res->paterno);
+		// 	$dataPM['ap_materno'] = trim($res->materno);
 
-			$res->nombre2 = trim($res->nombre2);
-			$len = strlen($res->nombre2);
-			$nombre = trim($res->nombre1);
-			if($len > 0){
-				$nombre = $nombre . ' ' . trim($res->nombre2);
-			}
-			$dataPM['nombres'] = $nombre;
+		// 	$res->nombre2 = trim($res->nombre2);
+		// 	$len = strlen($res->nombre2);
+		// 	$nombre = trim($res->nombre1);
+		// 	if($len > 0){
+		// 		$nombre = $nombre . ' ' . trim($res->nombre2);
+		// 	}
+		// 	$dataPM['nombres'] = $nombre;
 
-			// Limpiamos la Cedula
-			$cedula_data = limpiaCedula($res->documento);
+		// 	// Limpiamos la Cedula
+		// 	$cedula_data = limpiaCedula($res->documento);
 
-			$dataPM['num_documento']  = trim($cedula_data['ced']);
-			$dataPM['extension']      = trim($cedula_data['ext']);
-			$dataPM['tipo_documento'] = trim($cedula_data['tip']);
+		// 	$dataPM['num_documento']  = trim($cedula_data['ced']);
+		// 	$dataPM['extension']      = trim($cedula_data['ext']);
+		// 	$dataPM['tipo_documento'] = trim($cedula_data['tip']);
 
 
-			if($res->sexo==0){
-				$dataPM['genero'] = 'F';
-			}else{
-				$dataPM['genero'] = 'M';
-			}
-			$dataPM['fecha_nacimiento'] = substr($res->fechaNac,0,10);
+		// 	if($res->sexo==0){
+		// 		$dataPM['genero'] = 'F';
+		// 	}else{
+		// 		$dataPM['genero'] = 'M';
+		// 	}
+		// 	$dataPM['fecha_nacimiento'] = substr($res->fechaNac,0,10);
 
-			$telefono = trim($res->celular);
-			$len = strlen($telefono);
-			if($len == 0){
-				$telefono = '12345678';
-			}
-			$dataPM['telefono'] = $telefono;
-			$dataPM['correo'] = '';
+		// 	$telefono = trim($res->celular);
+		// 	$len = strlen($telefono);
+		// 	if($len == 0){
+		// 		$telefono = '12345678';
+		// 	}
+		// 	$dataPM['telefono'] = $telefono;
+		// 	$dataPM['correo'] = '';
 
-			$data['status'] = 'ok';
-			$data['donde'] = 'P';
-			$data['result'] = $dataPM;
+		// 	$data['status'] = 'ok';
+		// 	$data['donde'] = 'P';
+		// 	$data['result'] = $dataPM;
 
-		}else{
+		// }else{
 
-			//echo "Cliente No Encontrado<br>";
-			$data['status'] = 'Cliente no encontrado';
-			$data['result'] = '';
+		// 	//echo "Cliente No Encontrado<br>";
+		// 	$data['status'] = 'Cliente no encontrado';
+		// 	$data['result'] = '';
 
-		}
+		// }
 
-    	}
+    }
 
 	//returns data as JSON format
     	echo json_encode($data);

@@ -157,6 +157,7 @@ function buscaPaciente(){
 				s_phon = data.result.telefono;
 				f_gene = data.result.genero;
 				f_fecn = data.result.fecha_nacimiento;
+				f_email = data.result.correo;
 				//f_plan = data.result.plan;
 				tipdoc = data.result.tipo_documento;
 				donde  = data.donde;
@@ -170,7 +171,7 @@ function buscaPaciente(){
 				f_gene = f_gene!==null ? data.result.genero : " ";
 				s_phon = s_phon!==null ? data.result.telefono : " ";
 				f_fecn = f_fecn!==null ? data.result.fecha_nacimiento : " ";
-				f_email = f_email!==null ? data.result.email : " ";
+				f_email = f_email!==null ? data.result.correo : " ";
 				donde  = donde!==null ? data.donde : " ";
 				//f_plan = f_plan!==null ? data.result.planes : " ";
 				if(data.donde === 'I'){
@@ -513,25 +514,63 @@ function generarFactura(){
 }
 
 function verContrato() {
-    // let registro_a_facturar = $('#registro_a_imprimir').val().trim();
-	let registro_a_facturar = $('#registro_a_facturar').val();
-	// console.log('Registro a facturar: ' + registro_a_facturar);
-	// if (!registro_a_facturar) {
-	// 	alert('No se ha definido el registro a facturar');
-	// 	return;
-	// } else {
-	// 	console.log('Registro a facturar: ' + registro_a_facturar);
-	// 	return;
-	// }
-		
+    let registro_a_facturar = $('#registro_a_facturar').val();
+
+    // Ocultar botones antes de cargar
+    $('#botonesAccion').hide();
+
     // Mostrar el contenedor del PDF
     $('#contenedor-pdf').show();
-		$('html, body').animate({
-			scrollTop: $('#contenedor-pdf').offset().top
-		}, 500); // 500 ms de duración
+    $('html, body').animate({
+        scrollTop: $('#contenedor-pdf').offset().top
+    }, 500);
+
     // Cargar el PDF en el iframe
     $('#visor-pdf').attr('src', '../ajax/obtener_contrato.php?id=' + registro_a_facturar);
 }
+function mostrarBotonesAccion() {
+    // Mostrar los botones solo si el PDF se ha cargado
+    $('#botonesAccion').fadeIn();
+}
+
+function enviarPorCorreo() {
+    const btnCorreo = event.target;
+    // btnCorreo.disabled = true;
+    btnCorreo.innerText = 'Enviando...';
+    
+    const idContrato = $('#registro_a_facturar').val();
+    
+    $.post('../ajax/enviar_contrato.php', { tipo: 'correo', id: idContrato }, function(respuesta) {
+        // alert(respuesta);
+        btnCorreo.innerText = 'Enviado por correo';
+    }).fail(function() {
+        alert('Error al enviar por correo');
+        btnCorreo.disabled = false;
+        btnCorreo.innerText = 'Enviar contrato por correo';
+    });
+}
+
+function enviarPorWhatsapp() {
+    const btnWhatsapp = event.target;
+    // btnWhatsapp.disabled = true;
+    btnWhatsapp.innerText = 'Enviando...';
+
+    const idContrato = $('#registro_a_facturar').val();
+
+    $.post('../ajax/enviar_contrato.php', { tipo: 'whatsapp', id: idContrato }, function(respuesta) {
+        // alert(respuesta);
+        btnWhatsapp.innerText = 'Enviado por WhatsApp';
+    }).fail(function() {
+        alert('Error al enviar por WhatsApp');
+        btnWhatsapp.disabled = false;
+        btnWhatsapp.innerText = 'Enviar contrato por WhatsApp';
+    });
+}
+
+
+
+
+
 function cerrarContrato() {
     // Ocultar el contenedor del PDF
     $('#contenedor-pdf').hide();
