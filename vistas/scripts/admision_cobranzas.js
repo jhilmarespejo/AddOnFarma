@@ -314,13 +314,13 @@ function guarda_info(){
 				$('#registro_a_facturar').val(data.id_temp);
 				
 				/// JJJ
-				$('#vamos_a_cobrar').show();
-				// $('#formularioregistros').hide();
-				// limpiar();
-				// setTimeout(()=> {
-				// 	$('#vamos_a_cobrar').show();
-				// }
-				// ,100);
+				//$('#vamos_a_cobrar').show();
+				$('#formularioregistros').hide();
+				limpiar();
+				setTimeout(()=> {
+					$('#vamos_a_cobrar').show();
+				}
+				,100);
 
 
 			}else{

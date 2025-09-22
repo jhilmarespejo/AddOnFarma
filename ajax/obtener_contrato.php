@@ -15,7 +15,7 @@ use setasign\Fpdi\Tcpdf\Fpdi;
 $root_path = realpath(dirname(__FILE__) . '/../') . '/';
 
 //$id_temp = isset($_GET['id']) ? limpiarCadena($_GET['id']) : '';
-$id_temp = 68;
+$id_temp = 78;
 
 if ($id_temp != '') {
     // Consultar datos del cliente y contrato
@@ -127,8 +127,8 @@ if ($id_temp != '') {
         $pdf->Output($ruta_pdf_personalizado, 'F');
         
         // 4. FIRMAR DIGITALMENTE EL PDF
-        $certificadoPath = $root_path . 'certificates/ALFREDO_VICENTE_ASCARRUNZ_ARANA.p12';
-        $certificadoPassword = '2980673';
+        $certificadoPath = $root_path . 'certificates/ROBERTO_ALFREDO_EWEL_PALENQUE.p12';
+        $certificadoPassword = '793966';
         
         // Verificar que el certificado existe
         if (!file_exists($certificadoPath)) {

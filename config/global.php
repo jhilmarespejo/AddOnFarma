@@ -4,7 +4,7 @@ define("DB_HOST","localhost");
 
 //Nombre de la base de datos
 //define("DB_NAME", "innovasa_AddOnInnova");
-define("DB_NAME", "farma");
+define("DB_NAME", "farma1");
 
 //Usuario de la base de datos
 //define("DB_USERNAME", "innovasa_AddOnInnova");
