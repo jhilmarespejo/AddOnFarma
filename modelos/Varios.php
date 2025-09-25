@@ -13,7 +13,7 @@ Class Varios
 
 	public function llamamosWS_sartawi($data)
 	{
-		exit('xxxxx');
+		//exit('xxxxx');
 		$varios = new Varios();
 
 		//$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
@@ -300,8 +300,8 @@ Class Varios
 			$row = mysqli_fetch_assoc($res);
 			$contrato = $row['codigo_plan_hijo'];
 		}
-		//echo "CONTRATO: " . $contrato . "<br>";
-		//die();
+		// echo "CONTRATO: " . $contrato . "<br>";
+		// die();
 
 		// Buscamos el valor siguiente para ese PLAN
 		$sql = "SELECT contrato, valor_actual FROM contratos WHERE contrato_sm = '$contrato'";
@@ -400,7 +400,7 @@ Class Varios
 		$sql = "INSERT INTO temp(id_usuario,id_contratante,cedula_asesor,agencia_venta,codigo_plan,codigo_canal,fecha_creacion,precio,estado) 
 				VALUES('$id_usuario','$id_contratante','$cedula_asesor','$codigo_agencia','$planes','$codigo_canal','$fecha_creacion','$deuda','P')";
 
-                //echo "SQL: " . $sql . "<br>";
+                // echo "SQL: " . $sql . "<br>";exit;
 		return ejecutarConsulta_retornarID($sql);
 
 	}

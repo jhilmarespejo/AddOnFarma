@@ -14,8 +14,8 @@ use setasign\Fpdi\Tcpdf\Fpdi;
 // Obtener la ruta absoluta del directorio raíz
 $root_path = realpath(dirname(__FILE__) . '/../') . '/';
 
-//$id_temp = isset($_GET['id']) ? limpiarCadena($_GET['id']) : '';
-$id_temp = 78;
+$id_temp = isset($_GET['id']) ? limpiarCadena($_GET['id']) : '';
+//$id_temp = 78;
 
 if ($id_temp != '') {
     // Consultar datos del cliente y contrato
@@ -63,16 +63,19 @@ if ($id_temp != '') {
         $fecha_fin_formateada = "HASTA:  Horas  $hora del   Día: $dia_inicio   Mes: $mes_inicio   Año: $anio_fin";
 
         // Preparar lugar y fecha de contrato
-        $lugar_fecha = "CIUDAD,  ".$row['nombre_ciudad'] . ", " . date('d') . " DE " . date('m') . " DE " . date('Y');
+        $meses = ['01' =>'ENERO','02'=>'FEBRERO','03'=>'MARZO','04'=>'ABRIL','05'=>'MAYO','06'=>'JUNIO','07'=>'JULIO','08'=>'AGOSTO','09'=>'SEPTIEMBRE','10'=>'OCTUBRE','11'=> 'NOVIEMBRE','12'=>'DICIEMBRE'];
+
+        $mes_actual = $meses[date('m')];
+        $lugar_fecha = $row['nombre_ciudad'] . ", " . date('d') . " DE " . $mes_actual . " DE " . date('Y');
         
         // --- DEFINIR COORDENADAS ---
         $coordenadas = [
-            't.contrato' => ['x' => 230, 'y' => 46, 'size' => 6, 'font' => 'helvetica'],
+            't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
             'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
             'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
             'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
-            'c.fecha_inicio' => ['x' => 112, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
-            'c.fecha_fin' => ['x' => 112, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
+            'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
+            'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
             'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
         ];
         
@@ -87,7 +90,7 @@ if ($id_temp != '') {
             'c.lugar_fecha' => $lugar_fecha,
         ];
         
-        // --- GENERAR PDF DINÁMICO ---
+        // --- GENERAR PDF contrato personalizado ---
         $pdf = new FPDI();
         
         // Importar páginas del PDF original
@@ -120,7 +123,7 @@ if ($id_temp != '') {
             mkdir($ruta_temporal, 0777, true);
         }
         
-        $nombre_pdf_personalizado = $contrato_nombre . "_personalizado.pdf";
+        $nombre_pdf_personalizado = $contrato_nombre . "_".$row['num_documento'].".pdf";
         $ruta_pdf_personalizado = $ruta_temporal . $nombre_pdf_personalizado;
         
         // Guardar el PDF generado (usar ruta absoluta)
@@ -142,7 +145,7 @@ if ($id_temp != '') {
             mkdir($ruta_firmados, 0777, true);
         }
         
-        $nombre_pdf_firmado = $contrato_nombre . "_firmado.pdf";
+        $nombre_pdf_firmado = $nombre_pdf_personalizado;
         $ruta_pdf_firmado = $ruta_firmados . $nombre_pdf_firmado;
         
         // Función para firmar el PDF

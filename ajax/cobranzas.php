@@ -161,6 +161,8 @@ switch ($_GET["op"]){
 	
 	// +P2
 	case 'generarFactura':
+		return $data['status_fact']  = 'ok';
+		break;
 
 		/*
 		$codigo_agencia = 'B181';
@@ -180,7 +182,6 @@ switch ($_GET["op"]){
 		$contrato =  $varios->getNumeroContrato($registro_a_facturar);
 
 		echo "CONTRATO: " . $contrato . "<br>";
-		exit;
 
 		$data = array();
 		$data['cod_tra'] = $cod_tra;
@@ -292,7 +293,7 @@ switch ($_GET["op"]){
 		//dep($factura);
 
 		echo json_encode($data);
-		dep($data);exit;
+		//dep($data);exit;
 
 	break;
 

@@ -117,7 +117,7 @@ function listarPlanes(){
 			$("#planes").html(r);
 			///JJJ 
 				$("#planes").prop("selectedIndex", 1);
-				$('#cedula_asesor').val('111333');
+				//$('#cedula_asesor').val('111333');
 			///JJJ
 
 			$("#planes").selectpicker("refresh");
@@ -456,22 +456,22 @@ function generarFactura(){
 	// Simulación directa sin AJAX
     let planElegido = $('#planes option:selected').text() || 'Plan no seleccionado';
     
-    $('#btnImprimir').show().attr('disabled', false);
-    $('#btnVolverInicio').show();
-    $('#btnCancelar').attr('disabled', true);
+    // $('#btnImprimir').show().attr('disabled', false);
+    // $('#btnVolverInicio').show();
+    // $('#btnCancelar').attr('disabled', true);
 
-    $('#loadingMensaje').hide();
+    // $('#loadingMensaje').hide();
 
-    $('#idmensaje_final').html(
-        `<div class="alert alert-success" style="font-size:18px;">
-            ¡Cobranza registrada correctamente!<br>
-            <strong>Plan elegido:</strong> ${planElegido}
-        </div>`
-    ).show();
+    // $('#idmensaje_final').html(
+    //     `<div class="alert alert-success" style="font-size:18px;">
+    //         ¡Cobranza registrada correctamente!<br>
+    //         <strong>Plan elegido:</strong> ${planElegido}
+    //     </div>`
+    // ).show();
 
 
     //+P2
-	/* ///JJJ descomentar este bloque para usar AJAX
+	/* ///JJJ descomentar este bloque para usar AJAX*/
     $.ajax({
         url: "../ajax/cobranzas.php?op=generarFactura",
         type: "POST",
@@ -500,9 +500,21 @@ function generarFactura(){
             }
         },
 
-        error: function () {
-            alert('Error al comunicarse con el servidor.');
-        },
+        // error: function (e) {
+		// 	console.log(e);
+        //     alert('Error al comunicarse con el servidor.');
+        // },
+		error: function (jqXHR, textStatus, errorThrown) {
+			console.error("AJAX Error:");
+			console.error("Status:", textStatus);
+			console.error("Error thrown:", errorThrown);
+			console.error("Response text:", jqXHR.responseText);
+
+			alert('Error al comunicarse con el servidor.\n' +
+				'Estado: ' + textStatus + '\n' +
+				'Error: ' + errorThrown);
+		},
+
 
         complete: function () {
             document.body.style.cursor = 'default';
@@ -510,7 +522,7 @@ function generarFactura(){
             // Ocultar mensaje de carga al terminar
             $('#loadingMensaje').hide();
         }
-    });*/
+    });
 }
 
 function verContrato() {
@@ -533,38 +545,49 @@ function mostrarBotonesAccion() {
     $('#botonesAccion').fadeIn();
 }
 
+
 function enviarPorCorreo() {
     const btnCorreo = event.target;
-    // btnCorreo.disabled = true;
-    btnCorreo.innerText = 'Enviando...';
+    btnCorreo.disabled = true;
+    btnCorreo.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
     
     const idContrato = $('#registro_a_facturar').val();
     
     $.post('../ajax/enviar_contrato.php', { tipo: 'correo', id: idContrato }, function(respuesta) {
-        // alert(respuesta);
-        btnCorreo.innerText = 'Enviado por correo';
+        btnCorreo.innerHTML = '<i class="fa fa-check"></i> Enviado por correo';
+        mostrarNotificacion(respuesta, 'success');
     }).fail(function() {
-        alert('Error al enviar por correo');
         btnCorreo.disabled = false;
-        btnCorreo.innerText = 'Enviar contrato por correo';
+        btnCorreo.innerHTML = '<i class="fa fa-envelope"></i> Enviar por correo';
+        mostrarNotificacion('Error al enviar por correo', 'error');
     });
 }
 
-function enviarPorWhatsapp() {
-    const btnWhatsapp = event.target;
-    // btnWhatsapp.disabled = true;
-    btnWhatsapp.innerText = 'Enviando...';
+// function enviarPorWhatsapp() {
+//     const btnWhatsapp = event.target;
+//     btnWhatsapp.disabled = true;
+//     btnWhatsapp.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
 
-    const idContrato = $('#registro_a_facturar').val();
+//     const idContrato = $('#registro_a_facturar').val();
 
-    $.post('../ajax/enviar_contrato.php', { tipo: 'whatsapp', id: idContrato }, function(respuesta) {
-        // alert(respuesta);
-        btnWhatsapp.innerText = 'Enviado por WhatsApp';
-    }).fail(function() {
-        alert('Error al enviar por WhatsApp');
-        btnWhatsapp.disabled = false;
-        btnWhatsapp.innerText = 'Enviar contrato por WhatsApp';
-    });
+//     $.post('../ajax/enviar_contrato.php', { tipo: 'whatsapp', id: idContrato }, function(respuesta) {
+//         btnWhatsapp.innerHTML = '<i class="fa fa-check"></i> Enviado por WhatsApp';
+//         mostrarNotificacion(respuesta, 'success');
+//     }).fail(function() {
+//         btnWhatsapp.disabled = false;
+//         btnWhatsapp.innerHTML = '<i class="fa fa-whatsapp"></i> Enviar por WhatsApp';
+//         mostrarNotificacion('Error al enviar por WhatsApp', 'error');
+//     });
+// }
+
+// Función auxiliar para mostrar notificaciones
+function mostrarNotificacion(mensaje, tipo) {
+    // Puedes usar Toastr, SweetAlert o simplemente alert
+    if (tipo === 'success') {
+        alert('' + mensaje);
+    } else {
+        alert('' + mensaje);
+    }
 }
 
 
