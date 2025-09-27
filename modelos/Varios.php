@@ -174,6 +174,7 @@ Class Varios
 
 
 		// Encoded as a json string
+		//*** 4. Envío al Web Service
 		$data_string = json_encode($cliente);
 
 		$ch=curl_init($url);
@@ -191,7 +192,9 @@ Class Varios
 
 		// Aqui devuelvo el resultado
 		$result = curl_exec($ch);
+		
 
+		//*** 5. Procesamiento de Respuesta */
 		if ($result === false) {
 			//echo 'Error cURL: ' . curl_error($ch);
 			$estado = curl_error($ch);
@@ -400,7 +403,7 @@ Class Varios
 		$sql = "INSERT INTO temp(id_usuario,id_contratante,cedula_asesor,agencia_venta,codigo_plan,codigo_canal,fecha_creacion,precio,estado) 
 				VALUES('$id_usuario','$id_contratante','$cedula_asesor','$codigo_agencia','$planes','$codigo_canal','$fecha_creacion','$deuda','P')";
 
-                // echo "SQL: " . $sql . "<br>";exit;
+                //echo "SQL: " . $sql . "<br>";
 		return ejecutarConsulta_retornarID($sql);
 
 	}

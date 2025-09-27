@@ -161,8 +161,6 @@ switch ($_GET["op"]){
 	
 	// +P2
 	case 'generarFactura':
-		return $data['status_fact']  = 'ok';
-		break;
 
 		/*
 		$codigo_agencia = 'B181';

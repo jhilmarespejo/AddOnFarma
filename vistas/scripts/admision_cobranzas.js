@@ -117,7 +117,7 @@ function listarPlanes(){
 			$("#planes").html(r);
 			///JJJ 
 				$("#planes").prop("selectedIndex", 1);
-				//$('#cedula_asesor').val('111333');
+				// $('#cedula_asesor').val('111333');
 			///JJJ
 
 			$("#planes").selectpicker("refresh");
@@ -436,6 +436,7 @@ function guardaryeditar(e) {
 //+P1
 function generarFactura(){
 	let registro_a_facturar = $('#registro_a_facturar').val();
+	alert( registro_a_facturar);
     
     document.body.style.cursor = 'wait';
 
@@ -510,9 +511,9 @@ function generarFactura(){
 			console.error("Error thrown:", errorThrown);
 			console.error("Response text:", jqXHR.responseText);
 
-			alert('Error al comunicarse con el servidor.\n' +
-				'Estado: ' + textStatus + '\n' +
-				'Error: ' + errorThrown);
+			// alert('Error al comunicarse con el servidor.\n' +
+			// 	'Estado: ' + textStatus + '\n' +
+			// 	'Error: ' + errorThrown);
 		},
 
 
