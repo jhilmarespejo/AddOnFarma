@@ -434,96 +434,97 @@ function guardaryeditar(e) {
 
 }
 //+P1
-function generarFactura(){
-	let registro_a_facturar = $('#registro_a_facturar').val();
-	alert( registro_a_facturar);
+function generarFactura() {
+	// alert('xxxxxxxxxxx');
+    let registro_a_facturar = $('#registro_a_facturar').val();
+	// Habilitar botones de contrato y navegación
+		// $('#btnContrato').show().attr('disabled', false);
+		// $('#btnVolverInicio').show();
+		// $('#btnCancelar').attr('disabled', true);
+		// $('#btnContrato').attr('disabled', false);
     
+		
     document.body.style.cursor = 'wait';
-
     // Mostrar mensaje de carga
     $('#loadingMensaje').show();
-    $('#btnImprimir').hide();
+    $('#btnImprimir').hide().attr('disabled', true);
     $('#btnVolverInicio').hide();
-	
-	// JJJ cambiar de false a true
-    $('#btnImprimir').attr('disabled', false);
-
-	// JJJ cambiar de false a true
-    $('#btnCancelar').attr('disabled', false);
-	
-	$('#btnContrato').show().attr('disabled', false); // muestra el botón de contrato
-
-
-	// Simulación directa sin AJAX
-    let planElegido = $('#planes option:selected').text() || 'Plan no seleccionado';
+    $('#btnCancelar').attr('disabled', true);
+    $('#btnContrato').hide().attr('disabled', true);
     
-    // $('#btnImprimir').show().attr('disabled', false);
-    // $('#btnVolverInicio').show();
-    // $('#btnCancelar').attr('disabled', true);
-
-    // $('#loadingMensaje').hide();
-
-    // $('#idmensaje_final').html(
-    //     `<div class="alert alert-success" style="font-size:18px;">
-    //         ¡Cobranza registrada correctamente!<br>
-    //         <strong>Plan elegido:</strong> ${planElegido}
-    //     </div>`
-    // ).show();
-
-
-    //+P2
-	/* ///JJJ descomentar este bloque para usar AJAX*/
+	
     $.ajax({
         url: "../ajax/cobranzas.php?op=generarFactura",
         type: "POST",
         dataType: "json",
         async: true,
         data: { registro_a_facturar: registro_a_facturar },
-
+        
         success: function (datos) {
-            if (datos.status_fact === 'ok') {
-                $('#btnImprimir')
-                    .attr('href', datos.factura_url)
-                    .attr('target', '_blank')
-                    .show()
-                    .attr('disabled', false);
+            console.log("=== RESPUESTA COMPLETA DEL SERVIDOR ===");
+            console.log("Datos recibidos:", datos);
+            console.log("Status principal:", datos.status);
+            console.log("Status facturación:", datos.status_fact1);
+            console.log("Mensaje:", datos.msg1);
+            console.log("Factura URL:", datos.factura_url);
+            console.log("Contrato:", datos.contrato);
+            console.log("=====================================");
 
-				// Mostrar botón de contrato
-				$('#btnContrato').show().attr('disabled', false);
+            // ÉXITO: Web Service procesó correctamente (Estado 'E') o proceso interno exitoso
+            if (datos.status_fact1 === 'E' || datos.status === 'ok' || datos.status_fact === 'ok') {
+                // Habilitar botón de impresión si hay URL de factura
+				alert("Transacción Exitosa!!!");
+                if (datos.factura_url && datos.factura_url !== 'null') {
+                    $('#btnImprimir')
+                        .attr('href', datos.factura_url)
+                        .attr('target', '_blank')
+                        .show()
+                        .attr('disabled', false);
+                }
                 
-
+                // Habilitar botones de contrato y navegación
+                $('#btnContrato').show().attr('disabled', false);
                 $('#btnVolverInicio').show();
                 $('#btnCancelar').attr('disabled', true);
-
-                limpiar();
+                $('#btnContrato').attr('disabled', true);
+                
             } else {
-                alert("Error generando factura: " + datos.msg1);
+                // MOSTRAR ERROR SIMPLE EN ALERT
+                let mensajeError = "Error en la facturación";
+                
+                if (datos.msg1) {
+                    // Limpiar mensaje de error para mostrar en alert
+                    mensajeError = datos.msg1.replace(/(\\n|\\r)/g, ' ').substring(0, 200);
+                }
+                
+                alert("X " + mensajeError);
+                
+                // Habilitar reintento
+                $('#btnCancelar').attr('disabled', false);
+                $('#btnVolverInicio').show();
             }
         },
 
-        // error: function (e) {
-		// 	console.log(e);
-        //     alert('Error al comunicarse con el servidor.');
-        // },
-		error: function (jqXHR, textStatus, errorThrown) {
-			console.error("AJAX Error:");
-			console.error("Status:", textStatus);
-			console.error("Error thrown:", errorThrown);
-			console.error("Response text:", jqXHR.responseText);
-
-			// alert('Error al comunicarse con el servidor.\n' +
-			// 	'Estado: ' + textStatus + '\n' +
-			// 	'Error: ' + errorThrown);
-		},
-
-
+        error: function (jqXHR, textStatus, errorThrown) {
+            console.error("=== ERROR AJAX ===");
+            console.error("Status:", textStatus);
+            console.error("Error:", errorThrown);
+            console.error("Response:", jqXHR.responseText);
+            console.error("===================");
+            
+            alert('Error de comunicación con el servidor. Consulte la consola para más detalles.');
+            
+            $('#btnCancelar').attr('disabled', false);
+            $('#btnVolverInicio').show();
+        },
+        
         complete: function () {
             document.body.style.cursor = 'default';
-
-            // Ocultar mensaje de carga al terminar
             $('#loadingMensaje').hide();
         }
     });
+	
+	
 }
 
 function verContrato() {

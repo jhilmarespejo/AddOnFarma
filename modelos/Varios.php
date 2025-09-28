@@ -13,107 +13,156 @@ Class Varios
 
 	public function llamamosWS_sartawi($data)
 	{
-		//exit('xxxxx');
-		$varios = new Varios();
+		// =========================================================================
+		// VALIDACIÓN INICIAL DE DATOS CRÍTICOS
+		// =========================================================================
+		$required_fields = ['codigo_plan', 'precio', 'cod_cli', 'fecha_nacimiento', 'codigo_agencia'];
+		
+		foreach ($required_fields as $field) {
+			if (empty($data[$field])) {
+				return [
+					'status_fact' => 'ERROR',
+					'mensaje_fact' => "Campo requerido faltante: $field",
+					'factura' => null
+				];
+			}
+		}
 
-		//$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
+		// =========================================================================
+		// CONFIGURACIÓN INICIAL
+		// =========================================================================
+		$varios = new Varios();
+		
+		// URL del Web Service - usar ambiente de TEST
 		$url = 'http://104.209.250.175/wstest/api/TransfDatosCliente';
 		
-
 		date_default_timezone_set('America/La_Paz');
-    		$fecha_facturacion = date('YmdHis');
+		$fecha_facturacion = date('YmdHis');
 
-		$fecha_nacimiento = substr($data['fecha_nacimiento'],0,4).substr($data['fecha_nacimiento'],5,2).substr($data['fecha_nacimiento'],8,2);
+		// =========================================================================
+		// VALIDACIÓN Y FORMATEO DE FECHAS
+		// =========================================================================
+		if (empty($data['fecha_nacimiento']) || strlen($data['fecha_nacimiento']) < 10) {
+			return [
+				'status_fact' => 'ERROR',
+				'mensaje_fact' => 'Fecha de nacimiento inválida o vacía',
+				'factura' => null
+			];
+		}
+		
+		// Formatear fecha de nacimiento (YYYY-MM-DD → YYYYMMDD)
+		$fecha_nacimiento = str_replace('-', '', $data['fecha_nacimiento']);
+		if (strlen($fecha_nacimiento) != 8) {
+			$fecha_nacimiento = substr($data['fecha_nacimiento'],0,4) . 
+							substr($data['fecha_nacimiento'],5,2) . 
+							substr($data['fecha_nacimiento'],8,2);
+		}
 
-		//-------------------------------------------//
-		// Buscamos al usuario para el envío del WS  //
-		//-------------------------------------------//
-		$codAgencia = $data['codigo_agencia'];
-		$codAgencia = 'LPZ-OB';							//---------------------------------
+		// =========================================================================
+		// OBTENER CREDENCIALES DEL WS
+		// =========================================================================
+		$codAgencia = $data['codigo_agencia']; // Usar el valor REAL, no forzar
 		$res = $varios->buscaUsuarioWS($codAgencia);
 
-		$user = $res['usuario'];
-		$psw  = $res['clave'];
-
-		//	$user = "portal_innova";						//---------------------------------
-		//	$psw  = "dM527'~F";
+		// Validar credenciales
+		if (empty($res['usuario']) || empty($res['clave'])) {
+			// Fallback a credenciales por defecto
 			$user = "dr-scz-ep-ws";
-			$psw  = "456789";
+			$psw = "456789";
+		} else {
+			$user = $res['usuario'];
+			$psw = $res['clave'];
+		}
 
-			// Datos del cliente
-			$codigoCliente = $data['cod_cli'];
-			$operacionId = $data['cod_ope'];
-			$numTransaccion = $data['cod_tra'];
+		// =========================================================================
+		// PREPARAR DATOS DEL CLIENTE (VALIDAR CADA CAMPO)
+		// =========================================================================
+		$codigoCliente = $data['cod_cli'] ?? '';
+		$operacionId = $data['cod_ope'] ?? '';
+		$numTransaccion = $data['cod_tra'] ?? '';
+		
+		// Validar tipo de documento - no forzar valores
+		$tipoDoc = $data['tipo_documento'] ?? 'C';
+		if (!in_array($tipoDoc, ['C', 'P', 'R', 'X'])) {
+			$tipoDoc = 'C'; // Valor por defecto válido
+		}
+		
+		$numDoc = $data['cedula'] ?? '';
+		$extensionDoc = $data['extension'] ?? '';
+		$expedidoDoc = $data['expedido'] ?? 'CB'; // Valor por defecto
+		
+		// Validar nombres - no permitir vacíos
+		$apPaterno = !empty($data['ap_paterno']) ? $data['ap_paterno'] : 'NO_PROVIDED';
+		$apMaterno = !empty($data['ap_materno']) ? $data['ap_materno'] : 'NO_PROVIDED';
+		$nombres = !empty($data['nombres']) ? $data['nombres'] : 'NO_PROVIDED';
+		
+		$razonSocial = $data['razon_social'] ?? ($nombres . ' ' . $apPaterno . ' ' . $apMaterno);
+		$genero = $data['genero'] ?? 'M';
+		$telefono = $data['telefono'] ?? '0000000';
+		$email = $data['email'] ?? "no-email@providers.com";
+		$direccion = $data['direccion'] ?? "N-A";
 
-			$tipoDoc = $data['tipo_documento'];
-			//$tipoDoc = 'C';
+		// =========================================================================
+		// VALIDAR DATOS CRÍTICOS DEL PLAN
+		// =========================================================================
+		$planElegido = trim($data['codigo_plan']);
+		$monto = floatval($data['precio']);
+		$ocupacion = $data['contrato'] ?? '';
+		
+		if (empty($planElegido)) {
+			return [
+				'status_fact' => 'ERROR',
+				'mensaje_fact' => 'Código de plan no puede estar vacío',
+				'factura' => null
+			];
+		}
+		
+		if ($monto <= 0) {
+			return [
+				'status_fact' => 'ERROR', 
+				'mensaje_fact' => 'Monto debe ser mayor a cero',
+				'factura' => null
+			];
+		}
 
-			$numDoc = $data['cedula'];
-			$extensionDoc = $data['extension'];
-
-			$expedidoDoc = $data['expedido'];
-			//$expedidoDoc = 'CB';
-
-			$apPaterno = $data['ap_paterno'];
-			$apMaterno = $data['ap_materno'];
-			$nombres = $data['nombres'];
-			$razonSocial = $data['razon_social'];
-			$genero = $data['genero'];
-			$telefono = $data['telefono'];
-			$email = "";
-			$direccion = "N-A";
-			$fecNacimiento = $fecha_nacimiento;
-			$cuidad = "SANTA CRUZ";
-			$pais = "BOLIVIA";
-			//$ocupacion = "PPCE0062-LP-24-0001-0003112";	//-------------
-			$ocupacion = $data['contrato'];
-			$indicador = "D";
-
-			$planElegido = $data['codigo_plan'];
-		//	$planElegido = "PPCE0062";		//---------------------------
-
-
-			$monto = $data['precio'];
-			$fecha = $fecha_facturacion;
-
-			$numeroPago = 0;
-			$codAgencia = $data['codigo_agencia'];
-		//	$codAgencia = 'LPZ-OB';			//---------------------------
-
-
+		// =========================================================================
+		// PREPARAR DATOS ADICIONALES
+		// =========================================================================
+		$fecha = $fecha_facturacion;
+		$numeroPago = 0;
 		$codigoAsesor = "";
 		$modalidad = "E";
+		$canal = $data['canal'] ?? 'C011';
+		$fechaInicio = $data['fecha_inicio'] ?? date('Ymd');
+		$indicador = "D";
+		$cuidad = "SANTA CRUZ";
+		$pais = "BOLIVIA";
 
-		$canal = $data['canal'];
-		//	$canal = 'C011';				//-----------------------------
-
-		$fechaInicio = $data['fecha_inicio'];
-
-		// Datos del beneficiario
+		// =========================================================================
+		// PREPARAR DATOS DEL BENEFICIARIO (VALIDADOS)
+		// =========================================================================
 		$tipoBen = "1";
-		$tipoDocBen = $data['tipo_documento'];
-		$tipoDocBen = 'C';
-		$numDocBen = $data['cedula'];
-		$extensionBen = $data['extension'];
-		$expedidoBen = $data['expedido'];
-		$apellidoPaternoBen = $data['ap_paterno'];
-		$apellidoMaternoBen = $data['ap_materno'];
-		$nombresBen = $data['nombres'];
+		$tipoDocBen = $tipoDoc; // Usar mismo tipo de documento, no forzar
+		$numDocBen = $numDoc;
+		$extensionBen = $extensionDoc;
+		$expedidoBen = $expedidoDoc;
+		$apellidoPaternoBen = $apPaterno;
+		$apellidoMaternoBen = $apMaterno;
+		$nombresBen = $nombres;
 		$fechaNacimientoBen = $fecha_nacimiento;
-		$generoBen = $data['genero'];
-		$telefonoBen = $data['telefono'];
-		$emailBen = "";
-		$direccionBen = "N-A";
-		$ciudadBen = "SANTA CRUZ";
-		$paisBen = "BOLIVIA";
+		$generoBen = $genero;
+		$telefonoBen = $telefono;
+		$emailBen = $email;
+		$direccionBen = $direccion;
+		$ciudadBen = $cuidad;
+		$paisBen = $pais;
 		$parentescoBen = "Titular";
 		$docIdentidadTitular = 0;
 
-		//echo "CONTRATO2: " . $ocupacion . "\n";
-
-
-		// Construir el array $cliente
-		$cliente = array(
+		// =========================================================================
+		// CONSTRUIR ARRAY FINAL CON VALIDACIÓN
+		// =========================================================================
+		$cliente = [
 			"user" => $user,
 			"psw" => $psw,
 			"codigoCliente" => $codigoCliente,
@@ -131,22 +180,22 @@ Class Varios
 			"telefono" => $telefono,
 			"email" => $email,
 			"direccion" => $direccion,
-			"fecNacimiento" => $fecNacimiento,
+			"fecNacimiento" => $fecha_nacimiento,
 			"cuidad" => $cuidad,
 			"pais" => $pais,
-			"ocupacion" => $ocupacion,  //$ocupacion,
+			"ocupacion" => $ocupacion,
 			"indicador" => $indicador,
 			"planElegido" => $planElegido,
-			"monto" => $monto,
+			"monto" => number_format($monto, 2, '.', ''), // Formatear decimales
 			"fecha" => $fecha,
 			"numeroPago" => $numeroPago,
-			"codAgencia" => $codAgencia,
+			"codAgencia" => $codAgencia, // Valor REAL, no forzado
 			"codigoAsesor" => $codigoAsesor,
 			"modalidad" => $modalidad,
 			"fechaInicio" => $fechaInicio,
-			"canal" => $canal, // Agregado manualmente, ya que no está en tus datos originales
-			"beneficiarios" => array(
-				array(
+			"canal" => $canal,
+			"beneficiarios" => [
+				[
 					"tipoBen" => $tipoBen,
 					"tipoDocBen" => $tipoDocBen,
 					"numDocBen" => $numDocBen,
@@ -164,77 +213,98 @@ Class Varios
 					"paisBen" => $paisBen,
 					"parentescoBen" => $parentescoBen,
 					"docIdentidadTitular" => $docIdentidadTitular,
-				)
-			)
+				]
+			]
+		];
+
+		// =========================================================================
+		// LOG PARA DEBUG (OPCIONAL)
+		// =========================================================================
+		file_put_contents('debug_ws_payload.txt', 
+			"=== PAYLOAD ENVIADO AL WS ===\n" . 
+			print_r($cliente, true) . 
+			"\n=== FIN PAYLOAD ===\n", 
+			FILE_APPEND
 		);
 
-
-		//dep($cliente);
-		//die();
-
-
-		// Encoded as a json string
-		//*** 4. Envío al Web Service
+		// =========================================================================
+		// ENVÍO AL WEB SERVICE
+		// =========================================================================
 		$data_string = json_encode($cliente);
+		
+		// Validar encoding JSON
+		if ($data_string === false) {
+			return [
+				'status_fact' => 'ERROR',
+				'mensaje_fact' => 'Error al codificar JSON: ' . json_last_error_msg(),
+				'factura' => null
+			];
+		}
 
-		$ch=curl_init($url);
-		curl_setopt_array($ch, array(
-			CURLOPT_POST  => true,
-			CURLOPT_POSTFIELDS  => $data_string,
-			CURLOPT_HEADER  => true,
-			CURLOPT_HTTPHEADER  => array('Content-Type:application/json', 'Content-Length: ' . strlen($data_string)),
-			CURLOPT_RETURNTRANSFER  => true
-			)
-		);
+		$ch = curl_init($url);
+		curl_setopt_array($ch, [
+			CURLOPT_POST => true,
+			CURLOPT_POSTFIELDS => $data_string,
+			CURLOPT_HEADER => true,
+			CURLOPT_HTTPHEADER => [
+				'Content-Type: application/json', 
+				'Content-Length: ' . strlen($data_string)
+			],
+			CURLOPT_RETURNTRANSFER => true,
+			CURLOPT_TIMEOUT => 30,
+			CURLOPT_SSL_VERIFYPEER => false // Solo para testing
+		]);
 
+		$ret_val = [];
 
-		$ret_val = array();
-
-		// Aqui devuelvo el resultado
+		// Ejecutar llamada
 		$result = curl_exec($ch);
 		
-
-		//*** 5. Procesamiento de Respuesta */
+		// =========================================================================
+		// PROCESAR RESPUESTA
+		// =========================================================================
 		if ($result === false) {
-			//echo 'Error cURL: ' . curl_error($ch);
-			$estado = curl_error($ch);
-			$ret_val['status_fact']  = $estado;
-			$ret_val['mensaje_fact'] = 'Error al ejecutar la funcion: "curl_error($ch)"';
+			$error_msg = curl_error($ch);
+			$ret_val = [
+				'status_fact' => 'ERROR_CURL',
+				'mensaje_fact' => 'Error cURL: ' . $error_msg,
+				'factura' => null
+			];
 		} else {
 			$httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
 			$headerSize = curl_getinfo($ch, CURLINFO_HEADER_SIZE);
 			$header = substr($result, 0, $headerSize);
 			$body = substr($result, $headerSize);
-			$json_response = json_decode($result, true);
+			
+			// Log de respuesta
+			file_put_contents('debug_ws_response.txt', 
+				"=== RESPUESTA WS ===\nHTTP Code: $httpCode\nBody: $body\n=== FIN RESPUESTA ===\n", 
+				FILE_APPEND
+			);
 
-			//echo 'Código HTTP: ' . $httpCode . PHP_EOL;
-			//echo 'Encabezado de respuesta: ' . $header . PHP_EOL;
-			//echo 'Cuerpo de respuesta: ' . $body . PHP_EOL;
-			$responseData = json_decode($body, true); // true para obtener un array asociativo
+			$responseData = json_decode($body, true);
+			
 			if ($responseData !== null) {
-				// Procesar $responseData según tus necesidades
-				$estado = $responseData['Estado'];
-				$mensaje = isset($responseData['Mensaje']) ? $responseData['Mensaje']: "";
-				$factura = isset($responseData['Factura']) ? $responseData['Factura']: "";
-				//echo 'Estado: ' . $estado . PHP_EOL;
-				//echo 'Mensaje: ' . $mensaje . PHP_EOL;
+				$estado = $responseData['Estado'] ?? 'DESCONOCIDO';
+				$mensaje = $responseData['Mensaje'] ?? 'Sin mensaje';
+				$factura = $responseData['Factura'] ?? null;
+				
+				$ret_val = [
+					'status_fact' => $estado,
+					'mensaje_fact' => $mensaje,
+					'factura' => $factura
+				];
 			} else {
-				//echo 'Error al decodificar la respuesta JSON.';
+				$ret_val = [
+					'status_fact' => 'ERROR_JSON',
+					'mensaje_fact' => 'Error al decodificar JSON. Respuesta: ' . substr($body, 0, 200),
+					'factura' => null
+				];
 			}
-
-			$ret_val['status_fact']  = $estado;
-			$ret_val['factura']  = $factura;
-			$ret_val['mensaje_fact'] = $mensaje;
-
 		}
-
+		
 		curl_close($ch);
-
-		//$ret_val['status_fact']  = 'OK';
-		//$ret_val['mensaje_fact'] = 'BIEN!!';
-
 		return $ret_val;
-
 	}
 
 	public function readPlanPadre($codigo){

@@ -173,13 +173,13 @@ switch ($_GET["op"]){
 		$cod_ope = $varios->getParameterValues('cod_ope');
 		$cod_tra = $varios->getParameterValues('cod_tra');
 
-		echo "COD OPE:" . $cod_ope . "<br>";
-		echo "COD TRA:" . $cod_tra . "<br>";
+		// echo "COD OPE:" . $cod_ope . "<br>";
+		// echo "COD TRA:" . $cod_tra . "<br>";
 
 		// Generamos el número de contrato del paciente
 		$contrato =  $varios->getNumeroContrato($registro_a_facturar);
 
-		echo "CONTRATO: " . $contrato . "<br>";
+		// echo "CONTRATO: " . $contrato . "<br>";
 
 		$data = array();
 		$data['cod_tra'] = $cod_tra;
@@ -265,8 +265,8 @@ switch ($_GET["op"]){
 		//+P5
 		$rc = $varios->llamamosWS_Sartawi($factura); 
 		$horaRetorno = date('H:i:s');
-
-		//dep($rc);
+		
+		// dep($rc);exit;
 
 		// Recogemos el mensaje de retorno del WS Sartawi
 		$factura['status_fact']  = $rc['status_fact'];
@@ -280,7 +280,7 @@ switch ($_GET["op"]){
 			// Actualizamos los campos FACTURACION, FECHA_FACTURACION y ESTADO de la table temp
 			$rspta = $cobranzas->actualizamosCamposFacturacion($registro_a_facturar,$mi_factura);
 		}
-
+		
 		$rspta = $varios->registraDatosLog($factura);
 
 		$data['status_fact1']  = $rc['status_fact'];

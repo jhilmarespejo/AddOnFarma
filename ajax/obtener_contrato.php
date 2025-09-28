@@ -53,7 +53,7 @@ if ($id_temp != '') {
         $fecha_formateada = "DÍA:\t$dia_nac MES:\t$mes_nac\tAÑO: $anio_nac";
 
         // preparar fecha de inicio y fin de contrato
-        $fecha_inicio = $row['fecha_creacion'];
+        $fecha_inicio = date('Y-m-d');//$row['fecha_creacion'];
         list($fecha, $hora_completa) = explode(' ', $fecha_inicio);
         $hora = substr($hora_completa, 0, 5);
         list($anio_inicio, $mes_inicio, $dia_inicio) = explode('-', $fecha);
@@ -68,55 +68,107 @@ if ($id_temp != '') {
         $mes_actual = $meses[date('m')];
         $lugar_fecha = $row['nombre_ciudad'] . ", " . date('d') . " DE " . $mes_actual . " DE " . date('Y');
         
-        // --- DEFINIR COORDENADAS ---
-        $coordenadas = [
-            't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
-            'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
-            'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
-            'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
-            'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
-            'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
-            'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
-        ];
-        
-        // --- DATOS A INSERTAR ---
+
+        // --- DEFINIR DATOS A INSERTAR (ESTA PARTE FALTA) ---
         $datos = [
             't.contrato' => $contrato_nombre,
             'c.nombres' => $row['nombres'] . ' ' . $row['ap_paterno'] . ' ' . $row['ap_materno'],
-            'c.num_documento' => $row['num_documento'].'-'.$row['extension'].' '.$row['expedido'],
+            'c.num_documento' => $row['num_documento'].' '.$row['extension'].' '.$row['expedido'],
             'c.fecha_nacimiento' => $fecha_formateada,
             'c.fecha_inicio' => $fecha_inicio_formateada,
             'c.fecha_fin' => $fecha_fin_formateada,
             'c.lugar_fecha' => $lugar_fecha,
         ];
-        
+
+        // Configurar coordenadas según la plantilla
+        if ($nombre_plantilla === 'PPCE0210.pdf') {
+            // Coordenadas para PPCE0210 (dos páginas)
+            $coordenadas = [
+                // Página 1
+                1 => [
+                    't.contrato' => ['x' => 238, 'y' => 46, 'size' => 6, 'font' => 'helvetica'],
+                    'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
+                    'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_inicio' => ['x' => 85, 'y' => 168, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_fin' => ['x' => 85, 'y' => 174, 'size' => 5, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 223, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                ],
+                // Página 2
+                2 => [
+                    't.contrato' => ['x' => 238, 'y' => 46, 'size' => 6, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 223, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                ]
+            ];
+        } elseif ($nombre_plantilla === 'PPCE0196.pdf') {
+            // Coordenadas para PPCE0196 (una sola página)
+            $coordenadas = [
+                1 => [
+                    't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
+                    'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
+                    'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                ]
+            ];
+        } else {
+            // Plantilla genérica o por defecto
+            $coordenadas = [
+                1 => [
+                    't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
+                    'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
+                    'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
+                    'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                ]
+            ];
+        }
+
         // --- GENERAR PDF contrato personalizado ---
         $pdf = new FPDI();
-        
+
         // Importar páginas del PDF original
         $pageCount = $pdf->setSourceFile($archivo_pdf_original);
+
+        // DEBUG: Verificar datos y coordenadas
+        error_log("Datos a insertar: " . print_r($datos, true));
+        error_log("Coordenadas configuradas: " . print_r($coordenadas, true));
+        error_log("Número de páginas: " . $pageCount);
+
         for ($i = 1; $i <= $pageCount; $i++) {
             $pdf->AddPage();
             $tplIdx = $pdf->importPage($i);
             $pdf->useTemplate($tplIdx, 0, 0, 210);
             
-            // Solo en la primera página insertamos los datos
-            if ($i == 1) {
-                foreach ($datos as $campo => $valor) {
-                    if (isset($coordenadas[$campo])) {
-                        $cfg = $coordenadas[$campo];
+            // Verifica si hay coordenadas definidas para esta página
+            if (isset($coordenadas[$i])) {
+                foreach ($coordenadas[$i] as $campo => $cfg) {
+                    if (isset($datos[$campo])) {
+                        // Convertir coordenadas de puntos a mm (TCPDF trabaja en mm)
                         $x_mm = $cfg['x'] * 25.4 / 72;
                         $y_mm = $cfg['y'] * 25.4 / 72;
-
+                        
                         $pdf->SetFont($cfg['font'], '', $cfg['size']);
                         $pdf->SetTextColor(0, 0, 0);
                         $pdf->SetXY($x_mm, $y_mm);
-                        $pdf->Cell(0, 0, $valor, 0, 0, 'L');
+                        
+                        // DEBUG: Log de lo que se está intentando escribir
+                        error_log("Escribiendo en página $i - Campo: $campo - Valor: " . $datos[$campo] . " - Posición: X=$x_mm mm, Y=$y_mm mm");
+                        
+                        $pdf->Cell(0, 0, $datos[$campo], 0, 0, 'L');
+                    } else {
+                        error_log("Campo no encontrado en datos: $campo");
                     }
                 }
+            } else {
+                error_log("No hay coordenadas definidas para la página $i");
             }
         }
-        
+
         // 3. GUARDAR PDF PERSONALIZADO EN CARPETA TEMPORAL
         $ruta_temporal = $root_path . "files/contratostmp/";
         if (!file_exists($ruta_temporal)) {

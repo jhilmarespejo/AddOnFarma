@@ -1,0 +1,48 @@
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-c6775f48-3cf4-4cbd-8a65-1dd74934b641.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-3fa1703b-b7b1-4daf-8ebf-4677f0377048.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-9b97f3f2-9c71-479f-a08e-9509aecb4e04.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-e18f7090-c576-42a9-97e5-cb818bee4391.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-044d1146-3eb0-4ca9-89c3-b5b7bfecc8c9.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-5011e7cb-8315-41de-b9fe-0c6ddec344ae.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-de4f40ff-e5a0-4a8d-a37a-cd25fe8d6fdc.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-04e288af-cf22-4dd5-b839-1120bca0f592.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-a5799e85-5c5f-4f28-9467-726cc83941c7.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"X","Mensaje":"IZI: Server error: `POST https:\/\/api.test.izisoluciones.com\/v1.2\/facturas` resulted in a `500 Internal Server Error` response:\nEL PARAMETRO ARCHIVO ES INVALIDO Formato de XML no cumple con el XSD:cvc-datatype-valid.1.2.1: '' is not a valid value f (truncated...)\n"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-3564b18e-1210-4c06-b7dc-cfe7117f1995.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-aa0c405b-143a-47f6-92b4-855195ee8cef.pdf"}
+=== FIN RESPUESTA ===

@@ -1,0 +1,17 @@
+[2025-09-27 10:44:59] === INICIO PRUEBA FACTURACIÓN ===
+[2025-09-27 10:44:59] Códigos generados - OPE: 3049417, TRA: 5553897, Contrato: PPCE0210-LP-25-0001-0000005
+[2025-09-27 06:44:59] Datos cliente obtenidos - Plan: PC0088, Cliente: QUINO
+[2025-09-27 06:44:59] Datos WS preparados - Plan Hijo: PPCE0210, Precio: 1
+[2025-09-27 06:44:59] Llamando a WS IZI...
+[2025-09-27 06:45:13] Respuesta WS - Estado: E, Mensaje: Sin mensaje
+[2025-09-27 06:45:13] Factura generada: https://izi-bol-temp.s3.amazonaws.com/facturas/InnovaSalud_factura-c6775f48-3cf4-4cbd-8a65-1dd74934b641.pdf
+[2025-09-27 06:45:13] Respuesta final - Status: E
+[2025-09-27 15:15:23] === INICIO PRUEBA FACTURACIÓN ===
+[2025-09-27 15:23:49] === INICIO PRUEBA FACTURACIÓN ===
+[2025-09-27 15:23:49] Códigos generados - OPE: 3049424, TRA: 5553904, Contrato: PPCE0210-LP-25-0001-0000012
+[2025-09-27 11:23:49] Datos cliente obtenidos - Plan: PC0088, Cliente: RODOLFO
+[2025-09-27 11:23:49] Datos WS preparados - Plan Hijo: PPCE0210, Precio: 1
+[2025-09-27 11:23:49] Llamando a WS IZI...
+[2025-09-27 11:23:59] Respuesta WS - Estado: E, Mensaje: Sin mensaje
+[2025-09-27 11:23:59] Factura generada: https://izi-bol-temp.s3.amazonaws.com/facturas/InnovaSalud_factura-04e288af-cf22-4dd5-b839-1120bca0f592.pdf
+[2025-09-27 11:23:59] Respuesta final - Status: E
