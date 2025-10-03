@@ -46,3 +46,235 @@ Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas
 HTTP Code: 200
 Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-aa0c405b-143a-47f6-92b4-855195ee8cef.pdf"}
 === FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-c32ec1d6-a2f8-4ad5-92ce-a3833c98c5d9.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-bf6de830-5d52-49e4-8b26-f60f2a6d2b84.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-a89251cc-c381-4561-a1d8-37d5a7cd90cb.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-e77d8088-9d19-4aaf-b1f9-1fb84eb48057.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-f5353dda-8b39-4bed-bedf-13bba2e03987.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-c5d0a55a-4764-437b-a529-2477b2a1af39.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-ea9c13b8-33c4-4207-b7ed-d5682a2fda84.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-715df33f-f370-4028-9606-7355d15e8583.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-2cd4c398-70a2-42ec-8078-edb1656b6f33.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-8a79065e-fb10-4f9d-8b01-9004dcbe1a7f.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1c8b0441-3044-4c70-b558-32dc821f3b36.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6e54f890-c7a5-40f1-b9e1-15e2d6ab2ee0.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-77b487f8-203a-4e23-a07c-4e875d2851ba.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-7e2408ce-e0f7-4bf5-b0b9-6677b5b3b689.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-b8c2b8ec-5534-45d5-a646-af34ab2dfa6c.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-9a881d3a-a2c9-45ed-8924-1e4d2805a576.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-9b65d47f-59b7-4c0a-b614-9a6d127993e8.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-98ab4335-44b7-4753-ae62-0942e0f56059.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6dad9fce-04e4-4321-93f7-0f1fc345e9c5.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-024dea50-adaa-4de1-a7f4-310ead6ad276.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-74192928-89e5-477a-ab4e-56d0a715e0fd.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-3e15762f-c6cb-4553-865b-a017f517fae9.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-2b354293-0b77-4dfb-b120-633dd1e96b90.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-d3cf1cee-4820-4988-8399-692d59d13f74.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-d526151b-886f-47f7-94c1-1a0a4561af83.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-03fc8a4b-de03-41ce-86f2-c613c711dd28.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6f8f3c52-15ce-44f9-bcf5-71d2ee1e3f69.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1512dbdd-a7d5-417e-b02c-5858ce9eae2c.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-15d56df2-bf31-42b1-9f6e-04189d8ce815.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-49a81ebe-2da9-4c54-95ed-5466f87d5349.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-e7b0906b-7364-4b23-94d8-72480126da91.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-904fbef3-d82f-41e9-96f2-7f176e5e9984.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1e8a2c72-84ec-4cb8-9e85-9e30798e2c26.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-cacc406c-5339-4151-90b6-8e5144c83d1c.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-4f305d7f-9543-4f28-b4ac-19630f2c533a.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1c9651bf-506d-4bdd-ab8a-3ce91d42488b.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-cc794eb4-7ea6-48f0-aadd-bd901809c5c3.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-f8174303-b2b7-42fc-ba1d-abb4f91a4104.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-2df1339c-cf5d-4ab2-8ac7-d6abf64fe432.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-40b6763c-f3b0-40c1-8536-e526035b91b4.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-496fb7be-96cf-4817-9570-bd85303a83db.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-df94f23a-5f64-4d42-b053-c0631ae3d631.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6ab9dabf-2cdb-4cc4-a22d-6fcf3db5f0c4.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-62e80df8-e263-4271-a235-80c0c714b8f6.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-548af0b2-d290-4545-8bc8-2ccca9543b30.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-fd415a3a-59cd-4f8b-9858-3acaaf772ff0.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1b6185b9-5650-4304-bad6-f8a76fa22b05.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-dc9c264b-ba7a-4e75-8a51-92d5b65a3e42.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-5a53362c-b1af-4494-b844-ed96fe5d11f5.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-1215887e-9101-44ab-b7ac-05a22ca1a77a.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-e426d09d-317d-4b0c-afa1-03b2eae49ae1.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-20ce9e04-b01e-4d3a-b2e3-ee5708f82bcb.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-4aefe3b8-a348-44af-a16b-dd0f7968d765.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-485845d9-1376-4a47-a0bf-3698d67c1a61.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-c58bc3d8-7b70-47a4-9b38-6694febd144b.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-40f48f7e-0c3f-4a6c-a7f5-ceacc6927a16.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-99b0f33a-d19c-400f-9191-baff9688a902.pdf"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6132cacc-cdc7-47a6-b732-b588a5ed3e25.pdf"}
+=== FIN RESPUESTA ===

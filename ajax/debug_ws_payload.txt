@@ -866,3 +866,3720 @@ Array
 )
 
 === FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019626
+    [operacionId] => 3049413
+    [numTransaccion] => 5553893
+    [tipoDoc] => C
+    [numDoc] => 6165654
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ESPEJO
+    [apMaterno] => FLORES
+    [nombres] => JHILMAR BUDDY
+    [razonSocial] => JHILMAR BUDDY ESPEJO FLORES
+    [genero] => M
+    [telefono] => 74519378
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19851116
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000001
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928065831
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6165654
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ESPEJO
+                    [apellidoMaternoBen] => FLORES
+                    [nombresBen] => JHILMAR BUDDY
+                    [fechaNacimientoBen] => 19851116
+                    [generoBen] => M
+                    [telefonoBen] => 74519378
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019633
+    [operacionId] => 3049414
+    [numTransaccion] => 5553894
+    [tipoDoc] => C
+    [numDoc] => 2305905
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => LAZARTE
+    [apMaterno] => YAPU
+    [nombres] => MARCO ANTONIO
+    [razonSocial] => MARCO ANTONIO LAZARTE YAPU
+    [genero] => M
+    [telefono] => 70614280
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19720803
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000002
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928071754
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 2305905
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => LAZARTE
+                    [apellidoMaternoBen] => YAPU
+                    [nombresBen] => MARCO ANTONIO
+                    [fechaNacimientoBen] => 19720803
+                    [generoBen] => M
+                    [telefonoBen] => 70614280
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019653
+    [operacionId] => 3049415
+    [numTransaccion] => 5553895
+    [tipoDoc] => C
+    [numDoc] => 821048
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => TERAN
+    [apMaterno] => BARRIENTOS
+    [nombres] => MARCELO
+    [razonSocial] => MARCELO TERAN BARRIENTOS
+    [genero] => M
+    [telefono] => 75204919
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19540822
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000003
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928072911
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 821048
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => TERAN
+                    [apellidoMaternoBen] => BARRIENTOS
+                    [nombresBen] => MARCELO
+                    [fechaNacimientoBen] => 19540822
+                    [generoBen] => M
+                    [telefonoBen] => 75204919
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019612
+    [operacionId] => 3049416
+    [numTransaccion] => 5553896
+    [tipoDoc] => C
+    [numDoc] => 4294241
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CARDONA
+    [apMaterno] => PEREZ
+    [nombres] => LUIS GONZALO
+    [razonSocial] => LUIS GONZALO CARDONA PEREZ
+    [genero] => M
+    [telefono] => 70667412
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19731018
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000004
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928073210
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4294241
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CARDONA
+                    [apellidoMaternoBen] => PEREZ
+                    [nombresBen] => LUIS GONZALO
+                    [fechaNacimientoBen] => 19731018
+                    [generoBen] => M
+                    [telefonoBen] => 70667412
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019627
+    [operacionId] => 3049417
+    [numTransaccion] => 5553897
+    [tipoDoc] => C
+    [numDoc] => 793966
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => EWEL
+    [apMaterno] => PALENQUE
+    [nombres] => ROBERTO ALFREDO
+    [razonSocial] => ROBERTO ALFREDO EWEL PALENQUE
+    [genero] => M
+    [telefono] => 70409785
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19660407
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000005
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928073330
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 793966
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => EWEL
+                    [apellidoMaternoBen] => PALENQUE
+                    [nombresBen] => ROBERTO ALFREDO
+                    [fechaNacimientoBen] => 19660407
+                    [generoBen] => M
+                    [telefonoBen] => 70409785
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019603
+    [operacionId] => 3049418
+    [numTransaccion] => 5553898
+    [tipoDoc] => C
+    [numDoc] => 9670620
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ARANCIBIA 
+    [apMaterno] => CABRERA 
+    [nombres] => VERONICA
+    [razonSocial] => VERONICA ARANCIBIA  CABRERA 
+    [genero] => F
+    [telefono] => 70820937
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19970709
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000006
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928074909
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 9670620
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ARANCIBIA 
+                    [apellidoMaternoBen] => CABRERA 
+                    [nombresBen] => VERONICA
+                    [fechaNacimientoBen] => 19970709
+                    [generoBen] => F
+                    [telefonoBen] => 70820937
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019604
+    [operacionId] => 3049419
+    [numTransaccion] => 5553899
+    [tipoDoc] => C
+    [numDoc] => 7690024
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ARANDIA 
+    [apMaterno] => CHOQUE 
+    [nombres] => ALEJANDRA 
+    [razonSocial] => ALEJANDRA  ARANDIA  CHOQUE 
+    [genero] => F
+    [telefono] => 67735398
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19950125
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000007
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928075036
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7690024
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ARANDIA 
+                    [apellidoMaternoBen] => CHOQUE 
+                    [nombresBen] => ALEJANDRA 
+                    [fechaNacimientoBen] => 19950125
+                    [generoBen] => F
+                    [telefonoBen] => 67735398
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019605
+    [operacionId] => 3049420
+    [numTransaccion] => 5553900
+    [tipoDoc] => C
+    [numDoc] => 4852262
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => BALDERRAMA
+    [apMaterno] => PIZARROSO
+    [nombres] => FAVIO ISMAEL
+    [razonSocial] => FAVIO ISMAEL BALDERRAMA PIZARROSO
+    [genero] => M
+    [telefono] => 72020856
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19800402
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000008
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928075129
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4852262
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => BALDERRAMA
+                    [apellidoMaternoBen] => PIZARROSO
+                    [nombresBen] => FAVIO ISMAEL
+                    [fechaNacimientoBen] => 19800402
+                    [generoBen] => M
+                    [telefonoBen] => 72020856
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019606
+    [operacionId] => 3049421
+    [numTransaccion] => 5553901
+    [tipoDoc] => C
+    [numDoc] => 8139442
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => BARJA
+    [apMaterno] => MAMANI
+    [nombres] => EILEEN RACHEL
+    [razonSocial] => EILEEN RACHEL BARJA MAMANI
+    [genero] => F
+    [telefono] => 70082159
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19981008
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000009
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928075246
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8139442
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => BARJA
+                    [apellidoMaternoBen] => MAMANI
+                    [nombresBen] => EILEEN RACHEL
+                    [fechaNacimientoBen] => 19981008
+                    [generoBen] => F
+                    [telefonoBen] => 70082159
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019607
+    [operacionId] => 3049422
+    [numTransaccion] => 5553902
+    [tipoDoc] => C
+    [numDoc] => 7914726
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CABEZAS
+    [apMaterno] => VEIZAGA
+    [nombres] => YANET DIANA
+    [razonSocial] => YANET DIANA CABEZAS VEIZAGA
+    [genero] => F
+    [telefono] => 65342356
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19930604
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000010
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928075629
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7914726
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CABEZAS
+                    [apellidoMaternoBen] => VEIZAGA
+                    [nombresBen] => YANET DIANA
+                    [fechaNacimientoBen] => 19930604
+                    [generoBen] => F
+                    [telefonoBen] => 65342356
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019608
+    [operacionId] => 3049423
+    [numTransaccion] => 5553903
+    [tipoDoc] => C
+    [numDoc] => 4028908
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CALIZAYA
+    [apMaterno] => CARTAGENA
+    [nombres] => NADIR ROSARIO
+    [razonSocial] => NADIR ROSARIO CALIZAYA CARTAGENA
+    [genero] => F
+    [telefono] => 62808419
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19880218
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000011
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928081445
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4028908
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CALIZAYA
+                    [apellidoMaternoBen] => CARTAGENA
+                    [nombresBen] => NADIR ROSARIO
+                    [fechaNacimientoBen] => 19880218
+                    [generoBen] => F
+                    [telefonoBen] => 62808419
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019609
+    [operacionId] => 3049424
+    [numTransaccion] => 5553904
+    [tipoDoc] => C
+    [numDoc] => 5767443
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CALVI
+    [apMaterno] => GOMEZ
+    [nombres] => LENNY LAURA
+    [razonSocial] => LENNY LAURA CALVI GOMEZ
+    [genero] => F
+    [telefono] => 60413777
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19870704
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000012
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928081538
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5767443
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CALVI
+                    [apellidoMaternoBen] => GOMEZ
+                    [nombresBen] => LENNY LAURA
+                    [fechaNacimientoBen] => 19870704
+                    [generoBen] => F
+                    [telefonoBen] => 60413777
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019610
+    [operacionId] => 3049425
+    [numTransaccion] => 5553905
+    [tipoDoc] => C
+    [numDoc] => 7960961
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CANAVIRI
+    [apMaterno] => QUISPE
+    [nombres] => DEYSI
+    [razonSocial] => DEYSI CANAVIRI QUISPE
+    [genero] => F
+    [telefono] => 72261881
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19881205
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000013
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928081717
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7960961
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CANAVIRI
+                    [apellidoMaternoBen] => QUISPE
+                    [nombresBen] => DEYSI
+                    [fechaNacimientoBen] => 19881205
+                    [generoBen] => F
+                    [telefonoBen] => 72261881
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019611
+    [operacionId] => 3049426
+    [numTransaccion] => 5553906
+    [tipoDoc] => C
+    [numDoc] => 12187593
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CAPAREARE
+    [apMaterno] => AVAROMA
+    [nombres] => ELIZETH ELIZETH
+    [razonSocial] => ELIZETH ELIZETH CAPAREARE AVAROMA
+    [genero] => F
+    [telefono] => 67984606
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19950403
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000014
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928081813
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 12187593
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CAPAREARE
+                    [apellidoMaternoBen] => AVAROMA
+                    [nombresBen] => ELIZETH ELIZETH
+                    [fechaNacimientoBen] => 19950403
+                    [generoBen] => F
+                    [telefonoBen] => 67984606
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019613
+    [operacionId] => 3049427
+    [numTransaccion] => 5553907
+    [tipoDoc] => C
+    [numDoc] => 9907461
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CATALAN
+    [apMaterno] => LOPEZ
+    [nombres] => CAMILA ROSARIO
+    [razonSocial] => CAMILA ROSARIO CATALAN LOPEZ
+    [genero] => F
+    [telefono] => 69857494
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19960417
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000015
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928081912
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 9907461
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CATALAN
+                    [apellidoMaternoBen] => LOPEZ
+                    [nombresBen] => CAMILA ROSARIO
+                    [fechaNacimientoBen] => 19960417
+                    [generoBen] => F
+                    [telefonoBen] => 69857494
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019614
+    [operacionId] => 3049428
+    [numTransaccion] => 5553908
+    [tipoDoc] => C
+    [numDoc] => 9122897
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CHAMBI
+    [apMaterno] => HUANCA
+    [nombres] => NATALIA ESPERANZA
+    [razonSocial] => NATALIA ESPERANZA CHAMBI HUANCA
+    [genero] => F
+    [telefono] => 63229609
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19951218
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000016
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082004
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 9122897
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CHAMBI
+                    [apellidoMaternoBen] => HUANCA
+                    [nombresBen] => NATALIA ESPERANZA
+                    [fechaNacimientoBen] => 19951218
+                    [generoBen] => F
+                    [telefonoBen] => 63229609
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019615
+    [operacionId] => 3049429
+    [numTransaccion] => 5553909
+    [tipoDoc] => C
+    [numDoc] => 5061811
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CHAVEZ
+    [apMaterno] => RIVA
+    [nombres] => MELVI GENESIS
+    [razonSocial] => MELVI GENESIS CHAVEZ RIVA
+    [genero] => F
+    [telefono] => 72310512
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19930114
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000017
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082104
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5061811
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CHAVEZ
+                    [apellidoMaternoBen] => RIVA
+                    [nombresBen] => MELVI GENESIS
+                    [fechaNacimientoBen] => 19930114
+                    [generoBen] => F
+                    [telefonoBen] => 72310512
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019616
+    [operacionId] => 3049430
+    [numTransaccion] => 5553910
+    [tipoDoc] => C
+    [numDoc] => 8414729
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CHOQUE 
+    [apMaterno] => MAMANI
+    [nombres] => DELIA
+    [razonSocial] => DELIA CHOQUE  MAMANI
+    [genero] => F
+    [telefono] => 69392341
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19990204
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000018
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082204
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8414729
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CHOQUE 
+                    [apellidoMaternoBen] => MAMANI
+                    [nombresBen] => DELIA
+                    [fechaNacimientoBen] => 19990204
+                    [generoBen] => F
+                    [telefonoBen] => 69392341
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019617
+    [operacionId] => 3049431
+    [numTransaccion] => 5553911
+    [tipoDoc] => C
+    [numDoc] => 7298669
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => COLQUE
+    [apMaterno] => CHOQUE
+    [nombres] => LEIDY GIOCONDA
+    [razonSocial] => LEIDY GIOCONDA COLQUE CHOQUE
+    [genero] => F
+    [telefono] => 75717309
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19910109
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000019
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082335
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7298669
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => COLQUE
+                    [apellidoMaternoBen] => CHOQUE
+                    [nombresBen] => LEIDY GIOCONDA
+                    [fechaNacimientoBen] => 19910109
+                    [generoBen] => F
+                    [telefonoBen] => 75717309
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019618
+    [operacionId] => 3049432
+    [numTransaccion] => 5553912
+    [tipoDoc] => C
+    [numDoc] => 12955670
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CORONEL
+    [apMaterno] => SOLARES
+    [nombres] => CARMEN TATIANA
+    [razonSocial] => CARMEN TATIANA CORONEL SOLARES
+    [genero] => F
+    [telefono] => 60130191
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19960716
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000020
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082501
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 12955670
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CORONEL
+                    [apellidoMaternoBen] => SOLARES
+                    [nombresBen] => CARMEN TATIANA
+                    [fechaNacimientoBen] => 19960716
+                    [generoBen] => F
+                    [telefonoBen] => 60130191
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019620
+    [operacionId] => 3049433
+    [numTransaccion] => 5553913
+    [tipoDoc] => C
+    [numDoc] => 8945810
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CRUZ
+    [apMaterno] => MEJIA
+    [nombres] => SHIRLEY
+    [razonSocial] => SHIRLEY CRUZ MEJIA
+    [genero] => F
+    [telefono] => 67851609
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19900921
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000021
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082554
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8945810
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CRUZ
+                    [apellidoMaternoBen] => MEJIA
+                    [nombresBen] => SHIRLEY
+                    [fechaNacimientoBen] => 19900921
+                    [generoBen] => F
+                    [telefonoBen] => 67851609
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019621
+    [operacionId] => 3049434
+    [numTransaccion] => 5553914
+    [tipoDoc] => C
+    [numDoc] => 6044183
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CUENTAS
+    [apMaterno] => MAMANI
+    [nombres] => SANDRA MABEL
+    [razonSocial] => SANDRA MABEL CUENTAS MAMANI
+    [genero] => F
+    [telefono] => 74859104
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19850309
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000022
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082647
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6044183
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CUENTAS
+                    [apellidoMaternoBen] => MAMANI
+                    [nombresBen] => SANDRA MABEL
+                    [fechaNacimientoBen] => 19850309
+                    [generoBen] => F
+                    [telefonoBen] => 74859104
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019622
+    [operacionId] => 3049435
+    [numTransaccion] => 5553915
+    [tipoDoc] => C
+    [numDoc] => 8341727
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CUETO
+    [apMaterno] => TAPIA
+    [nombres] => MONICA
+    [razonSocial] => MONICA CUETO TAPIA
+    [genero] => F
+    [telefono] => 78915234
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19880607
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000023
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082734
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8341727
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CUETO
+                    [apellidoMaternoBen] => TAPIA
+                    [nombresBen] => MONICA
+                    [fechaNacimientoBen] => 19880607
+                    [generoBen] => F
+                    [telefonoBen] => 78915234
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019623
+    [operacionId] => 3049436
+    [numTransaccion] => 5553916
+    [tipoDoc] => C
+    [numDoc] => 7201634
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CUTIPA
+    [apMaterno] => CALLE
+    [nombres] => DANNY FABIOLA
+    [razonSocial] => DANNY FABIOLA CUTIPA CALLE
+    [genero] => F
+    [telefono] => 63772375
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19970404
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000024
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082843
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7201634
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CUTIPA
+                    [apellidoMaternoBen] => CALLE
+                    [nombresBen] => DANNY FABIOLA
+                    [fechaNacimientoBen] => 19970404
+                    [generoBen] => F
+                    [telefonoBen] => 63772375
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019624
+    [operacionId] => 3049437
+    [numTransaccion] => 5553917
+    [tipoDoc] => C
+    [numDoc] => 3290297
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => DEL POZO 
+    [apMaterno] => MELGAR 
+    [nombres] => CLAUDIA ELIANA
+    [razonSocial] => CLAUDIA ELIANA DEL POZO  MELGAR 
+    [genero] => F
+    [telefono] => 70293813
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19700105
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000025
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928082935
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3290297
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => DEL POZO 
+                    [apellidoMaternoBen] => MELGAR 
+                    [nombresBen] => CLAUDIA ELIANA
+                    [fechaNacimientoBen] => 19700105
+                    [generoBen] => F
+                    [telefonoBen] => 70293813
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019625
+    [operacionId] => 3049438
+    [numTransaccion] => 5553918
+    [tipoDoc] => C
+    [numDoc] => 4259914
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => DELGADO
+    [apMaterno] => CHAUCA
+    [nombres] => SANTIAGO CRISTOBAL
+    [razonSocial] => SANTIAGO CRISTOBAL DELGADO CHAUCA
+    [genero] => M
+    [telefono] => 74096776
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19910725
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000026
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083019
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4259914
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => DELGADO
+                    [apellidoMaternoBen] => CHAUCA
+                    [nombresBen] => SANTIAGO CRISTOBAL
+                    [fechaNacimientoBen] => 19910725
+                    [generoBen] => M
+                    [telefonoBen] => 74096776
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019628
+    [operacionId] => 3049439
+    [numTransaccion] => 5553919
+    [tipoDoc] => C
+    [numDoc] => 12355930
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => GUARACHI 
+    [apMaterno] => CACHACA
+    [nombres] => JHENNY GEOVANA
+    [razonSocial] => JHENNY GEOVANA GUARACHI  CACHACA
+    [genero] => F
+    [telefono] => 65889267
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19980818
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000027
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083119
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 12355930
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => GUARACHI 
+                    [apellidoMaternoBen] => CACHACA
+                    [nombresBen] => JHENNY GEOVANA
+                    [fechaNacimientoBen] => 19980818
+                    [generoBen] => F
+                    [telefonoBen] => 65889267
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019629
+    [operacionId] => 3049440
+    [numTransaccion] => 5553920
+    [tipoDoc] => C
+    [numDoc] => 3489644
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => HERRERA
+    [apMaterno] => ARIAS
+    [nombres] => MIGUEL CARLOS
+    [razonSocial] => MIGUEL CARLOS HERRERA ARIAS
+    [genero] => M
+    [telefono] => 76553700
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19790503
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000028
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083218
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3489644
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => HERRERA
+                    [apellidoMaternoBen] => ARIAS
+                    [nombresBen] => MIGUEL CARLOS
+                    [fechaNacimientoBen] => 19790503
+                    [generoBen] => M
+                    [telefonoBen] => 76553700
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019630
+    [operacionId] => 3049441
+    [numTransaccion] => 5553921
+    [tipoDoc] => C
+    [numDoc] => 7329684
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => HUANCA
+    [apMaterno] => VICENTE
+    [nombres] => JESSICA DANITZA
+    [razonSocial] => JESSICA DANITZA HUANCA VICENTE
+    [genero] => F
+    [telefono] => 75703565
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19970210
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000029
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083327
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7329684
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => HUANCA
+                    [apellidoMaternoBen] => VICENTE
+                    [nombresBen] => JESSICA DANITZA
+                    [fechaNacimientoBen] => 19970210
+                    [generoBen] => F
+                    [telefonoBen] => 75703565
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019631
+    [operacionId] => 3049442
+    [numTransaccion] => 5553922
+    [tipoDoc] => C
+    [numDoc] => 2700467
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => JIMENEZ 
+    [apMaterno] => DUEÑAS
+    [nombres] => MAURICIO ALEJANDRO
+    [razonSocial] => MAURICIO ALEJANDRO JIMENEZ  DUEÑAS
+    [genero] => M
+    [telefono] => 60677777
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19800128
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000030
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083414
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 2700467
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => JIMENEZ 
+                    [apellidoMaternoBen] => DUEÑAS
+                    [nombresBen] => MAURICIO ALEJANDRO
+                    [fechaNacimientoBen] => 19800128
+                    [generoBen] => M
+                    [telefonoBen] => 60677777
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019632
+    [operacionId] => 3049443
+    [numTransaccion] => 5553923
+    [tipoDoc] => C
+    [numDoc] => 8309582
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => KASPARETT
+    [apMaterno] => QUISBERT
+    [nombres] => KARLA LORENA
+    [razonSocial] => KARLA LORENA KASPARETT QUISBERT
+    [genero] => F
+    [telefono] => 76583078
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19900731
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000031
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083601
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8309582
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => KASPARETT
+                    [apellidoMaternoBen] => QUISBERT
+                    [nombresBen] => KARLA LORENA
+                    [fechaNacimientoBen] => 19900731
+                    [generoBen] => F
+                    [telefonoBen] => 76583078
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019633
+    [operacionId] => 3049444
+    [numTransaccion] => 5553924
+    [tipoDoc] => C
+    [numDoc] => 2305905
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => LAZARTE
+    [apMaterno] => YAPU
+    [nombres] => MARCO ANTONIO
+    [razonSocial] => MARCO ANTONIO LAZARTE YAPU
+    [genero] => M
+    [telefono] => 70614280
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19720803
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000032
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928083702
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 2305905
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => LAZARTE
+                    [apellidoMaternoBen] => YAPU
+                    [nombresBen] => MARCO ANTONIO
+                    [fechaNacimientoBen] => 19720803
+                    [generoBen] => M
+                    [telefonoBen] => 70614280
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019634
+    [operacionId] => 3049445
+    [numTransaccion] => 5553925
+    [tipoDoc] => C
+    [numDoc] => 5480849
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MARIN 
+    [apMaterno] => MITA
+    [nombres] => SANDIBEL
+    [razonSocial] => SANDIBEL MARIN  MITA
+    [genero] => F
+    [telefono] => 60229949
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19910309
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000033
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084051
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5480849
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MARIN 
+                    [apellidoMaternoBen] => MITA
+                    [nombresBen] => SANDIBEL
+                    [fechaNacimientoBen] => 19910309
+                    [generoBen] => F
+                    [telefonoBen] => 60229949
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019635
+    [operacionId] => 3049446
+    [numTransaccion] => 5553926
+    [tipoDoc] => C
+    [numDoc] => 3519173
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MATIAS
+    [apMaterno] => COSSIO
+    [nombres] => MARIA ELENA
+    [razonSocial] => MARIA ELENA MATIAS COSSIO
+    [genero] => F
+    [telefono] => 72174866
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19970901
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000034
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084240
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3519173
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MATIAS
+                    [apellidoMaternoBen] => COSSIO
+                    [nombresBen] => MARIA ELENA
+                    [fechaNacimientoBen] => 19970901
+                    [generoBen] => F
+                    [telefonoBen] => 72174866
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019636
+    [operacionId] => 3049447
+    [numTransaccion] => 5553927
+    [tipoDoc] => C
+    [numDoc] => 4018658
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MEDINA
+    [apMaterno] => POITA
+    [nombres] => NOEMI
+    [razonSocial] => NOEMI MEDINA POITA
+    [genero] => F
+    [telefono] => 71360422
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19780330
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000035
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084324
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4018658
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MEDINA
+                    [apellidoMaternoBen] => POITA
+                    [nombresBen] => NOEMI
+                    [fechaNacimientoBen] => 19780330
+                    [generoBen] => F
+                    [telefonoBen] => 71360422
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019637
+    [operacionId] => 3049448
+    [numTransaccion] => 5553928
+    [tipoDoc] => C
+    [numDoc] => 11068805
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MERCIER
+    [apMaterno] => RENGEL
+    [nombres] => MATIAS DARIO
+    [razonSocial] => MATIAS DARIO MERCIER RENGEL
+    [genero] => M
+    [telefono] => 77759997
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 20031218
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000036
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084407
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 11068805
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MERCIER
+                    [apellidoMaternoBen] => RENGEL
+                    [nombresBen] => MATIAS DARIO
+                    [fechaNacimientoBen] => 20031218
+                    [generoBen] => M
+                    [telefonoBen] => 77759997
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019638
+    [operacionId] => 3049449
+    [numTransaccion] => 5553929
+    [tipoDoc] => C
+    [numDoc] => 3552441
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MICHEL
+    [apMaterno] => APAZA
+    [nombres] => GEUDY PATRICIA
+    [razonSocial] => GEUDY PATRICIA MICHEL APAZA
+    [genero] => F
+    [telefono] => 72491051
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19770730
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000037
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084530
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3552441
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MICHEL
+                    [apellidoMaternoBen] => APAZA
+                    [nombresBen] => GEUDY PATRICIA
+                    [fechaNacimientoBen] => 19770730
+                    [generoBen] => F
+                    [telefonoBen] => 72491051
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019639
+    [operacionId] => 3049450
+    [numTransaccion] => 5553930
+    [tipoDoc] => C
+    [numDoc] => 6140855
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MOLLO
+    [apMaterno] => RAMOS
+    [nombres] => LISE JUDITH
+    [razonSocial] => LISE JUDITH MOLLO RAMOS
+    [genero] => F
+    [telefono] => 79405244
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19841218
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000038
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084656
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6140855
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MOLLO
+                    [apellidoMaternoBen] => RAMOS
+                    [nombresBen] => LISE JUDITH
+                    [fechaNacimientoBen] => 19841218
+                    [generoBen] => F
+                    [telefonoBen] => 79405244
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019640
+    [operacionId] => 3049451
+    [numTransaccion] => 5553931
+    [tipoDoc] => C
+    [numDoc] => 8508154
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => MONTES
+    [apMaterno] => QUISPE
+    [nombres] => SHIRLEY
+    [razonSocial] => SHIRLEY MONTES QUISPE
+    [genero] => F
+    [telefono] => 70451284
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19920103
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000039
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928084750
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8508154
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => MONTES
+                    [apellidoMaternoBen] => QUISPE
+                    [nombresBen] => SHIRLEY
+                    [fechaNacimientoBen] => 19920103
+                    [generoBen] => F
+                    [telefonoBen] => 70451284
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019641
+    [operacionId] => 3049452
+    [numTransaccion] => 5553932
+    [tipoDoc] => C
+    [numDoc] => 5278669
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => NOYA
+    [apMaterno] => SALINAS
+    [nombres] => VALERIA EMMA
+    [razonSocial] => VALERIA EMMA NOYA SALINAS
+    [genero] => F
+    [telefono] => 72724827
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19870919
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000040
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085012
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5278669
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => NOYA
+                    [apellidoMaternoBen] => SALINAS
+                    [nombresBen] => VALERIA EMMA
+                    [fechaNacimientoBen] => 19870919
+                    [generoBen] => F
+                    [telefonoBen] => 72724827
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019642
+    [operacionId] => 3049453
+    [numTransaccion] => 5553933
+    [tipoDoc] => C
+    [numDoc] => 5664748
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ORTEGA
+    [apMaterno] => CHOQUE
+    [nombres] => MARLENE
+    [razonSocial] => MARLENE ORTEGA CHOQUE
+    [genero] => F
+    [telefono] => 73478137
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19841002
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000041
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085052
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5664748
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ORTEGA
+                    [apellidoMaternoBen] => CHOQUE
+                    [nombresBen] => MARLENE
+                    [fechaNacimientoBen] => 19841002
+                    [generoBen] => F
+                    [telefonoBen] => 73478137
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019643
+    [operacionId] => 3049454
+    [numTransaccion] => 5553934
+    [tipoDoc] => C
+    [numDoc] => 4875441
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => PEREZ
+    [apMaterno] => LOPEZ
+    [nombres] => EDGAR ALEJANDRO
+    [razonSocial] => EDGAR ALEJANDRO PEREZ LOPEZ
+    [genero] => M
+    [telefono] => 74360352
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19800127
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000042
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085146
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4875441
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => PEREZ
+                    [apellidoMaternoBen] => LOPEZ
+                    [nombresBen] => EDGAR ALEJANDRO
+                    [fechaNacimientoBen] => 19800127
+                    [generoBen] => M
+                    [telefonoBen] => 74360352
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019644
+    [operacionId] => 3049455
+    [numTransaccion] => 5553935
+    [tipoDoc] => C
+    [numDoc] => 6866929
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => POCOATA 
+    [apMaterno] => QUISPE 
+    [nombres] => IREVAL LUZ
+    [razonSocial] => IREVAL LUZ POCOATA  QUISPE 
+    [genero] => F
+    [telefono] => 76559304
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19890421
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000043
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085227
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6866929
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => POCOATA 
+                    [apellidoMaternoBen] => QUISPE 
+                    [nombresBen] => IREVAL LUZ
+                    [fechaNacimientoBen] => 19890421
+                    [generoBen] => F
+                    [telefonoBen] => 76559304
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019645
+    [operacionId] => 3049456
+    [numTransaccion] => 5553936
+    [tipoDoc] => C
+    [numDoc] => 5953937
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => PONCE
+    [apMaterno] => ESPINOZA
+    [nombres] => MICHAEL HENRY
+    [razonSocial] => MICHAEL HENRY PONCE ESPINOZA
+    [genero] => M
+    [telefono] => 70610268
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19770421
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000044
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085313
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5953937
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => PONCE
+                    [apellidoMaternoBen] => ESPINOZA
+                    [nombresBen] => MICHAEL HENRY
+                    [fechaNacimientoBen] => 19770421
+                    [generoBen] => M
+                    [telefonoBen] => 70610268
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019646
+    [operacionId] => 3049457
+    [numTransaccion] => 5553937
+    [tipoDoc] => C
+    [numDoc] => 8437892
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => QUISPE
+    [apMaterno] => UGARTE
+    [nombres] => MARIA DEL CARMEN
+    [razonSocial] => MARIA DEL CARMEN QUISPE UGARTE
+    [genero] => F
+    [telefono] => 67475202
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19910506
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000045
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085416
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 8437892
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => QUISPE
+                    [apellidoMaternoBen] => UGARTE
+                    [nombresBen] => MARIA DEL CARMEN
+                    [fechaNacimientoBen] => 19910506
+                    [generoBen] => F
+                    [telefonoBen] => 67475202
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019647
+    [operacionId] => 3049458
+    [numTransaccion] => 5553938
+    [tipoDoc] => C
+    [numDoc] => 10760868
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => QUISPE
+    [apMaterno] => MACHICAO
+    [nombres] => GIBELLI CELINA
+    [razonSocial] => GIBELLI CELINA QUISPE MACHICAO
+    [genero] => F
+    [telefono] => 75212298
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19960809
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000046
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085458
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 10760868
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => QUISPE
+                    [apellidoMaternoBen] => MACHICAO
+                    [nombresBen] => GIBELLI CELINA
+                    [fechaNacimientoBen] => 19960809
+                    [generoBen] => F
+                    [telefonoBen] => 75212298
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019648
+    [operacionId] => 3049459
+    [numTransaccion] => 5553939
+    [tipoDoc] => C
+    [numDoc] => 3498752
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ROJAS
+    [apMaterno] => VALDA
+    [nombres] => RAFAEL MAURICIO
+    [razonSocial] => RAFAEL MAURICIO ROJAS VALDA
+    [genero] => M
+    [telefono] => 76733625
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19800910
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000047
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085545
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3498752
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ROJAS
+                    [apellidoMaternoBen] => VALDA
+                    [nombresBen] => RAFAEL MAURICIO
+                    [fechaNacimientoBen] => 19800910
+                    [generoBen] => M
+                    [telefonoBen] => 76733625
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019649
+    [operacionId] => 3049460
+    [numTransaccion] => 5553940
+    [tipoDoc] => C
+    [numDoc] => 7169130
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => RUEDA
+    [apMaterno] => AVILES
+    [nombres] => MARGARITA VIRGINIA
+    [razonSocial] => MARGARITA VIRGINIA RUEDA AVILES
+    [genero] => F
+    [telefono] => 72949228
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19880617
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000048
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085631
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 7169130
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => RUEDA
+                    [apellidoMaternoBen] => AVILES
+                    [nombresBen] => MARGARITA VIRGINIA
+                    [fechaNacimientoBen] => 19880617
+                    [generoBen] => F
+                    [telefonoBen] => 72949228
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019650
+    [operacionId] => 3049461
+    [numTransaccion] => 5553941
+    [tipoDoc] => C
+    [numDoc] => 3322942
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => SALAZAR 
+    [apMaterno] => GUTIÉRREZ 
+    [nombres] => CLAUDIA NINOSKA
+    [razonSocial] => CLAUDIA NINOSKA SALAZAR  GUTIÉRREZ 
+    [genero] => F
+    [telefono] => 61231948
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19700616
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000049
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085714
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 3322942
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => SALAZAR 
+                    [apellidoMaternoBen] => GUTIÉRREZ 
+                    [nombresBen] => CLAUDIA NINOSKA
+                    [fechaNacimientoBen] => 19700616
+                    [generoBen] => F
+                    [telefonoBen] => 61231948
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019651
+    [operacionId] => 3049462
+    [numTransaccion] => 5553942
+    [tipoDoc] => C
+    [numDoc] => 4313663
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => SANHUEZA
+    [apMaterno] => MACHICAO
+    [nombres] => LENNY NEDRA
+    [razonSocial] => LENNY NEDRA SANHUEZA MACHICAO
+    [genero] => F
+    [telefono] => 76701367
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19760715
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000050
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085826
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4313663
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => SANHUEZA
+                    [apellidoMaternoBen] => MACHICAO
+                    [nombresBen] => LENNY NEDRA
+                    [fechaNacimientoBen] => 19760715
+                    [generoBen] => F
+                    [telefonoBen] => 76701367
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019652
+    [operacionId] => 3049463
+    [numTransaccion] => 5553943
+    [tipoDoc] => C
+    [numDoc] => 4297604
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => SORAIDE
+    [apMaterno] => JIMENEZ
+    [nombres] => LUIS DARIO
+    [razonSocial] => LUIS DARIO SORAIDE JIMENEZ
+    [genero] => M
+    [telefono] => 70160531
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19740212
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000051
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928085934
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4297604
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => SORAIDE
+                    [apellidoMaternoBen] => JIMENEZ
+                    [nombresBen] => LUIS DARIO
+                    [fechaNacimientoBen] => 19740212
+                    [generoBen] => M
+                    [telefonoBen] => 70160531
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019654
+    [operacionId] => 3049464
+    [numTransaccion] => 5553944
+    [tipoDoc] => C
+    [numDoc] => 6123061
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => USTARIZ
+    [apMaterno] => VARGAS
+    [nombres] => KEVIN ALVARO
+    [razonSocial] => KEVIN ALVARO USTARIZ VARGAS
+    [genero] => M
+    [telefono] => 68039174
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19921121
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000052
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928090028
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6123061
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => USTARIZ
+                    [apellidoMaternoBen] => VARGAS
+                    [nombresBen] => KEVIN ALVARO
+                    [fechaNacimientoBen] => 19921121
+                    [generoBen] => M
+                    [telefonoBen] => 68039174
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019655
+    [operacionId] => 3049465
+    [numTransaccion] => 5553945
+    [tipoDoc] => C
+    [numDoc] => 5738724
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => VELASCO
+    [apMaterno] => SARMIENTO
+    [nombres] => DANIELA ALEJANDRA
+    [razonSocial] => DANIELA ALEJANDRA VELASCO SARMIENTO
+    [genero] => F
+    [telefono] => 63661291
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19860623
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000053
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928092400
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5738724
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => VELASCO
+                    [apellidoMaternoBen] => SARMIENTO
+                    [nombresBen] => DANIELA ALEJANDRA
+                    [fechaNacimientoBen] => 19860623
+                    [generoBen] => F
+                    [telefonoBen] => 63661291
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019656
+    [operacionId] => 3049466
+    [numTransaccion] => 5553946
+    [tipoDoc] => C
+    [numDoc] => 4089484
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => VERA
+    [apMaterno] => LOAYZA
+    [nombres] => GLORIA CONSUELO
+    [razonSocial] => GLORIA CONSUELO VERA LOAYZA
+    [genero] => F
+    [telefono] => 72912845
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19781208
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000054
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928092520
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4089484
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => VERA
+                    [apellidoMaternoBen] => LOAYZA
+                    [nombresBen] => GLORIA CONSUELO
+                    [fechaNacimientoBen] => 19781208
+                    [generoBen] => F
+                    [telefonoBen] => 72912845
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019657
+    [operacionId] => 3049467
+    [numTransaccion] => 5553947
+    [tipoDoc] => C
+    [numDoc] => 4908335
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => VILLALPANDO
+    [apMaterno] => CUENTAS
+    [nombres] => DANIELA KHANTATI
+    [razonSocial] => DANIELA KHANTATI VILLALPANDO CUENTAS
+    [genero] => F
+    [telefono] => 71205719
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19841201
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000055
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928092601
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4908335
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => VILLALPANDO
+                    [apellidoMaternoBen] => CUENTAS
+                    [nombresBen] => DANIELA KHANTATI
+                    [fechaNacimientoBen] => 19841201
+                    [generoBen] => F
+                    [telefonoBen] => 71205719
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019619
+    [operacionId] => 3049468
+    [numTransaccion] => 5553948
+    [tipoDoc] => C
+    [numDoc] => 6959620
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => CORONEL 
+    [apMaterno] => GUARACHI 
+    [nombres] => FIORELA MONICA
+    [razonSocial] => FIORELA MONICA CORONEL  GUARACHI 
+    [genero] => F
+    [telefono] => 76277079
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19900517
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000056
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928092819
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6959620
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => CORONEL 
+                    [apellidoMaternoBen] => GUARACHI 
+                    [nombresBen] => FIORELA MONICA
+                    [fechaNacimientoBen] => 19900517
+                    [generoBen] => F
+                    [telefonoBen] => 76277079
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019600
+    [operacionId] => 3049469
+    [numTransaccion] => 5553949
+    [tipoDoc] => C
+    [numDoc] => 5055827
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => NO_PROVIDED
+    [apMaterno] => DURAN
+    [nombres] => LAURA LILY
+    [razonSocial] => LAURA LILY  DURAN
+    [genero] => F
+    [telefono] => 75133404
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 20250921
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000057
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928093040
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 5055827
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => NO_PROVIDED
+                    [apellidoMaternoBen] => DURAN
+                    [nombresBen] => LAURA LILY
+                    [fechaNacimientoBen] => 20250921
+                    [generoBen] => F
+                    [telefonoBen] => 75133404
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019601
+    [operacionId] => 3049470
+    [numTransaccion] => 5553950
+    [tipoDoc] => C
+    [numDoc] => 6136017
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => AJATA
+    [apMaterno] => MIRANDA
+    [nombres] => LIZETH 
+    [razonSocial] => LIZETH  AJATA MIRANDA
+    [genero] => F
+    [telefono] => 75858684
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19900912
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000058
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928093159
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 6136017
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => AJATA
+                    [apellidoMaternoBen] => MIRANDA
+                    [nombresBen] => LIZETH 
+                    [fechaNacimientoBen] => 19900912
+                    [generoBen] => F
+                    [telefonoBen] => 75858684
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+
+    [psw] => dM527'~F
+    [codigoCliente] => 3019602
+    [operacionId] => 3049471
+    [numTransaccion] => 5553951
+    [tipoDoc] => C
+    [numDoc] => 4275200
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => ANTEZANA 
+    [apMaterno] => TORREZ
+    [nombres] => JORGE GONZALO
+    [razonSocial] => JORGE GONZALO ANTEZANA  TORREZ
+    [genero] => M
+    [telefono] => 77390048
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19780621
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0210-LP-25-0001-0000059
+    [indicador] => D
+    [planElegido] => PPCE0210
+    [monto] => 1.00
+    [fecha] => 20250928093253
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20250928
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 4275200
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => ANTEZANA 
+                    [apellidoMaternoBen] => TORREZ
+                    [nombresBen] => JORGE GONZALO
+                    [fechaNacimientoBen] => 19780621
+                    [generoBen] => M
+                    [telefonoBen] => 77390048
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===

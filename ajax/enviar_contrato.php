@@ -117,9 +117,8 @@ function enviarPorCorreo($cliente, $archivos) {
         if (!empty($cliente['pais_nacimiento']) && filter_var($cliente['pais_nacimiento'], FILTER_VALIDATE_EMAIL)) {
             $mail->addCC($cliente['pais_nacimiento']);
         }
-        // $mail->addBCC('mteran@innovasalud.bo');
-        // $mail->addBCC('mlazarte@innovasalud.bo');
-        $mail->addBCC('pluris.tj@gmail.com');
+        $mail->addBCC('mteran@innovasalud.bo');
+        $mail->addBCC('mlazarte@innovasalud.bo');
         
         
         // Contenido del correo

@@ -401,9 +401,8 @@ function guardaryeditar(e) {
 							console.log("Cruce de Generos");
 							console.log(text);
 							//$('#respuesta_c').val("Cruce de Generos");
-
 						}
-
+					
 					}else{   // CIDRE y OTROS
 
 						guarda_info();
@@ -435,7 +434,6 @@ function guardaryeditar(e) {
 }
 //+P1
 function generarFactura() {
-	// alert('xxxxxxxxxxx');
     let registro_a_facturar = $('#registro_a_facturar').val();
 	// Habilitar botones de contrato y navegación
 		// $('#btnContrato').show().attr('disabled', false);
@@ -447,6 +445,7 @@ function generarFactura() {
     document.body.style.cursor = 'wait';
     // Mostrar mensaje de carga
     $('#loadingMensaje').show();
+    $('#btnContrato').show();
     $('#btnImprimir').hide().attr('disabled', true);
     $('#btnVolverInicio').hide();
     $('#btnCancelar').attr('disabled', true);
@@ -523,7 +522,6 @@ function generarFactura() {
             $('#loadingMensaje').hide();
         }
     });
-	
 	
 }
 
