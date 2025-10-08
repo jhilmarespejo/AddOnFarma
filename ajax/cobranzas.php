@@ -164,16 +164,16 @@ switch ($_GET["op"]){
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	case 'generarFactura':
     // Simulación de respuesta exitosa
-    // $respuesta_simulada = array(
-    //     "status" => "ok",
-    //     "status_fact1" => "E",
-    //     "msg1" => "Factura generada correctamente",
-    //     "factura_url" => "https://www.innovasalud.bo/facturas/factura_demo.pdf",
-    //     "contrato" => "FACTURA generado correctamente"
-    // );
+    $respuesta_simulada = array(
+        "status" => "ok",
+        "status_fact1" => "E",
+        "msg1" => "Factura generada correctamente",
+        "factura_url" => "",
+        "contrato" => "FACTURA generado correctamente"
+    );
     
-    // echo json_encode($respuesta_simulada);
-    // break;
+    echo json_encode($respuesta_simulada);
+    break;
 	
 	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 		

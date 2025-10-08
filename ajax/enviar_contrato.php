@@ -92,12 +92,12 @@ function enviarPorCorreo($cliente, $archivos) {
         $mail->SMTPAuth = true;
         $mail->SMTPDebug = 0;
         $mail->SMTPSecure = 'tls';
-        $mail->Username = 'mailapp@innovasalud.bo';
+        $mail->Username = 'jespejo@innovasalud.bo';
         $mail->Password = 'Prueba12345$';
         $mail->Port = 587;
         
         // Remitente y destinatario
-        $mail->setFrom('mailapp@innovasalud.bo', 'Innovasalud');
+        $mail->setFrom('jespejo@innovasalud.bo', 'Innovasalud');
         $mail->addAddress($cliente['correo'], $cliente['nombres'] . ' ' . $cliente['ap_paterno']);
         
         // Contenido del correo
@@ -165,9 +165,9 @@ function enviarPorCorreo($cliente, $archivos) {
             )
         );
         
-        //$mail->send();
-        // return "Documentos enviados por correo correctamente a " . $cliente['correo'];
-        return "Simulación exitosa: documentos preparados para enviar a " . $cliente['correo'];
+        $mail->send();
+        return "Documentos enviados por correo correctamente a " . $cliente['correo'];
+        //return "Simulación exitosa: documentos preparados para enviar a " . $cliente['correo'];
         
     } catch (Exception $e) {
         return "Error al enviar por correo: " . $mail->ErrorInfo;
