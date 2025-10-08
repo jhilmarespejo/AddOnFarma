@@ -80,7 +80,7 @@ Class Cobranzas
 			$ret_val['status'] = 'error';
 			$ret_val['msg'] = 'Cliente facturado anteriormente';
 			$ret_val['data'] = '';
-
+		
 		}else{
 
 			$row = mysqli_fetch_assoc($rspta);

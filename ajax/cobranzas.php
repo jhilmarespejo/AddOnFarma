@@ -161,18 +161,34 @@ switch ($_GET["op"]){
 	
 	// +P2
 	case 'generarFactura':
-
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	case 'generarFactura':
+    // Simulación de respuesta exitosa
+    // $respuesta_simulada = array(
+    //     "status" => "ok",
+    //     "status_fact1" => "E",
+    //     "msg1" => "Factura generada correctamente",
+    //     "factura_url" => "https://www.innovasalud.bo/facturas/factura_demo.pdf",
+    //     "contrato" => "FACTURA generado correctamente"
+    // );
+    
+    // echo json_encode($respuesta_simulada);
+    // break;
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+		
+		
 		/*
 		$codigo_agencia = 'B181';
 		$id_usuario = '8';
 		$precio = '50';
 		$registro_a_facturar = '1';
 		*/
-
-		// Generamos los códigos de operación y transacción
+		
+		//Generamos los códigos de operación y transacción
 		$cod_ope = $varios->getParameterValues('cod_ope');
 		$cod_tra = $varios->getParameterValues('cod_tra');
-
+		
 		// echo "COD OPE:" . $cod_ope . "<br>";
 		// echo "COD TRA:" . $cod_tra . "<br>";
 
@@ -287,12 +303,12 @@ switch ($_GET["op"]){
 		$data['msg1'] = $rc['mensaje_fact'];
 		$data['id_reg'] = $registro_a_facturar;
 		$data['factura_url'] = $mi_factura;
-
+		
 		//dep($factura);
-
+		
 		echo json_encode($data);
 		//dep($data);exit;
-
+	
 	break;
 
 

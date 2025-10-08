@@ -30,6 +30,10 @@ if ($id_temp != '') {
 
     $result = ejecutarConsulta($sql);
     
+    
+    //var_dump($result); exit;
+    
+
     if ($result && $row = $result->fetch_assoc()) {
         $contrato_nombre = $row['contrato'];
         
@@ -42,7 +46,12 @@ if ($id_temp != '') {
         
         // Verificar si la plantilla existe
         if (!file_exists($archivo_pdf_original)) {
-            echo "<html><body><h3>La plantilla '$nombre_plantilla' no se encuentra disponible.</h3></body></html>";
+            // Retornar JSON de error en lugar de mostrar HTML
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => false,
+                'message' => "La plantilla '$nombre_plantilla' no se encuentra disponible."
+            ]);
             exit;
         }
         
@@ -69,7 +78,7 @@ if ($id_temp != '') {
         $lugar_fecha = $row['nombre_ciudad'] . ", " . date('d') . " DE " . $mes_actual . " DE " . date('Y');
         
 
-        // --- DEFINIR DATOS A INSERTAR (ESTA PARTE FALTA) ---
+        // --- DEFINIR DATOS A INSERTAR ---
         $datos = [
             't.contrato' => $contrato_nombre,
             'c.nombres' => $row['nombres'] . ' ' . $row['ap_paterno'] . ' ' . $row['ap_materno'],
@@ -187,7 +196,11 @@ if ($id_temp != '') {
         
         // Verificar que el certificado existe
         if (!file_exists($certificadoPath)) {
-            echo "<html><body><h3>Error: Certificado digital no encontrado en: $certificadoPath</h3></body></html>";
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => false,
+                'message' => "Error: Certificado digital no encontrado en: $certificadoPath"
+            ]);
             exit;
         }
         
@@ -202,25 +215,37 @@ if ($id_temp != '') {
         
         // Función para firmar el PDF
         if (firmarPDF($ruta_pdf_personalizado, $ruta_pdf_firmado, $certificadoPath, $certificadoPassword)) {
-            // --- MOSTRAR PDF EN PANTALLA ---
-            header('Content-Type: application/pdf');
-            header('Content-Disposition: inline; filename="' . $nombre_pdf_firmado . '"');
-            header('Content-Transfer-Encoding: binary');
-            header('Accept-Ranges: bytes');
-            
-            // Mostrar el PDF firmado
-            readfile($ruta_pdf_firmado);
+            // ÉXITO: Retornar JSON de éxito en lugar de mostrar el PDF
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => true,
+                'message' => 'Contrato generado y firmado digitalmente',
+                'archivo_firmado' => $nombre_pdf_firmado,
+                'ruta_firmado' => $ruta_pdf_firmado
+            ]);
         } else {
-            echo "<html><body><h3>Error al firmar el documento digitalmente.</h3></body></html>";
+            header('Content-Type: application/json');
+            echo json_encode([
+                'success' => false,
+                'message' => 'Error al firmar el documento digitalmente'
+            ]);
         }
         
         exit;
     
     } else {
-        echo "<html><body><h3>No se encontró el registro.</h3></body></html>";
+        header('Content-Type: application/json');
+        echo json_encode([
+            'success' => false,
+            'message' => 'No se encontró el registro en la base de datos'
+        ]);
     }
 } else {
-    echo "<html><body><h3>ID no proporcionado.</h3></body></html>";
+    header('Content-Type: application/json');
+    echo json_encode([
+        'success' => false,
+        'message' => 'ID no proporcionado'
+    ]);
 }
 
 ob_end_flush();

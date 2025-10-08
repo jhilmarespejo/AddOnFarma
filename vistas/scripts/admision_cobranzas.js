@@ -104,7 +104,7 @@ function handleChange(checkbox){
 
 
 function listarPlanes(){
-
+	
 	$("#genero option:selected").each(function () {
 
 		genero_paciente = $(this).val();
@@ -283,7 +283,7 @@ function guarda_info(){
 	console.log('PLAN  : ' + a11);
 */
 
-
+	
 	$.ajax({
 		url: "../ajax/cliente.php?op=guardarContratante",
 		type: "POST",
@@ -433,25 +433,114 @@ function guardaryeditar(e) {
 
 }
 //+P1
+// function generarFactura() {
+//     let registro_a_facturar = $('#registro_a_facturar').val();
+// 	// Habilitar botones de contrato y navegación solo para test local
+// 		$('#btnContrato').show().attr('disabled', false);
+// 		$('#btnVolverInicio').show();
+// 		$('#btnCancelar').attr('disabled', true);
+// 		$('#btnContrato').attr('disabled', false);
+    
+// 	/*
+//     document.body.style.cursor = 'wait';
+//     // Mostrar mensaje de carga
+//     $('#loadingMensaje').show();
+//     $('#btnContrato').show();
+//     $('#btnImprimir').hide().attr('disabled', true);
+//     $('#btnVolverInicio').hide();
+//     $('#btnCancelar').attr('disabled', true);
+//     $('#btnContrato').hide().attr('disabled', true);
+    
+	
+//     $.ajax({
+//         url: "../ajax/cobranzas.php?op=generarFactura",
+//         type: "POST",
+//         dataType: "json",
+//         async: true,
+//         data: { registro_a_facturar: registro_a_facturar },
+        
+//         success: function (datos) {
+//             console.log("=== RESPUESTA COMPLETA DEL SERVIDOR ===");
+//             console.log("Datos recibidos:", datos);
+//             console.log("Status principal:", datos.status);
+//             console.log("Status facturación:", datos.status_fact1);
+//             console.log("Mensaje:", datos.msg1);
+//             console.log("Factura URL:", datos.factura_url);
+//             console.log("Contrato:", datos.contrato);
+//             console.log("=====================================");
+
+//             // ÉXITO: Web Service procesó correctamente (Estado 'E') o proceso interno exitoso
+//             if (datos.status_fact1 === 'E' || datos.status === 'ok' || datos.status_fact === 'ok') {
+//                 // Habilitar botón de impresión si hay URL de factura
+// 				alert("Transacción Exitosa!!!");
+//                 if (datos.factura_url && datos.factura_url !== 'null') {
+//                     $('#btnImprimir')
+//                         .attr('href', datos.factura_url)
+//                         .attr('target', '_blank')
+//                         .show()
+//                         .attr('disabled', false);
+//                 }
+                
+//                 // Habilitar botones de contrato y navegación
+//                 $('#btnContrato').show().attr('disabled', false);
+//                 $('#btnVolverInicio').show();
+//                 $('#btnCancelar').attr('disabled', true);
+//                 $('#btnContrato').attr('disabled', true);
+                
+//             } else {
+//                 // MOSTRAR ERROR SIMPLE EN ALERT
+//                 let mensajeError = "Error en la facturación";
+                
+//                 if (datos.msg1) {
+//                     // Limpiar mensaje de error para mostrar en alert
+//                     mensajeError = datos.msg1.replace(/(\\n|\\r)/g, ' ').substring(0, 200);
+//                 }
+                
+//                 alert("X " + mensajeError);
+                
+//                 // Habilitar reintento
+//                 $('#btnCancelar').attr('disabled', false);
+//                 $('#btnVolverInicio').show();
+//             }
+//         },
+
+//         error: function (jqXHR, textStatus, errorThrown) {
+//             console.error("=== ERROR AJAX ===");
+//             console.error("Status:", textStatus);
+//             console.error("Error:", errorThrown);
+//             console.error("Response:", jqXHR.responseText);
+//             console.error("===================");
+            
+//             alert('Error de comunicación con el servidor. Consulte la consola para más detalles.');
+            
+//             $('#btnCancelar').attr('disabled', false);
+//             $('#btnVolverInicio').show();
+//         },
+        
+//         complete: function () {
+//             document.body.style.cursor = 'default';
+//             $('#loadingMensaje').hide();
+//         }
+//     });
+
+// 	*/
+// }
+
 function generarFactura() {
     let registro_a_facturar = $('#registro_a_facturar').val();
-	// Habilitar botones de contrato y navegación
-		// $('#btnContrato').show().attr('disabled', false);
-		// $('#btnVolverInicio').show();
-		// $('#btnCancelar').attr('disabled', true);
-		// $('#btnContrato').attr('disabled', false);
     
-		
     document.body.style.cursor = 'wait';
     // Mostrar mensaje de carga
     $('#loadingMensaje').show();
-    $('#btnContrato').show();
-    $('#btnImprimir').hide().attr('disabled', true);
+    
+    // Ocultar botones que no se usarán en el nuevo flujo
+    $('#btnContrato').hide();
+    $('#btnImprimir').hide();
     $('#btnVolverInicio').hide();
     $('#btnCancelar').attr('disabled', true);
-    $('#btnContrato').hide().attr('disabled', true);
+
+	// Simulación de respuesta exitosa sin AJAX    
     
-	
     $.ajax({
         url: "../ajax/cobranzas.php?op=generarFactura",
         type: "POST",
@@ -471,34 +560,28 @@ function generarFactura() {
 
             // ÉXITO: Web Service procesó correctamente (Estado 'E') o proceso interno exitoso
             if (datos.status_fact1 === 'E' || datos.status === 'ok' || datos.status_fact === 'ok') {
+                
+                // 1. GENERAR Y FIRMAR EL CONTRATO (sin mostrarlo en pantalla) luego enviar por correo
+                generarYFirmarContrato(registro_a_facturar);
+				
+                
                 // Habilitar botón de impresión si hay URL de factura
-				alert("Transacción Exitosa!!!");
                 if (datos.factura_url && datos.factura_url !== 'null') {
                     $('#btnImprimir')
                         .attr('href', datos.factura_url)
                         .attr('target', '_blank')
-                        .show()
-                        .attr('disabled', false);
+                        .show();
                 }
-                
-                // Habilitar botones de contrato y navegación
-                $('#btnContrato').show().attr('disabled', false);
-                $('#btnVolverInicio').show();
-                $('#btnCancelar').attr('disabled', true);
-                $('#btnContrato').attr('disabled', true);
                 
             } else {
                 // MOSTRAR ERROR SIMPLE EN ALERT
                 let mensajeError = "Error en la facturación";
                 
                 if (datos.msg1) {
-                    // Limpiar mensaje de error para mostrar en alert
                     mensajeError = datos.msg1.replace(/(\\n|\\r)/g, ' ').substring(0, 200);
                 }
                 
-                alert("X " + mensajeError);
-                
-                // Habilitar reintento
+                mostrarNotificacion("Error: " + mensajeError, "error");
                 $('#btnCancelar').attr('disabled', false);
                 $('#btnVolverInicio').show();
             }
@@ -511,8 +594,7 @@ function generarFactura() {
             console.error("Response:", jqXHR.responseText);
             console.error("===================");
             
-            alert('Error de comunicación con el servidor. Consulte la consola para más detalles.');
-            
+            mostrarNotificacion('Error de comunicación con el servidor', 'error');
             $('#btnCancelar').attr('disabled', false);
             $('#btnVolverInicio').show();
         },
@@ -522,47 +604,162 @@ function generarFactura() {
             $('#loadingMensaje').hide();
         }
     });
-	
 }
 
-function verContrato() {
-    let registro_a_facturar = $('#registro_a_facturar').val();
-
-    // Ocultar botones antes de cargar
-    $('#botonesAccion').hide();
-
-    // Mostrar el contenedor del PDF
-    $('#contenedor-pdf').show();
-    $('html, body').animate({
-        scrollTop: $('#contenedor-pdf').offset().top
-    }, 500);
-
-    // Cargar el PDF en el iframe
-    $('#visor-pdf').attr('src', '../ajax/obtener_contrato.php?id=' + registro_a_facturar);
+// Función para generar y firmar el contrato sin mostrarlo
+function generarYFirmarContrato(idContrato) {
+    console.log("Generando y firmando contrato... ID:", idContrato);
+    
+    $.ajax({
+        url: '../ajax/obtener_contrato.php',
+        type: 'GET',
+        data: { id: idContrato },
+        // No especificar dataType para que jQuery detecte automáticamente
+        success: function(data, textStatus, xhr) {
+            const contentType = xhr.getResponseHeader('content-type');
+            
+            if (contentType && contentType.includes('application/json')) {
+                // Es JSON - procesar normalmente
+                if (data.success) {
+                    console.log("Contrato generado y firmado exitosamente");
+                    mostrarNotificacion("Contrato generado y firmado digitalmente", "success");
+                    enviarContratoPorCorreo(idContrato);
+                } else {
+                    console.error("Error al generar contrato:", data.message);
+                    mostrarNotificacion("Error al generar contrato: " + (data.message || 'Error desconocido'), "error");
+                    enviarContratoPorCorreo(idContrato);
+                }
+            } else {
+                // Es PDF u otro tipo - considerar como éxito
+                console.log("Contrato generado (respuesta no JSON)");
+                mostrarNotificacion("Contrato generado y firmado digitalmente", "success");
+                enviarContratoPorCorreo(idContrato);
+            }
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            console.error("Error en la solicitud:", textStatus, errorThrown);
+            
+            // Verificar si es error de parser (cuando se espera JSON pero se recibe PDF)
+            if (textStatus === 'parsererror') {
+                console.log("Parser error - probablemente se recibió PDF en lugar de JSON");
+                mostrarNotificacion("Contrato generado y firmado digitalmente", "success");
+                enviarContratoPorCorreo(idContrato);
+            } else {
+                mostrarNotificacion("Error de comunicación al generar contrato", "error");
+                enviarContratoPorCorreo(idContrato);
+            }
+        }
+    });
 }
+// Función para enviar contrato por correo automáticamente
+function enviarContratoPorCorreo(idContrato) {
+    console.log("Enviando contrato por correo... ID:", idContrato);
+    
+    $.post('../ajax/enviar_contrato.php', { 
+        tipo: 'correo', 
+        id: idContrato 
+    }, function(respuesta) {
+        console.log("Correo enviado exitosamente:", respuesta);
+        mostrarNotificacion("Contrato enviado correctamente por correo electrónico", "success");
+        
+        // Mostrar botones finales
+        $('#btnVolverInicio').show();
+        if ($('#btnImprimir').attr('href') !== '#') {
+            $('#btnImprimir').show();
+        }
+        
+    }).fail(function(jqXHR, textStatus, errorThrown) {
+        console.error("Error al enviar por correo:", textStatus, errorThrown);
+        mostrarNotificacion("Error al enviar el contrato por correo", "error");
+        
+        // Mostrar botones finales incluso si falla el envío
+        $('#btnVolverInicio').show();
+        if ($('#btnImprimir').attr('href') !== '#') {
+            $('#btnImprimir').show();
+        }
+    });
+}
+
+// Función auxiliar para mostrar notificaciones
+function mostrarNotificacion(mensaje, tipo) {
+    // Usar SweetAlert2 para notificaciones más profesionales (si está disponible)
+    if (typeof Swal !== 'undefined') {
+        Swal.fire({
+            icon: tipo === 'success' ? 'success' : 'error',
+            title: tipo === 'success' ? 'Éxito' : 'Error',
+            text: mensaje,
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
+    } else {
+        // Fallback a alert estándar
+        alert((tipo === 'success' ? '✓ ' : '✗ ') + mensaje);
+    }
+}
+
+
+
+
+// function verContrato() {
+//     let registro_a_facturar = $('#registro_a_facturar').val();
+    
+//     // Ocultar botones antes de cargar
+//     $('#botonesAccion').hide();
+    
+//     // Mostrar el contenedor del PDF
+//     $('#contenedor-pdf').show();
+//     $('html, body').animate({
+//         scrollTop: $('#contenedor-pdf').offset().top
+//     }, 500);
+    
+//     // Cargar el PDF en el iframe
+//     $('#visor-pdf').attr('src', '../ajax/obtener_contrato.php?id=' + registro_a_facturar);
+// }
 function mostrarBotonesAccion() {
     // Mostrar los botones solo si el PDF se ha cargado
     $('#botonesAccion').fadeIn();
 }
 
 
-function enviarPorCorreo() {
-    const btnCorreo = event.target;
-    btnCorreo.disabled = true;
-    btnCorreo.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
+// function enviarPorCorreo() {
+//     const btnCorreo = event.target;
+//     btnCorreo.disabled = true;
+//     btnCorreo.innerHTML = '<i class="fa fa-spinner fa-spin"></i> Enviando...';
     
-    const idContrato = $('#registro_a_facturar').val();
+//     const idContrato = $('#registro_a_facturar').val();
     
-    $.post('../ajax/enviar_contrato.php', { tipo: 'correo', id: idContrato }, function(respuesta) {
-        btnCorreo.innerHTML = '<i class="fa fa-check"></i> Enviado por correo';
-        mostrarNotificacion(respuesta, 'success');
-    }).fail(function() {
-        btnCorreo.disabled = false;
-        btnCorreo.innerHTML = '<i class="fa fa-envelope"></i> Enviar por correo';
-        mostrarNotificacion('Error al enviar por correo', 'error');
-    });
-}
+//     $.post('../ajax/enviar_contrato.php', { tipo: 'correo', id: idContrato }, function(respuesta) {
+//         btnCorreo.innerHTML = '<i class="fa fa-check"></i> Enviado por correo';
+//         mostrarNotificacion(respuesta, 'success');
+//     }).fail(function() {
+//         btnCorreo.disabled = false;
+//         btnCorreo.innerHTML = '<i class="fa fa-envelope"></i> Enviar por correo';
+//         mostrarNotificacion('Error al enviar por correo', 'error');
+//     });
+// }
 
+// Función auxiliar para mostrar notificaciones
+function mostrarNotificacion(mensaje, tipo) {
+    // Usar SweetAlert2 para notificaciones más profesionales (si está disponible)
+    if (typeof Swal !== 'undefined') {
+        Swal.fire({
+            icon: tipo === 'success' ? 'success' : 'error',
+            title: tipo === 'success' ? 'Éxito' : 'Error',
+            text: mensaje,
+            toast: true,
+            position: 'top-end',
+            showConfirmButton: false,
+            timer: 3000,
+            timerProgressBar: true
+        });
+    } else {
+        // Fallback a alert estándar
+        alert((tipo === 'success' ? '✓ ' : '✗ ') + mensaje);
+    }
+}
 // function enviarPorWhatsapp() {
 //     const btnWhatsapp = event.target;
 //     btnWhatsapp.disabled = true;

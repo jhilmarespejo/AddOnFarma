@@ -34,8 +34,8 @@ Class Varios
 		$varios = new Varios();
 		
 		// URL del Web Service - usar ambiente de TEST
-		$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
-		// $url = 'http://104.209.250.175/wstest/api/TransfDatosCliente';
+		//$url = 'http://104.209.250.175/wsqa/api/TransfDatosCliente';
+		 $url = 'http://104.209.250.175/wstest/api/TransfDatosCliente';
 		
 		date_default_timezone_set('America/La_Paz');
 		$fecha_facturacion = date('YmdHis');

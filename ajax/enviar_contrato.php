@@ -31,7 +31,7 @@ try {
     $sql = "
         SELECT 
             c.ap_paterno, c.ap_materno, c.nombres, c.num_documento, c.extension, c.expedido, 
-            c.fecha_nacimiento, c.fecha_creacion, c.correo, c.pais_nacimiento, c.telefono, t.contrato, c.canal
+            c.fecha_nacimiento, c.fecha_creacion, c.correo, c.telefono, t.contrato
         FROM clientes c 
         LEFT JOIN temp t ON t.id_contratante = c.id   
         WHERE t.id = '$id_temp'
@@ -40,7 +40,6 @@ try {
     $result = ejecutarConsulta($sql);
     $cliente = $result->fetch_assoc(); // Si usas MySQLi
     
-    // var_dump($cliente['canal']); exit;
     // Si usas PDO en tu Conexion.php, sería:
     // $cliente = $result->fetch(PDO::FETCH_ASSOC);
     
@@ -66,13 +65,13 @@ if (!file_exists($contratoPath)) {
 $archivos['contrato'] = $contratoPath;
 
 // 2.2 Anexo - Extraer prefijo del contrato
-// $prefijo = explode('-', $cliente['contrato'])[0];
-// $anexoPath = "../files/anexos/" . $prefijo . "_ANEXO.pdf";
-// if (!file_exists($anexoPath)) {
-//     echo "El anexo no está disponible: " . basename($anexoPath);
-//     exit;
-// }
-// $archivos['anexo'] = $anexoPath;
+$prefijo = explode('-', $cliente['contrato'])[0];
+$anexoPath = "../files/anexos/" . $prefijo . "_ANEXO.pdf";
+if (!file_exists($anexoPath)) {
+    echo "El anexo no está disponible: " . basename($anexoPath);
+    exit;
+}
+$archivos['anexo'] = $anexoPath;
 
 // 2.3 Manual del cliente
 $manualPath = "../files/anexos/ManualCliente.pdf";
@@ -81,16 +80,6 @@ if (!file_exists($manualPath)) {
     exit;
 }
 $archivos['manual'] = $manualPath;
-
-// 2.4 Servicios_del_Plan
-$serviciosPath = "../files/anexos/Servicios_del_Plan.pdf";
-if (!file_exists($serviciosPath)) {
-    echo "Servicios_del_Plan no está disponible.";
-    exit;
-}
-$archivos['servicios_plan'] = $serviciosPath;
-
-
 
 // Función para enviar por correo
 function enviarPorCorreo($cliente, $archivos) {
@@ -107,52 +96,66 @@ function enviarPorCorreo($cliente, $archivos) {
         $mail->Password = 'Prueba12345$';
         $mail->Port = 587;
         
-        // Remitente
+        // Remitente y destinatario
         $mail->setFrom('mailapp@innovasalud.bo', 'Innovasalud');
-
-        // Destinatario principal
         $mail->addAddress($cliente['correo'], $cliente['nombres'] . ' ' . $cliente['ap_paterno']);
-
-        // Copia (CC) si el campo pais_nacimiento contiene un correo válido
-        if (!empty($cliente['pais_nacimiento']) && filter_var($cliente['pais_nacimiento'], FILTER_VALIDATE_EMAIL)) {
-            $mail->addCC($cliente['pais_nacimiento']);
-        }
-        $mail->addBCC('mteran@innovasalud.bo');
-        $mail->addBCC('mlazarte@innovasalud.bo');
-        
         
         // Contenido del correo
         $mail->isHTML(true);
         $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'INNOVASALUD - Su contrato';
-
-        $mail->addEmbeddedImage('../files/anexos/cuerpo-mail.jpg', 'cuerpoMailCID', 'cuerpo-mail.jpg');
+        $mail->Subject = 'INNOVASALUD - Documentos de su contrato';
         
+        $cuerpo = '<!DOCTYPE html>
+        <html>
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>Documentos del Contrato - InnovaSalud</title>
+        </head>
+        <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+            <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f4f4f4; padding: 20px;">
+                <tr>
+                    <td align="center">
+                        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; overflow: hidden;">
+                            <tr style="background-color: #00587d;">
+                                <td align="center" style="padding: 20px;">
+                                    <img src="https://www.innovasalud.bo/contratos_test/mailer/img/LogoInnovaSM.jpg" alt="InnovaSalud" width="180" style="display: block; margin-bottom: 10px;">
+                                    <h1 style="color: #ffffff; margin: 0; font-size: 26px;">Documentos de su Contrato</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 20px; color: #333333; font-size: 16px;">
+                                    <p>Estimado(a) <strong>' . $cliente['nombres'] . ' ' . $cliente['ap_paterno'] . '</strong>,</p>
+                                    <p>Adjuntamos los documentos relacionados con su contrato de salud:</p>
+                                    <ul style="padding-left: 20px;">
+                                        <li><strong>Contrato firmado</strong></li>
+                                        <li><strong>Anexo del contrato</strong></li>
+                                        <li><strong>Manual del cliente</strong></li>
+                                    </ul>
+                                    <p>Estamos a su disposición para cualquier consulta o aclaración.</p>
+                                    <p><strong>Atentamente,<br>El equipo de InnovaSalud</strong></p>
+                                </td>
+                            </tr>
+                            <tr style="background-color: #e6f2f7;">
+                                <td align="center" style="padding: 15px; font-size: 14px; color: #555555;">
+                                    <p>
+                                        <a href="https://www.innovasalud.bo" style="color: #00587d; text-decoration: none;">www.innovasalud.bo</a> &nbsp; | &nbsp;
+                                        <a href="https://wa.me/59176503333" style="color: #00587d; text-decoration: none;">+591 765 03333</a>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </body>
+        </html>';
         
-        $cuerpo = '
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <title>InnovaSalud Contigo</title>
-            </head>
-            <body style="margin:0; padding:0;">
-                <img src="cid:cuerpoMailCID" alt="InnovaSalud Contigo" style="width:100%; max-width:600px; display:block; margin:auto;">
-            </body>
-            </html>';
-
-        $mail->isHTML(true);
         $mail->Body = $cuerpo;
         
         // Adjuntar archivos
         $mail->addAttachment($archivos['contrato'], "Contrato_" . $cliente['num_documento'] . ".pdf");
-        if($cliente['canal'] == 'C002'){
-            $mail->addAttachment($archivos['servicios_plan'], "Servicios_del_Plan.pdf");
-        } else {
-            $mail->addAttachment($archivos['anexo'], "Anexo_Contrato.pdf");
-            $mail->addAttachment($archivos['manual'], "Manual_del_Cliente.pdf");
-        }
-        
+        $mail->addAttachment($archivos['anexo'], "Anexo_Contrato.pdf");
+        $mail->addAttachment($archivos['manual'], "Manual_del_Cliente.pdf");
         
         $mail->SMTPOptions = array(
             'ssl' => array(
@@ -162,8 +165,9 @@ function enviarPorCorreo($cliente, $archivos) {
             )
         );
         
-        $mail->send();
-        return "Documentos enviados por correo correctamente a " . $cliente['correo'];
+        //$mail->send();
+        // return "Documentos enviados por correo correctamente a " . $cliente['correo'];
+        return "Simulación exitosa: documentos preparados para enviar a " . $cliente['correo'];
         
     } catch (Exception $e) {
         return "Error al enviar por correo: " . $mail->ErrorInfo;
