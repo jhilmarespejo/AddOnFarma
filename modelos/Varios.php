@@ -694,7 +694,7 @@ Class Varios
 					AND estado = 'A'
 					AND codigo_plan_padre = '$codigo_plan'";
 
-		//echo "SQL: " . $sql . "<br>";
+		echo "SQL: " . $sql . "<br>";
 		return ejecutarConsulta($sql);
 
 	}

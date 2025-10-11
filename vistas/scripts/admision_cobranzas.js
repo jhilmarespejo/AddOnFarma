@@ -115,11 +115,7 @@ function listarPlanes(){
 		function (r) {
 			//console.log(r);
 			$("#planes").html(r);
-			///JJJ 
-				$("#planes").prop("selectedIndex", 1);
-				// $('#cedula_asesor').val('111333');
-			///JJJ
-
+			//$("#planes").prop("selectedIndex", 0);
 			$("#planes").selectpicker("refresh");
 		});
 	});
@@ -659,7 +655,7 @@ function enviarContratoPorCorreo(idContrato) {
         tipo: 'correo', 
         id: idContrato 
     }, function(respuesta) {
-        console.log("Correo enviado exitosamente:", respuesta);
+        //console.log("Correo enviado exitosamente:", respuesta);
         mostrarNotificacion("Contrato enviado correctamente por correo electrónico", "success");
         
         // Mostrar botones finales

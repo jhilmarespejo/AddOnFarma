@@ -47,7 +47,7 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 					</div>
 				</div>
             <form name="formulario" id="formulario" method="POST">
-
+				
 				<div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
 					<label>Tipo Documento(*):</label>
 					<select name="tipo_documento" id="tipo_documento" class="form-control selectpicker">

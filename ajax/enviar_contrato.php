@@ -18,6 +18,24 @@ use PHPMailer\PHPMailer\Exception;
 
 date_default_timezone_set('America/La_Paz');
 
+// FUNCIÓN PARA ACTUALIZAR TEMP - AGREGADA
+function actualizarTemp($id_temp, $campo, $valor, $append = false) {
+    if ($append) {
+        // Si es append, obtener el valor actual y agregar el nuevo
+        $sql_select = "SELECT $campo FROM temp WHERE id = '$id_temp'";
+        $result = ejecutarConsulta($sql_select);
+        $current = '';
+        if ($result && $row = $result->fetch_assoc()) {
+            $current = $row[$campo] . ' | ';
+        }
+        $valor = $current . $valor;
+    }
+    
+    $valor_escape = limpiarCadena($valor);
+    $sql = "UPDATE temp SET $campo = '$valor_escape' WHERE id = '$id_temp'";
+    return ejecutarConsulta($sql);
+}
+
 $tipo = isset($_POST['tipo']) ? $_POST['tipo'] : '';
 $id_temp = isset($_POST['id']) ? $_POST['id'] : '';
 
@@ -25,6 +43,9 @@ if (!$tipo || !$id_temp) {
     echo "Datos incompletos.";
     exit;
 }
+
+// Registrar inicio del proceso de envío
+actualizarTemp($id_temp, 'correo_enviado', 'INICIADO_ENVIO: ' . date('Y-m-d H:i:s'));
 
 // Paso 1: Obtener datos del cliente y contrato usando tu conexión existente
 try {
@@ -38,17 +59,27 @@ try {
     ";
     
     $result = ejecutarConsulta($sql);
-    $cliente = $result->fetch_assoc(); // Si usas MySQLi
     
-    // Si usas PDO en tu Conexion.php, sería:
-    // $cliente = $result->fetch(PDO::FETCH_ASSOC);
+    if (!$result) {
+        // Error mejorado sin usar mysqli_error($conexion)
+        $error_msg = "ERROR_BD_CONSULTA: No se pudo ejecutar la consulta - " . date('Y-m-d H:i:s');
+        actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
+        echo "Error en consulta de base de datos";
+        exit;
+    }
+    
+    $cliente = $result->fetch_assoc();
     
     if (!$cliente) {
+        $error_msg = "ERROR_CLIENTE_NO_ENCONTRADO: ID $id_temp - " . date('Y-m-d H:i:s');
+        actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
         echo "No se encontraron datos del cliente.";
         exit;
     }
     
 } catch (Exception $e) {
+    $error_msg = "ERROR_EXCEPCION_BD: " . $e->getMessage() . " - " . date('Y-m-d H:i:s');
+    actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
     echo "Error al obtener datos del cliente: " . $e->getMessage();
     exit;
 }
@@ -59,6 +90,8 @@ $archivos = [];
 // 2.1 Contrato del cliente
 $contratoPath = "../files/contratosfirmados/" . $cliente['contrato'] . "_" . $cliente['num_documento'] . ".pdf";
 if (!file_exists($contratoPath)) {
+    $error_msg = "ERROR_CONTRATO_NO_EXISTE: " . basename($contratoPath) . " - " . date('Y-m-d H:i:s');
+    actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
     echo "El contrato no está disponible: " . basename($contratoPath);
     exit;
 }
@@ -68,6 +101,8 @@ $archivos['contrato'] = $contratoPath;
 $prefijo = explode('-', $cliente['contrato'])[0];
 $anexoPath = "../files/anexos/" . $prefijo . "_ANEXO.pdf";
 if (!file_exists($anexoPath)) {
+    $error_msg = "ERROR_ANEXO_NO_EXISTE: " . basename($anexoPath) . " - " . date('Y-m-d H:i:s');
+    actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
     echo "El anexo no está disponible: " . basename($anexoPath);
     exit;
 }
@@ -76,13 +111,15 @@ $archivos['anexo'] = $anexoPath;
 // 2.3 Manual del cliente
 $manualPath = "../files/anexos/ManualCliente.pdf";
 if (!file_exists($manualPath)) {
+    $error_msg = "ERROR_MANUAL_NO_EXISTE: ManualCliente.pdf - " . date('Y-m-d H:i:s');
+    actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
     echo "El manual del cliente no está disponible.";
     exit;
 }
 $archivos['manual'] = $manualPath;
 
 // Función para enviar por correo
-function enviarPorCorreo($cliente, $archivos) {
+function enviarPorCorreo($cliente, $archivos, $id_temp) {
     $mail = new PHPMailer(true);
     
     try {
@@ -166,31 +203,27 @@ function enviarPorCorreo($cliente, $archivos) {
         );
         
         $mail->send();
+        
+        // ÉXITO: Actualizar tabla temp
+        actualizarTemp($id_temp, 'correo_enviado', 'ENVIADO_CORRECTO: ' . date('Y-m-d H:i:s'));
         return "Documentos enviados por correo correctamente a " . $cliente['correo'];
-        //return "Simulación exitosa: documentos preparados para enviar a " . $cliente['correo'];
         
     } catch (Exception $e) {
+        // ERROR: Actualizar tabla temp con detalles del error - CORREGIDO
+        $error_msg = "ERROR_ENVIO_CORREO: " . $e->getMessage() . " - SMTP: " . $mail->ErrorInfo . " - " . date('Y-m-d H:i:s');
+        actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
         return "Error al enviar por correo: " . $mail->ErrorInfo;
     }
 }
 
-// Función para enviar por WhatsApp
-function enviarPorWhatsapp($cliente, $archivos) {
-    // Por ahora, simulamos el envío exitoso
-    return "Documentos preparados para envío por WhatsApp al " . $cliente['telefono'] . 
-           ". Archivos listos: " . implode(", ", array_map('basename', $archivos));
-}
-
 // Ejecutar el envío según el tipo
 if ($tipo === 'correo') {
-    $resultado = enviarPorCorreo($cliente, $archivos);
-    echo $resultado;
-    
-} elseif ($tipo === 'whatsapp') {
-    $resultado = enviarPorWhatsapp($cliente, $archivos);
+    $resultado = enviarPorCorreo($cliente, $archivos, $id_temp);
     echo $resultado;
     
 } else {
+    $error_msg = "ERROR_TIPO_NO_RECONOCIDO: $tipo - " . date('Y-m-d H:i:s');
+    actualizarTemp($id_temp, 'correo_enviado', $error_msg, true);
     echo "Tipo de envío no reconocido.";
 }
 

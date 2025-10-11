@@ -58,8 +58,8 @@ switch ($_GET["op"]){
 
 		$rspta = $varios->listarPlanesCanal($codigo_canal);
 
-		echo '<option value=' . '0' . '>' . 'Seleccione un Plan' . '</option>';	
-
+		echo '<option value=' . '0' . 'selected >' . 'Seleccione un Plan' . '</option>';	
+		
 		while ($reg = $rspta->fetch_object())
 		{
 			echo '<option value=' . $reg->codigo_plan . '>' . $reg->plan . '</option>';
@@ -185,6 +185,7 @@ switch ($_GET["op"]){
 		$data['status'] = 'Ok';
 		$data['plan_elegido'] = $plan_elegido;
 		echo $genero;
+		exit;
 
 	break;
 
