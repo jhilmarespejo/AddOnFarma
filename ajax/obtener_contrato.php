@@ -134,7 +134,7 @@ if ($id_temp != '') {
         list($anio_nac, $mes_nac, $dia_nac) = explode('-', $fecha);
         $fecha_formateada = "DÍA:\t$dia_nac MES:\t$mes_nac\tAÑO: $anio_nac";
 
-        $fecha_inicio = date('Y-m-d');
+        $fecha_inicio = $row['fecha_creacion'];
         list($fecha, $hora_completa) = explode(' ', $fecha_inicio);
         $hora = substr($hora_completa, 0, 5);
         list($anio_inicio, $mes_inicio, $dia_inicio) = explode('-', $fecha);
@@ -174,32 +174,43 @@ if ($id_temp != '') {
                     'c.lugar_fecha' => ['x' => 223, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
                 ]
             ];
-        } elseif ($nombre_plantilla === 'PPCE0196.pdf') {
+        } elseif ($nombre_plantilla === 'PPCE0196.pdf' || $nombre_plantilla === 'PPCE0197.pdf' || $nombre_plantilla === 'PPCE0198.pdf' || $nombre_plantilla === 'PPCE0199.pdf' || $nombre_plantilla === 'PPCE0200.pdf') {
             $coordenadas = [
                 1 => [
-                    't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
+                    't.contrato' => ['x' => 228, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
                     'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
                     'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
                     'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
                     'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
                     'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
-                    'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 228, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
                 ]
             ];
-        } else {
+        } elseif ($nombre_plantilla === 'PPCE0201.pdf' || $nombre_plantilla === 'PPCE0202.pdf') {
             $coordenadas = [
                 1 => [
-                    't.contrato' => ['x' => 230, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
-                    'c.nombres' => ['x' => 75, 'y' => 124, 'size' => 6, 'font' => 'helvetica'],
-                    'c.num_documento' => ['x' => 85, 'y' => 136, 'size' => 6, 'font' => 'helvetica'],
-                    'c.fecha_nacimiento' => ['x' => 85, 'y' => 148, 'size' => 6, 'font' => 'helvetica'],
-                    'c.fecha_inicio' => ['x' => 135, 'y' => 159, 'size' => 5, 'font' => 'helvetica'],
-                    'c.fecha_fin' => ['x' => 135, 'y' => 167, 'size' => 5, 'font' => 'helvetica'],
-                    'c.lugar_fecha' => ['x' => 220, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
+                    't.contrato' => ['x' => 228, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
+                    'c.nombres' => ['x' => 70, 'y' => 117, 'size' => 5, 'font' => 'helvetica'],
+                    'c.num_documento' => ['x' => 80, 'y' => 125, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_nacimiento' => ['x' => 80, 'y' => 133, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_inicio' => ['x' => 130, 'y' => 143, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_fin' => ['x' => 130, 'y' => 148, 'size' => 5, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 238, 'y' => 705, 'size' => 6, 'font' => 'helvetica'],
+                ]
+            ];
+        }  elseif ($nombre_plantilla === 'PPCE0203.pdf' || $nombre_plantilla === 'PPCE0204.pdf') {
+            $coordenadas = [
+                1 => [
+                    't.contrato' => ['x' => 245, 'y' => 45, 'size' => 6, 'font' => 'helvetica'],
+                    'c.nombres' => ['x' => 70, 'y' => 113, 'size' => 5, 'font' => 'helvetica'],
+                    'c.num_documento' => ['x' => 80, 'y' => 123, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_nacimiento' => ['x' => 80, 'y' => 132, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_inicio' => ['x' => 120, 'y' => 141, 'size' => 5, 'font' => 'helvetica'],
+                    'c.fecha_fin' => ['x' => 120, 'y' => 147, 'size' => 5, 'font' => 'helvetica'],
+                    'c.lugar_fecha' => ['x' => 238, 'y' => 705, 'size' => 7, 'font' => 'helvetica'],
                 ]
             ];
         }
-
         // --- GENERAR PDF CON TRY-CATCH ---
         try {
             $pdf = new FPDI();

@@ -261,7 +261,7 @@ if(isset($_SESSION['login']) && ($_SESSION['admision_cobranza'] == 1)){
 					
 					
 					<!-- Visor PDF -->
-					<iframe id="visor-pdf" src="" width="100%" height="600px" frameborder="0" onload="mostrarBotonesAccion()"></iframe>
+					<!-- <iframe id="visor-pdf" src="" width="100%" height="600px" frameborder="0" onload="mostrarBotonesAccion()"></iframe> -->
 				</div>
 			</div>
 		</div>

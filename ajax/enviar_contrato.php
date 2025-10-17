@@ -202,11 +202,24 @@ function enviarPorCorreo($cliente, $archivos, $id_temp) {
             )
         );
         
-        $mail->send();
+        try {
+            $mail->send();
+            actualizarTemp($id_temp, 'correo_enviado', 'ENVIADO_CORRECTO: ' . date('Y-m-d H:i:s'));
+            echo json_encode([
+                'status' => 'success',
+                'mensaje' => 'Documentos enviados por correo correctamente a ' . $cliente['correo']
+            ]);
+        } catch (Exception $e) {
+            actualizarTemp($id_temp, 'correo_enviado', 'ERROR_ENVIO: ' . $e->getMessage());
+            echo json_encode([
+                'status' => 'error',
+                'mensaje' => 'Error al enviar documentos: ' . $e->getMessage()
+            ]);
+        }
         
-        // ÉXITO: Actualizar tabla temp
-        actualizarTemp($id_temp, 'correo_enviado', 'ENVIADO_CORRECTO: ' . date('Y-m-d H:i:s'));
-        return "Documentos enviados por correo correctamente a " . $cliente['correo'];
+        // // ÉXITO: Actualizar tabla temp
+        // actualizarTemp($id_temp, 'correo_enviado', 'ENVIADO_CORRECTO: ' . date('Y-m-d H:i:s'));
+        // return "Documentos enviados por correo correctamente a " . $cliente['correo'];
         
     } catch (Exception $e) {
         // ERROR: Actualizar tabla temp con detalles del error - CORREGIDO

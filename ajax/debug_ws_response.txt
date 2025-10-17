@@ -278,3 +278,19 @@ Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas
 HTTP Code: 200
 Body: {"Estado":"E","Factura":"https:\/\/izi-bol-temp.s3.amazonaws.com\/facturas\/InnovaSalud_factura-6132cacc-cdc7-47a6-b732-b588a5ed3e25.pdf"}
 === FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"X","Mensaje":"No se encontr\u00f3 un contrato habilitado para el plan PPCE0132 en el canal C002"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"X","Mensaje":"No se encontr\u00f3 un contrato habilitado para el plan PPCE0196 en el canal C002"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"X","Mensaje":"No se encontr\u00f3 un contrato habilitado para el plan PPCE0132 en el canal C002"}
+=== FIN RESPUESTA ===
+=== RESPUESTA WS ===
+HTTP Code: 200
+Body: {"Estado":"X","Mensaje":"No se encontr\u00f3 un contrato habilitado para el plan PPCE0196 en el canal C002"}
+=== FIN RESPUESTA ===

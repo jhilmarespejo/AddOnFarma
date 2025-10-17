@@ -4583,3 +4583,251 @@ Array
 )
 
 === FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+    [psw] => dM527'~F
+    [codigoCliente] => 3019630
+    [operacionId] => 3049433
+    [numTransaccion] => 5553913
+    [tipoDoc] => C
+    [numDoc] => 46225007
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => RAMIREZ
+    [apMaterno] => COLODRO
+    [nombres] => CALI
+    [razonSocial] => CALI RAMIREZ COLODRO
+    [genero] => M
+    [telefono] => 68627732
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19991211
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0132-SC-25-0001-0000006
+    [indicador] => D
+    [planElegido] => PPCE0132
+    [monto] => 45.00
+    [fecha] => 20251014225841
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20251014
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 46225007
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => RAMIREZ
+                    [apellidoMaternoBen] => COLODRO
+                    [nombresBen] => CALI
+                    [fechaNacimientoBen] => 19991211
+                    [generoBen] => M
+                    [telefonoBen] => 68627732
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+    [psw] => dM527'~F
+    [codigoCliente] => 3019631
+    [operacionId] => 3049434
+    [numTransaccion] => 5553914
+    [tipoDoc] => C
+    [numDoc] => 46225008
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => FORONDA
+    [apMaterno] => CAMA
+    [nombres] => ALBERTO
+    [razonSocial] => ALBERTO FORONDA CAMA
+    [genero] => M
+    [telefono] => 69687340
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19991224
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => -0000001
+    [indicador] => D
+    [planElegido] => PPCE0196
+    [monto] => 45.00
+    [fecha] => 20251014230700
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20251014
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 46225008
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => FORONDA
+                    [apellidoMaternoBen] => CAMA
+                    [nombresBen] => ALBERTO
+                    [fechaNacimientoBen] => 19991224
+                    [generoBen] => M
+                    [telefonoBen] => 69687340
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+    [psw] => dM527'~F
+    [codigoCliente] => 3019632
+    [operacionId] => 3049435
+    [numTransaccion] => 5553915
+    [tipoDoc] => C
+    [numDoc] => 46225009
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => PADILLA
+    [apMaterno] => MERLO
+    [nombres] => GUIDA
+    [razonSocial] => GUIDA PADILLA MERLO
+    [genero] => F
+    [telefono] => 69277162
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19991212
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0132-SC-25-0001-0000007
+    [indicador] => D
+    [planElegido] => PPCE0132
+    [monto] => 45.00
+    [fecha] => 20251014231132
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20251014
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 46225009
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => PADILLA
+                    [apellidoMaternoBen] => MERLO
+                    [nombresBen] => GUIDA
+                    [fechaNacimientoBen] => 19991212
+                    [generoBen] => F
+                    [telefonoBen] => 69277162
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===
+=== PAYLOAD ENVIADO AL WS ===
+Array
+(
+    [user] => portal_innova
+    [psw] => dM527'~F
+    [codigoCliente] => 3019633
+    [operacionId] => 3049436
+    [numTransaccion] => 5553916
+    [tipoDoc] => C
+    [numDoc] => 46225010
+    [extensionDoc] => 
+    [expedidoDoc] => 
+    [apPaterno] => SALCEDO
+    [apMaterno] => CASAS
+    [nombres] => YOLA
+    [razonSocial] => YOLA SALCEDO CASAS
+    [genero] => F
+    [telefono] => 76611083
+    [email] => 
+    [direccion] => N-A
+    [fecNacimiento] => 19991224
+    [cuidad] => SANTA CRUZ
+    [pais] => BOLIVIA
+    [ocupacion] => PPCE0196-SC-25-0001-0000008
+    [indicador] => D
+    [planElegido] => PPCE0196
+    [monto] => 45.00
+    [fecha] => 20251014231751
+    [numeroPago] => 0
+    [codAgencia] => LPZ-ON
+    [codigoAsesor] => 
+    [modalidad] => E
+    [fechaInicio] => 20251014
+    [canal] => C002
+    [beneficiarios] => Array
+        (
+            [0] => Array
+                (
+                    [tipoBen] => 1
+                    [tipoDocBen] => C
+                    [numDocBen] => 46225010
+                    [extensionBen] => 
+                    [expedidoBen] => 
+                    [apellidoPaternoBen] => SALCEDO
+                    [apellidoMaternoBen] => CASAS
+                    [nombresBen] => YOLA
+                    [fechaNacimientoBen] => 19991224
+                    [generoBen] => F
+                    [telefonoBen] => 76611083
+                    [emailBen] => 
+                    [direccionBen] => N-A
+                    [ciudadBen] => SANTA CRUZ
+                    [paisBen] => BOLIVIA
+                    [parentescoBen] => Titular
+                    [docIdentidadTitular] => 0
+                )
+
+        )
+
+)
+
+=== FIN PAYLOAD ===

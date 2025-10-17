@@ -343,6 +343,18 @@ function guardaryeditar(e) {
 	let generoCliente = $('#genero').val();
 
 	console.log('PLANES: '+planes);
+       
+       if(!planes || planes === '' || planes === '0' || planes === '0selected'){
+			alert('❌ DEBE SELECCIONAR UN PLAN ANTES DE CONTINUAR');
+			
+			// Enfocar el combobox de Bootstrap Select
+			$('#planes').selectpicker('focus');
+			
+			// Resaltar visualmente
+			$('.bootstrap-select[data-id="planes"]').css('border', '2px solid red');
+			
+			return false; // Detener ejecución
+		}
 
 
 	if(planes === '0'){
@@ -533,7 +545,7 @@ function generarFactura() {
     $('#btnContrato').hide();
     $('#btnImprimir').hide();
     $('#btnVolverInicio').hide();
-    $('#btnCancelar').attr('disabled', true);
+    // //++ $('#btnCancelar').attr('disabled', true);
 
 	// Simulación de respuesta exitosa sin AJAX    
     
@@ -651,29 +663,40 @@ function generarYFirmarContrato(idContrato) {
 function enviarContratoPorCorreo(idContrato) {
     console.log("Enviando contrato por correo... ID:", idContrato);
     
-    $.post('../ajax/enviar_contrato.php', { 
-        tipo: 'correo', 
-        id: idContrato 
-    }, function(respuesta) {
-        //console.log("Correo enviado exitosamente:", respuesta);
-        mostrarNotificacion("Contrato enviado correctamente por correo electrónico", "success");
-        
-        // Mostrar botones finales
-        $('#btnVolverInicio').show();
-        if ($('#btnImprimir').attr('href') !== '#') {
-            $('#btnImprimir').show();
-        }
-        
-    }).fail(function(jqXHR, textStatus, errorThrown) {
-        console.error("Error al enviar por correo:", textStatus, errorThrown);
-        mostrarNotificacion("Error al enviar el contrato por correo", "error");
-        
-        // Mostrar botones finales incluso si falla el envío
-        $('#btnVolverInicio').show();
-        if ($('#btnImprimir').attr('href') !== '#') {
-            $('#btnImprimir').show();
-        }
-    });
+   $.post('../ajax/enviar_contrato.php', { 
+    tipo: 'correo', 
+    id: idContrato 
+}, function(respuestaRaw) {
+    let respuesta;
+    try {
+        respuesta = JSON.parse(respuestaRaw);
+    } catch (e) {
+        console.error("Respuesta no válida:", respuestaRaw);
+        alert("Error inesperado al procesar la respuesta del servidor.");
+        return;
+    }
+
+    if (respuesta.status === 'success') {
+        alert(respuesta.mensaje);
+    } else {
+        alert("Error: " + respuesta.mensaje);
+    }
+
+    $('#btnVolverInicio').show();
+    if ($('#btnImprimir').attr('href') !== '#') {
+        $('#btnImprimir').show();
+    }
+}).fail(function(jqXHR, textStatus, errorThrown) {
+    console.error("Error AJAX:", textStatus, errorThrown);
+    alert("Error al enviar el contrato por correo.");
+
+    $('#btnVolverInicio').show();
+    if ($('#btnImprimir').attr('href') !== '#') {
+        $('#btnImprimir').show();
+    }
+});
+
+
 }
 
 // Función auxiliar para mostrar notificaciones
@@ -714,10 +737,10 @@ function mostrarNotificacion(mensaje, tipo) {
 //     // Cargar el PDF en el iframe
 //     $('#visor-pdf').attr('src', '../ajax/obtener_contrato.php?id=' + registro_a_facturar);
 // }
-function mostrarBotonesAccion() {
-    // Mostrar los botones solo si el PDF se ha cargado
-    $('#botonesAccion').fadeIn();
-}
+// function mostrarBotonesAccion() {
+//     // Mostrar los botones solo si el PDF se ha cargado
+//     $('#botonesAccion').fadeIn();
+// }
 
 
 // function enviarPorCorreo() {
