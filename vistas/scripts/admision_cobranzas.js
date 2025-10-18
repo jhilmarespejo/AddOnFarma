@@ -545,7 +545,7 @@ function generarFactura() {
     $('#btnContrato').hide();
     $('#btnImprimir').hide();
     $('#btnVolverInicio').hide();
-    // //++ $('#btnCancelar').attr('disabled', true);
+    $('#btnCancelar').attr('disabled', true);
 
 	// Simulación de respuesta exitosa sin AJAX    
     
